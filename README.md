@@ -6,3 +6,4 @@ The note and code of some algorithm problem of lintcode or leetcode
 
   first-bad-version: <https://github.com/wang-yang/alg/blob/master/first-bad-version.java>
   
+  search-in-rotated-sorted-array: <https://github.com/wang-yang/alg/blob/master/search-in-rotated-sorted-array.java>

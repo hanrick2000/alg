@@ -19,14 +19,14 @@ public class Solution {
         return mid;
       }
       if (A[start] < A[mid]) {
-        // situation 1, red line
+        //如果 A[start] < A[mid], 则说明mid左侧是有序的, eg 4 5 6 7 [8] 0 1 2 3
         if (A[start] <= target && target <= A[mid]) {
           end = mid;
         } else {
           start = mid;
         }
       } else {
-        // situation 2, green line
+        //如果 A[start] > A[mid], 则说明mid右侧是有序的, eg 7 8 0 1 [2] 3 4 5 6
         if (A[mid] <= target && target <= A[end]) {
           start = mid;
         } else {

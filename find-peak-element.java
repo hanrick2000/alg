@@ -1,4 +1,12 @@
 /*
+There is an integer array which has the following features:
+The numbers in adjacent positions are different.
+A[0] < A[1] && A[A.length - 2] > A[A.length - 1].
+We define a position P is a peek if:
+A[P] > A[P-1] && A[P] > A[P+1]
+Find a peak element in this array. Return the index of the peak.
+*/
+/*
    看mid，如果mid>mid-1，且 mid>mid+1，则返回mid
    最左边和最右边的元素都是最小的, 所以:
      mid < mid - 1, 则在mid左边区间搜索可以得到一个peak

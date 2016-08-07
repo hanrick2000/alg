@@ -1,4 +1,14 @@
 /*
+Suppose a sorted array is rotated at some pivot unknown to you beforehand.
+(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
+You are given a target value to search. If found in the array return its index, otherwise return -1.
+You may assume no duplicate exists in the array.
+
+Example:
+For [4, 5, 1, 2, 3] and target=1, return 2.
+For [4, 5, 1, 2, 3] and target=0, return -1.
+*/
+/*
  mid左右必有一个是有序的
  如果 A[start] < A[mid], 则说明mid左侧是有序的, eg 4 5 6 7 [8] 0 1 2 3
  如果 A[start] > A[mid], 则说明mid右侧是有序的, eg 7 8 0 1 [2] 3 4 5 6

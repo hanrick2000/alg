@@ -7,7 +7,7 @@ You may assume no duplicate exists in the array.
 */
 /*
  跟search in rotated sorted array很像
- 都是根据nums[mid]和nums[nums.length-1](也可以是nums[0]来判断哪边是有序的
+ 都是根据nums[mid]和nums[nums.length-1](也可以是nums[0])来判断哪边是有序的
  最后剩下的两个, 选小的就是最小值
    0 1
    1 0

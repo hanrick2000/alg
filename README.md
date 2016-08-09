@@ -18,3 +18,5 @@ The note and code of some algorithm problem of lintcode or leetcode
 
 [search-in-rotated-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/search-in-rotated-sorted-array.java)
 
+[search-for-a-range](https://github.com/wang-yang/alg/blob/master/binary_search/search-for-a-range.java)
+

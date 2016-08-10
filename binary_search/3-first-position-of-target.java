@@ -22,7 +22,8 @@ class Solution {
         while (start + 1 < end) {
             int mid = start + (end - start) / 2;
             if (nums[mid] == target) {
-                end = mid;
+                end = mid; //等于的时候不返回,因为是找first position of target
+                //所以当nums[mid]==target时, 让end=mid 
             } else if (nums[mid] < target) {
                 start = mid;
                 // or start = mid + 1;

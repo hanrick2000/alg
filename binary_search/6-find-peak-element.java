@@ -9,15 +9,15 @@ Find a peak element in this array. Return the index of the peak.
 /*
    看mid，如果mid>mid-1，且 mid>mid+1，则返回mid
    最左边和最右边的元素都是最小的, 所以:
-     mid < mid - 1, 则在mid左边区间搜索可以得到一个peak
+     A[mid - 1] > A[mid], 则在mid左边区间搜索可以得到一个peak
         /|\
          | \
-       mid-1
+       mid-1 mid
 
-     mid > mid + 1，则在mid右边区间搜索可以得到一个peak
+     A[mid] > A[mid + 1]，则在mid右边区间搜索可以得到一个peak
         /|\
        / |
-       mid+1
+    mid mid+1
    最后生两个数，返回高的就是peak
  */
 class Solution {

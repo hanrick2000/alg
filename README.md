@@ -2,21 +2,21 @@
 The note and code of some algorithm problem of lintcode or leetcode
 
 ## Binary Search
-[search-insert-position](https://github.com/wang-yang/alg/blob/master/binary_search/search-insert-position.java)
+[1-search-insert-position](https://github.com/wang-yang/alg/blob/master/binary_search/1-search-insert-position.java)
 
-[search-a-2d-matrix](https://github.com/wang-yang/alg/blob/master/binary_search/search-a-2d-matrix.java)
+[2-search-a-2d-matrix](https://github.com/wang-yang/alg/blob/master/binary_search/2-search-a-2d-matrix.java)
 
-[first-position-of-target](https://github.com/wang-yang/alg/blob/master/binary_search/first-position-of-target.java)
+[3-first-position-of-target](https://github.com/wang-yang/alg/blob/master/binary_search/3-first-position-of-target.java)
 
-[search-in-a-big-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/search-in-a-big-sorted-array.java)
+[4-search-in-a-big-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/4-search-in-a-big-sorted-array.java)
 
-[find-minimum-in-rotated-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/find-minimum-in-rotated-sorted-array.java)
+[5-find-minimum-in-rotated-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/5-find-minimum-in-rotated-sorted-array.java)
 
-[find-peak-element](https://github.com/wang-yang/alg/blob/master/binary_search/find-peak-element.java)
+[6-find-peak-element](https://github.com/wang-yang/alg/blob/master/binary_search/6-find-peak-element.java)
 
-[first-bad-version](https://github.com/wang-yang/alg/blob/master/binary_search/first-bad-version.java)
+[7-first-bad-version](https://github.com/wang-yang/alg/blob/master/binary_search/7-first-bad-version.java)
 
-[search-in-rotated-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/search-in-rotated-sorted-array.java)
+[8-search-in-rotated-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/8-search-in-rotated-sorted-array.java)
 
-[search-for-a-range](https://github.com/wang-yang/alg/blob/master/binary_search/search-for-a-range.java)
+[9-search-for-a-range](https://github.com/wang-yang/alg/blob/master/binary_search/9-search-for-a-range.java)
 

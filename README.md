@@ -20,3 +20,13 @@ The note and code of some algorithm problem of lintcode or leetcode
 
 [9-search-for-a-range](https://github.com/wang-yang/alg/blob/master/binary_search/9-search-for-a-range.java)
 
+[b1-total-occurrence-of-target](https://github.com/wang-yang/alg/blob/master/binary_search/b1-total-occurrence-of-target.java)
+
+[b2-closest-number-in-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/b2-closest-number-in-sorted-array.java)
+
+[b3-last-position-of-target](https://github.com/wang-yang/alg/blob/master/binary_search/b3-last-position-of-target.java)
+
+[b4-classical-binary-search](https://github.com/wang-yang/alg/blob/master/binary_search/b4-classical-binary-search.java)
+
+[b5-k-closest-numbers-in-sorted-array](https://github.com/wang-yang/alg/blob/master/binary_search/b5-k-closest-numbers-in-sorted-array.java)
+

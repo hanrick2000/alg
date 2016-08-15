@@ -59,8 +59,8 @@ public class Solution {
     } else if (ary[end] >= target) {
       return end;
     } else {
-      return end + 1;
+      return end + 1; // return ary.length 也行
+      //到这里时, end一定等于ary.length-1
     }
   }
 }
-

@@ -6,27 +6,27 @@
   [2,1,2],
   [2,2,1]
 ]
-Using recursion to do it is acceptable. If you can do it without recursion, that would be great!
+Using recursion to do it is acceptable. 
+If you can do it without recursion, that would be great!
  */
 public class Solution {
   public ArrayList<ArrayList<Integer>> permuteUnique(ArrayList<Integer> nums) {
     ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
-    if(nums == null || nums.size() == 0)
+    if(nums == null || nums.size() == 0){
       return result;
+    }
     ArrayList<Integer> list = new ArrayList<Integer>();
     int[] visited = new int[nums.size()];
-    
     Collections.sort(nums);
     helper(result, list, visited, nums);
     return result;
   }
-  
-  public void helper(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> list, int[] visited, ArrayList<Integer> nums) {
+  public void helper(ArrayList<ArrayList<Integer>> result, 
+                     ArrayList<Integer> list, int[] visited, ArrayList<Integer> nums) {
     if(list.size() == nums.size()) {
       result.add(new ArrayList<Integer>(list));
       return;
     }
-    
     for(int i = 0; i < nums.size(); i++) {
       if (visited[i] == 1 || (i != 0 && nums.get(i) == nums.get(i-1) && visited[i - 1] == 0)){
         continue;
@@ -44,5 +44,5 @@ public class Solution {
       list.remove(list.size() - 1);
       visited[i] = 0;
     }
-  }  
+  }
 }

@@ -23,6 +23,14 @@ Do it without recursion.
 [3,2,1]
 */
 
+/*
+ * 第一个版本你可以画一颗搜索树
+ * 树的每一层就是递归的那一层 树上每个分支就是for循环中的每个选择
+                       \ 
+              1        2         3   
+           2    3   1    3    1    2
+           3    2   3    1    2    1
+ */
 public class Solution {
   public ArrayList<ArrayList<Integer>> permute(ArrayList<Integer> nums) {
      ArrayList<ArrayList<Integer>> rst = new ArrayList<ArrayList<Integer>>();
@@ -33,7 +41,8 @@ public class Solution {
      helper(rst, list, nums);
      return rst;
   }
-  public void helper(ArrayList<ArrayList<Integer>> rst, ArrayList<Integer> list, ArrayList<Integer> nums){
+  public void helper(ArrayList<ArrayList<Integer>> rst, ArrayList<Integer> list, 
+                     ArrayList<Integer> nums){
     if(list.size() == nums.size()) {
       rst.add(new ArrayList<Integer>(list));
       return;

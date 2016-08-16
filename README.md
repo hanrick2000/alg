@@ -1,7 +1,20 @@
 # Algorithm
 The note and code of some algorithm problem of lintcode or leetcode
 
-## 1 Binary Search
+## 1 Coding Style
+
+### 字符串查找
+[1-strstr](https://github.com/wang-yang/alg/blob/master/coding_style/1-strstr.java)  
+
+### 组合, 递归, 非递归
+[b1-subsets-ii](https://github.com/wang-yang/alg/blob/master/coding_style/b1-subsets-ii.java)  
+[b2-subsets](https://github.com/wang-yang/alg/blob/master/coding_style/b2-subsets.java)  
+
+### 排列, 递归, 非递归
+[b3-permutations-ii](https://github.com/wang-yang/alg/blob/master/coding_style/b3-permutations-ii.java)  
+[b4-permutations](https://github.com/wang-yang/alg/blob/master/coding_style/b4-permutations.java)  
+
+## 2 Binary Search
 
 ### 范围搜索, 左边界, 右边界
 [3-first-position-of-target](https://github.com/wang-yang/alg/blob/master/binary_search/3-first-position-of-target.java)  

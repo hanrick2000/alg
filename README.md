@@ -44,9 +44,35 @@ The note and code of some algorithm problem of lintcode or leetcode
 [b4-classical-binary-search](https://github.com/wang-yang/alg/blob/master/binary_search/b4-classical-binary-search.java)  
 [b6-wood-cut](https://github.com/wang-yang/alg/blob/master/binary_search/b6-wood-cut.java)  
 
+## 3 Binary Tree & Divide Conquer
+
+[1-maximum-depth-of-binary-tree](binary_tree/1-maximum-depth-of-binary-tree.java)
+[2-balanced-binary-tree]()
+[3-binary-tree-preorder-traversal]()
+[4-binary-tree-maximum-path-sum-ii]()
+[5-inorder-successor-in-binary-search-tree]()
+[6-validate-binary-search-tree]()
+[7-binary-tree-maximum-path-sum]()
+[8-lowest-common-ancestor]()
+[9-binary-tree-level-order-traversal]()
+[10-binary-search-tree-iterator]()
+[b1-binary-tree-path-sum]()
+[b10-binary-tree-inorder-traversal]()
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+# TODO
+1. lintcode的lader, 同时把leetcode上有的题刷上
+2. 看公司对应的考题: https://discuss.leetcode.com/category/458/amazon
+3. 然后挑着看

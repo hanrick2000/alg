@@ -1,5 +1,9 @@
 //Medium
 //Assume two nodes are exist in tree. 如果有节点不存在, 则会返回不对的结果
+/*
+Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
+The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
+*/
 public class Solution {
     // 在root为根的二叉树中找A,B的LCA:
     // 如果找到了就返回这个LCA

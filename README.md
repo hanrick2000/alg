@@ -4,7 +4,7 @@ The note and code of some algorithm problem of lintcode or leetcode
 ## 1 Coding Style
 
 ### 字符串查找
-(coding_style/1-strstr.java)  
+[1-strstr](coding_style/1-strstr.java)  
 
 ### 组合, 递归, 非递归
 (coding_style/b1-subsets-ii.java)  

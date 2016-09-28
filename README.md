@@ -46,18 +46,18 @@ The note and code of some algorithm problem of lintcode or leetcode
 
 ## 3 Binary Tree & Divide Conquer
 
-[1-maximum-depth-of-binary-tree.java](binary_tree/1-maximum-depth-of-binary-tree.java)  
-[2-balanced-binary-tree](binary_tree/2-balanced-binary-tree)  
-[3-binary-tree-preorder-traversal](binary_tree/3-binary-tree-preorder-traversal)  
-[4-binary-tree-maximum-path-sum-ii](binary_tree/4-binary-tree-maximum-path-sum-ii)  
-[5-inorder-successor-in-binary-search-tree](binary_tree/5-inorder-successor-in-binary-search-tree)  
-[6-validate-binary-search-tree](binary_tree/6-validate-binary-search-tree)  
-[7-binary-tree-maximum-path-sum](binary_tree/7-binary-tree-maximum-path-sum)  
-[8-lowest-common-ancestor](binary_tree/8-lowest-common-ancestor)  
-[9-binary-tree-level-order-traversal](binary_tree/9-binary-tree-level-order-traversal)  
-[10-binary-search-tree-iterator](binary_tree/10-binary-search-tree-iterator)  
-[b1-binary-tree-path-sum](binary_tree/b1-binary-tree-path-sum)  
-[b10-binary-tree-inorder-traversal](binary_tree/b10-binary-tree-inorder-traversal)  
+[1-maximum-depth-of-binary-tree](binary_tree/1-maximum-depth-of-binary-tree.java)  
+[2-balanced-binary-tree](binary_tree/2-balanced-binary-tree.java)  
+[3-binary-tree-preorder-traversal](binary_tree/3-binary-tree-preorder-traversal.java)  
+[4-binary-tree-maximum-path-sum-ii](binary_tree/4-binary-tree-maximum-path-sum-ii.java)  
+[5-inorder-successor-in-binary-search-tree](binary_tree/5-inorder-successor-in-binary-search-tree.java)  
+[6-validate-binary-search-tree](binary_tree/6-validate-binary-search-tree.java)  
+[7-binary-tree-maximum-path-sum](binary_tree/7-binary-tree-maximum-path-sum.java)  
+[8-lowest-common-ancestor](binary_tree/8-lowest-common-ancestor.java)  
+[9-binary-tree-level-order-traversal](binary_tree/9-binary-tree-level-order-traversal.java)  
+[10-binary-search-tree-iterator](binary_tree/10-binary-search-tree-iterator.java)  
+[b1-binary-tree-path-sum](binary_tree/b1-binary-tree-path-sum.java)  
+[b10-binary-tree-inorder-traversal](binary_tree/b10-binary-tree-inorder-traversal.java)  
 
 
 

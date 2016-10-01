@@ -5,6 +5,13 @@ How many possible unique paths are there?
 m and n will be at most 100.
 input(1,3) -> 1
 input(2,3) -> 3
+
+state: f[x][y]从起点到x,y的路径数
+function: (研究倒数第一步) f[x][y] = f[x - 1][y] + f[x][y - 1]
+initialize: f[0][i] = 1
+            f[i][0] = 1
+answer: f[n-1][m-1]
+
 */
 public class Solution {
     public int uniquePaths(int m, int n) {

@@ -244,7 +244,7 @@
   10 http://www.jiuzhang.com/solutions/largest-rectangle-in-histogram
 
 4 Two Pointers
-  1 http://www.jiuzhang.com/solutions/nuts-bolts-solutions
+  1 http://www.jiuzhang.com/solutions/nuts-bolts-problem
   2 http://www.jiuzhang.com/solutions/minimum-size-subarray-sum
   3 http://www.jiuzhang.com/solutions/container-with-most-water
   4 http://www.jiuzhang.com/solutions/longest-substring-without-repeating-characters
@@ -272,7 +272,57 @@
   16 http://www.jiuzhang.com/solutions/linked-list-cycle-ii
 
 5 Dynamic Problem I
+  1 http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence
+  2 http://www.jiuzhang.com/solutions/maximum-subarray
+  3 http://www.jiuzhang.com/solutions/maximal-square
+  4 http://www.jiuzhang.com/solutions/longest-palindromic-substring
+  5 http://www.jiuzhang.com/solutions/coins-in-a-line-ii
+  6 http://www.jiuzhang.com/solutions/coins-in-a-line
+  7 http://www.jiuzhang.com/solutions/house-robber
+  8 http://www.jiuzhang.com/solutions/maximum-product-subarray
+  9 http://www.jiuzhang.com/solutions/longest-increasing-subsequence
+  10 http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence-ii
+  -
+  1 http://www.jiuzhang.com/solutions/copy-books-ii
+  2 http://www.jiuzhang.com/solutions/copy-books
+  3 http://www.jiuzhang.com/solutions/post-office-problem
+  4 http://www.jiuzhang.com/solutions/coins-in-a-line-iii
+  5 http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iv
 
 6 Dynamic Problem II
+  1 http://www.jiuzhang.com/solutions/stone-game
+  2 http://www.jiuzhang.com/solutions/coins-in-a-line-ii
+  3 http://www.jiuzhang.com/solutions/coins-in-a-line
+  4 http://www.jiuzhang.com/solutions/backpack
+  5 http://www.jiuzhang.com/solutions/scramble-string
+  6 http://www.jiuzhang.com/solutions/coins-in-a-line-iii
+  -
+  1 http://www.jiuzhang.com/solutions/backpack-vi
+  2 http://www.jiuzhang.com/solutions/backpack-v
+  3 http://www.jiuzhang.com/solutions/backpack-iv
+  4 http://www.jiuzhang.com/solutions/backpack-ii
+  5 http://www.jiuzhang.com/solutions/minimum-adjustment-cost
+  6 http://www.jiuzhang.com/solutions/burst-balloons
+  7 http://www.jiuzhang.com/solutions/backpack-iii
+  8 http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iv
+  9 http://www.jiuzhang.com/solutions/k-sum
 
-7 Follow Up
+17 Follow Up
+  1 http://www.jiuzhang.com/solutions/subarray-sum
+  2 http://www.jiuzhang.com/solutions/submatrix-sum
+  3 http://www.jiuzhang.com/solutions/continuous-subarray-sum
+  4 http://www.jiuzhang.com/solutions/continuous-subarray-sum-ii
+  5 http://www.jiuzhang.com/solutions/kth-smallest-number-in-sorted-matrix
+  6 http://www.jiuzhang.com/solutions/minimum-size-subarray-sum
+  7 http://www.jiuzhang.com/solutions/subarray-sum-closest
+  8 http://www.jiuzhang.com/solutions/find-peak-element
+  9 http://www.jiuzhang.com/solutions/maximum-gap
+  -
+  1 http://www.jiuzhang.com/solutions/build-post-office
+  2 http://www.jiuzhang.com/solutions/nested-list-weight-sum
+  3 http://www.jiuzhang.com/solutions/build-post-office-ii
+  4 http://www.jiuzhang.com/solutions/bomb-enemy
+  5 http://www.jiuzhang.com/solutions/zigzag-iterator-ii
+  6 http://www.jiuzhang.com/solutions/zigzag-iterator
+  7 http://www.jiuzhang.com/solutions/subarray-sum-ii
+  8 http://www.jiuzhang.com/solutions/find-peak-element-ii

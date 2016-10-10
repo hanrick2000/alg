@@ -8,4 +8,5 @@ medium + easy的题就足够了，剩下的时间可以看看系统设计呀大�
 SQL也可能会考。。（一把辛酸泪）
 准备时间&算法题：1个半月集中刷题，lintcode里medium+easy以及lintcode的阶梯训练里的题都刷了两遍
 
-
+bfs=最短路径, tree的level order
+dfs=所有路径, permutation, 枚举类

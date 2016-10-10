@@ -1,5 +1,0 @@
-另外Amazon一定要熟练掌握leadership princeple。每个原则想个例子。楼主遇到了一轮全程45分钟behavior question的。如果大家面Amazon，详详细了解behavior questions怎么回答，可以去一亩三分地看详细面筋。
-
-只拿到了Amazon Robotic的电面，问了好多OOP的问题，挂了
-
-

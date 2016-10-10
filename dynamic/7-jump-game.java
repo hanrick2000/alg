@@ -14,12 +14,13 @@ A = [3,2,1,0,4], return false.
 // 这个方法，复杂度是 O(n^2) 可能会超时，但是依然需要掌握。
 public class Solution {
     public boolean canJump(int[] A) {
-        boolean[] can = new boolean[A.length]; //can[i]表示在i位置上是否可以到达数组最后一个元素
+        if (A == null || A.length == 0) return false;
+        boolean[] can = new boolean[A.length]; //can[i]表示我能否跳到第i个位置
         can[0] = true;
         for (int i = 1; i < A.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (can[j] && j + A[j] >= i) {
-                    can[i] = true;
+                    can[i] = true; //跟jump game ii这里有区别, 后者是找出最小的跳跃步数
                     break;
                 }
             }
@@ -27,18 +28,13 @@ public class Solution {
         return can[A.length - 1];
     }
 }
-
-
-// version 2: Greedy 背下来哦
+// version 2: Greedy, 显然是O(n)
 public class Solution {
     public boolean canJump(int[] A) {
-        // think it as merging n intervals
-        if (A == null || A.length == 0) {
-            return false;
-        }
+        if (A == null || A.length == 0) return false;
         int farthest = A[0];
         for (int i = 1; i < A.length; i++) {
-            if (i <= farthest && A[i] + i >= farthest) { //先判断当前的farthest是否大于等于当前的位置i, 如果>=i说明可以到达i, 然后在看i位置上的下一跳距离+i是否>=farthest, 如果大于则更新farthest
+            if (i <= farthest && A[i] + i >= farthest) { //先判断上一跳后能否到达i位置, 然后再看当前一跳能否更新最远距离
                 farthest = A[i] + i;
             }
         }

@@ -6,18 +6,20 @@ Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 Challenge 
 O(n) time and O(1) memory
 O(n) time and O(n) memory is also acceptable.
+灌水问题
 */
 
 //Version 0: Two pointer
 public class Solution {
     public int trapRainWater(int[] heights) {
-        int left = 0, right = heights.length - 1; 
+        int left = 0;
+        int right = heights.length - 1; 
         int res = 0;
         if(left >= right)
             return res;
         int leftheight = heights[left];
         int rightheight = heights[right];
-        while(left < right) {
+        while(left < right) { //一个槽一个槽的算
             if(leftheight < rightheight) {
                 left ++;
                 if(leftheight > heights[left]) {

@@ -24,8 +24,8 @@ public class Solution {
         boolean [][]flag =new boolean[n + 1][n + 1];
         int[][] sum = new int[n + 1][n + 1]; //从第i到第j的和
         for (int i = 0; i < n; i++) {
+            sum[i][i] = values[i];
             for (int j = i; j < n; j++) {
-                if(i==j) sum[i][j] = values[i];
                 else sum[i][j] = sum[i][j-1] + values[j];
             }
         }

@@ -23,7 +23,7 @@ public class Solution{
                 f[i][j] = f[i-1][j];
                 if(j>=A[i-1]){//notice: A[i-1]
                     f[i][j] = Math.max(f[i-1][j], f[i-1][j-A[i-1]] + V[i-1]); //唯一要改的地方, A[i-1]->V[i-1]
-                }                        //          ^
+                }   //                                               ^
             }
         }
         //result

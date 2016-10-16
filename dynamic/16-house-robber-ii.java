@@ -16,15 +16,26 @@ public class Solution {
         if (nums.length == 1) return nums[0];
         return Math.max(robber1(nums, 0, nums.length - 2), robber1(nums, 1, nums.length - 1));
     }
+    //my version
     public int robber1(int[] nums, int st, int ed) {
-        if(st == ed) return nums[ed];
-        if(st+1 == ed) return Math.max(nums[st], nums[ed]);
-        int[] f= new int[2];
-        f[st%2] = nums[st];
-        f[(st+1)%2] = Math.max(nums[st], nums[st+1]);
-        for(int i = st+2; i <= ed; i++) {
-            f[i%2] = Math.max(f[(i-1)%2], f[(i-2)%2] + nums[i]);
+        int n = ed - st + 1;
+        int[] f = new int[n+1];
+        f[0] = 0;
+        f[1] = nums[st];
+        for(int i=2; i<=n; i++){
+          f[i] = Math.max(f[i-2]+nums[st+i-1], f[i-1]);
         }
-        return f[ed%2];
+        return f[n];
+    }
+    // my rolling array version
+    public int robber1(int[] nums, int st, int ed) {
+        int n = ed - st + 1;
+        int[] f = new int[2];
+        f[0] = 0;
+        f[1] = nums[st];
+        for(int i=2; i<=n; i++){
+          f[i%2] = Math.max(f[(i-2)%2]+nums[st+i-1], f[(i-1)%2]);
+        }
+        return f[n%2];
     }
 }

@@ -4,6 +4,9 @@ hard:       49
 super:      3
 total:      280
 
+easy+medium:228
+current:   :90
+
 1 strStr & Coding Style
   1  OK E www.lintcode.com/problem/strstr
   -
@@ -197,9 +200,9 @@ total:      280
   3     M http://www.lintcode.com/problem/find-the-missing-number-ii
   4     M http://www.lintcode.com/problem/number-of-ways-to-represent-n-cents
 
-===================
-===================
-===================
+============================================================================
+============================================================================
+============================================================================
 
 11 Follow up in Coding Interview
   1     E http://www.lintcode.com/problem/kth-largest-in-n-arrays
@@ -213,7 +216,7 @@ total:      280
   3     M http://www.lintcode.com/problem/segment-tree-modify
   4     M http://www.lintcode.com/problem/segment-tree-query
   5     M http://www.lintcode.com/problem/segment-tree-build
-  6     M http://www.lintcode.com/problem/kth-largest-element
+  6  OK M http://www.lintcode.com/problem/kth-largest-element
 
 12 Data Structure I
   1     E http://www.lintcode.com/problem/number-of-islands
@@ -234,7 +237,7 @@ total:      280
   6     S http://www.lintcode.com/problem/building-outline
 
 13 Data Structure II
-  1     M http://www.lintcode.com/problem/trapping-rain-water
+  1  OK M http://www.lintcode.com/problem/trapping-rain-water
   2     M http://www.lintcode.com/problem/heapify
   3     H http://www.lintcode.com/problem/trapping-rain-water-ii
   4     H http://www.lintcode.com/problem/sliding-window-median
@@ -256,20 +259,20 @@ total:      280
 14 Two Pointers
   1  OK M http://www.lintcode.com/problem/nuts-bolts-problem
   2     M http://www.lintcode.com/problem/minimum-size-subarray-sum
-  3     M http://www.lintcode.com/problem/container-with-most-water
+  3  OK M http://www.lintcode.com/problem/container-with-most-water
   4     M http://www.lintcode.com/problem/longest-substring-without-repeating-characters
   5     M http://www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters
-  6     M http://www.lintcode.com/problem/trapping-rain-water
+  6  OK M http://www.lintcode.com/problem/trapping-rain-water
   7  OK M http://www.lintcode.com/problem/two-sum
   8     M http://www.lintcode.com/problem/minimum-window-substring
-  9     M http://www.lintcode.com/problem/kth-largest-element
+  9  OK M http://www.lintcode.com/problem/kth-largest-element
   -
   1     E http://www.lintcode.com/problem/valid-palindrome
   2     E http://www.lintcode.com/problem/partition-array-by-odd-and-even
   3     E http://www.lintcode.com/problem/remove-nth-node-from-end-of-list
   4     E http://www.lintcode.com/problem/merge-two-sorted-lists
   5     M http://www.lintcode.com/problem/the-smallest-difference
-  6     M http://www.lintcode.com/problem/trapping-rain-water
+  6  OK M http://www.lintcode.com/problem/trapping-rain-water
   7     M http://www.lintcode.com/problem/sort-colors
   8     M http://www.lintcode.com/problem/interleaving-positive-and-negative-numbers
   9     M http://www.lintcode.com/problem/linked-list-cycle

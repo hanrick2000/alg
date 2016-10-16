@@ -38,7 +38,6 @@ public class Solution {
         }
         return ans;
     }
-
     int[] dx = {1,-1,0,0};
     int[] dy = {0,0,1,-1};
     int search(int x, int y, int[][] A)   {
@@ -51,7 +50,7 @@ public class Solution {
             ny = y + dy[i];
             if(0<= nx && nx < n && 0<= ny && ny < m ) {
                 if( A[x][y] > A[nx][ny]) {
-                    ans = Math.max(ans,  search( nx, ny, A) + 1);
+                    ans = Math.max(ans,  search(nx, ny, A) + 1);
                 }
             }
         }

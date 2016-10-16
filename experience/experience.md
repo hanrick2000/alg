@@ -10,3 +10,5 @@ SQL也可能会考。。（一把辛酸泪）
 
 bfs=最短路径, tree的level order
 dfs=所有路径, permutation, 枚举类
+
+一亩三分地内推, 经验

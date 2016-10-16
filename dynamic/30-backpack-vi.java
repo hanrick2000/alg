@@ -17,7 +17,7 @@ return 6
 public class Solution {
     public int backPackVI(int[] nums, int target) {
         //state
-        int[] f = new int[target + 1]; //f[i]表示填满背包容量是i的方案综述
+        int[] f = new int[target + 1]; //f[i]表示填满背包容量是i的方案总数
         //init
         f[0] = 1;
         //fuction

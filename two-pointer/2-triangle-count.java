@@ -33,3 +33,27 @@ public class Solution {
         return ans;
     }
 }
+
+//my version
+public class Solution{
+  public int triangleCount(int S[]) {
+    if(S == null) return 0;
+    if(S.length < 2) return 0;
+    int ans = 0;
+    int n = S.length;
+    Arrays.sort(S);
+    for(int i=2; i<n; i++){
+      int left = 0;
+      int right = i - 1;
+      while(left<right){
+        if(S[left] + S[right] > S[i]){
+          ans = ans + (right-left);
+          right--;
+        }else{
+          left++;
+        }
+      }
+    }
+    return ans;
+  }
+}

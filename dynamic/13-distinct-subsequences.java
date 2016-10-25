@@ -1,3 +1,31 @@
+public class Solution {
+    public int numDistinct(String S, String T) {
+        if (S == null || T == null){
+            return 0;
+        }
+        //state
+        int[][] nums = new int[S.length() + 1][T.length() + 1]; //nums[i][j]表示S的前i个字符中选取T的前j个字符, 有多少中挑选方案
+        //init
+        for (int i = 0; i <= S.length(); i++) {
+            nums[i][0] = 1; //从字符串中挑出空串, 总会是有1个方案
+        }
+        //function
+        for (int i = 1; i <= S.length(); i++) {
+            for (int j = 1; j <= T.length(); j++) {
+                if (S.charAt(i - 1) == T.charAt(j - 1)) {
+                    nums[i][j] = nums[i - 1][j] + nums[i - 1][j - 1]; //最后一个字符相等: 不配对最后一个字母 + 配对最后一个字母
+                }else{
+                    nums[i][j] = nums[i - 1][j]; //最后一个字符不等: 转化成S的前i-1个字符中选取T的前j个字符的挑选方案数
+                }
+            }
+        }
+        //result
+        return nums[S.length()][T.length()];
+    }
+}
+
+//有模拟图, 手机备忘录中
+
 /*
 Given a string S and a string T, count the number of distinct subsequences of T in S.
 A subsequence of a string is a new string which is formed from the original string 
@@ -15,26 +43,3 @@ S[i] == T[j]: 两个字符串的最后一个字符相等，
   综合以上两种选择，可得知在S[i] == T[j]时有 f[i][j] = f[i-1][j-1] + f[i-1][j]
 S[i] != T[j]: 最后一个字符不等时，S[i] 不可能和 T[j] 配对，故 f[i][j] = f[i-1][j]
 */
-public class Solution {
-    public int numDistinct(String S, String T) {
-        if (S == null || T == null) return 0;
-        //state
-        int[][] nums = new int[S.length() + 1][T.length() + 1]; //nums[i][j]表示S的前i个字符中选取T的前j个字符, 有多少中挑选方案
-        //init
-        for (int i = 0; i <= S.length(); i++) nums[i][0] = 1; //从字符串中挑出空串, 总会是有1个方案
-        //function
-        for (int i = 1; i <= S.length(); i++) {
-            for (int j = 1; j <= T.length(); j++) {
-                if (S.charAt(i - 1) == T.charAt(j - 1)) {
-                    nums[i][j] = nums[i - 1][j] + nums[i - 1][j - 1]; //不配对最后一个字母 + 配对最后一个字母, 相等
-                }else{
-                    nums[i][j] = nums[i - 1][j]; //不等
-                }
-            }
-        }
-        //result
-        return nums[S.length()][T.length()];
-    }
-}
-
-//有模拟图, 手机备忘录中

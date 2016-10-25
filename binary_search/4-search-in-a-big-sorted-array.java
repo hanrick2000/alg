@@ -6,28 +6,18 @@ Find the first index of a target number.
 Your algorithm should be in O(log k), where k is the first index of the target number.
 Return -1, if the number doesn't exist in the array.
 If you accessed an inaccessible index (outside of the array), ArrayReader.get will return 2,147,483,647.
+先找到一个上界, 然后进行普通的二分查找
+Definition of ArrayReader:
+class ArrayReader {
+   // get the number at index, return -1 if index is less than zero.
+   public int get(int index);
+}
 */
-/*
-  先找到一个上界, 然后进行普通的二分查找
-*/
-/**
- * Definition of ArrayReader:
- * 
- * class ArrayReader {
- *    // get the number at index, return -1 if index is less than zero.
- *    public int get(int index);
- * }
- */
 public class Solution {
-  /**
-   * @param reader: An instance of ArrayReader.
-   * @param target: An integer
-   * @return : An integer which is the index of the target number
-   */
   public int searchBigSortedArray(ArrayReader reader, int target) {
     int index = 1;
-    while (reader.get(index - 1) < target) {
-      index = index * 2;
+    while (reader.get(index - 1) < target){
+      index = index * 2;   //先找到一个index, 让此index对应的值大于target, 即找到了寻找的上界
     }
     int start = 0, end = index - 1;
     while (start + 1 < end) {
@@ -38,12 +28,10 @@ public class Solution {
         end = mid;
       }
     }
-    if (reader.get(start) == target) {
+    if (reader.get(start) == target) 
       return start;
-    }
-    if (reader.get(end) == target) {
+    if (reader.get(end) == target) 
       return end;
-    }
     return -1;
   }
 }

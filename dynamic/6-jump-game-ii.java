@@ -1,13 +1,3 @@
-/*
-Given an array of non-negative integers, you are initially positioned at the first index of the array.
-Each element in the array represents your maximum jump length at that position.
-Your goal is to reach the last index in the minimum number of jumps.
-Given array A = [2,3,1,1,4]
-The minimum number of jumps to reach the last index is 2. 
-(Jump 1 step from index 0 to 1, then 3 f to the last index.)
-如果到不了last index, 则返回Integer.MAX_VALUE
-
-*/
 // version 1: Dynamic Programming
 // 这个方法，复杂度是 O(n^2)，会超时，但是依然需要掌握。
 public class Solution {
@@ -16,7 +6,9 @@ public class Solution {
         int[] f = new int[A.length]; //state: f[i]表示从起点到位置i最少需要多少步
         //init
         f[0] = 0;
-        for (int i = 1; i < A.length; i++) f[i] = Integer.MAX_VALUE;
+        for (int i = 1; i < A.length; i++){
+            f[i] = Integer.MAX_VALUE;
+        }
         //fuction
         for (int i = 1; i < A.length; i++) {
             for (int j = 0; j < i; j++) {
@@ -64,3 +56,14 @@ public class Solution {
  0   1 2   3 4   5 6 7 8
 [2] [3 1] [5 2] [1 3 1 -]
 上面这个例子, 第一次搜索2, 然后更新搜索范围到了坐标1-2. 第二次搜索1-2坐标对应的跳数3,1, 最远可以到4, 更新搜索范围到了坐标3-4, 第三次搜索3-4坐标对应的5,2, 更新搜索范围到了坐标5-8, 然后发现其超过了数组当前额长度, 说明可以跳到, 切是最短跳数
+
+/*
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+Each element in the array represents your maximum jump length at that position.
+Your goal is to reach the last index in the minimum number of jumps.
+Given array A = [2,3,1,1,4]
+The minimum number of jumps to reach the last index is 2. 
+(Jump 1 step from index 0 to 1, then 3 f to the last index.)
+如果到不了last index, 则返回Integer.MAX_VALUE
+
+*/

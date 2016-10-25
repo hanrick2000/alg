@@ -1,26 +1,13 @@
-/*
-There are n coins in a line. Two players take turns to take one or two coins 
-from right side until there are no more coins left. 
-The player who take the last coin wins.
-Could you please decide the first play will win or lose?
-Example
-n = 1, return true.
-n = 2, return true.
-n = 3, return false.
-n = 4, return true.
-n = 5, return true.
-Challenge 
-O(n) time and O(1) memory
-*/
-
-//最简单, n%3!=0, 先手赢 . . (. . .)
-
 // me
 public class Solution { //直接前向dp
     public boolean firstWillWin(int n){
-        if(n==0) return false;
-        if(n==1) return true;
-        if(n==2) return true;
+        if(n==0){
+            return false;
+        }else if(n==1){ 
+            return true;
+        }else if(n==2){
+            return true;
+        }
         boolean[] f = new boolean[n+1]; //f[i]表示剩下i个硬币时, 先手能否赢
         f[0] = false;
         f[1] = true;
@@ -120,3 +107,20 @@ public class Solution {
         return false;
     }
 }
+
+/*
+There are n coins in a line. Two players take turns to take one or two coins 
+from right side until there are no more coins left. 
+The player who take the last coin wins.
+Could you please decide the first play will win or lose?
+Example
+n = 1, return true.
+n = 2, return true.
+n = 3, return false.
+n = 4, return true.
+n = 5, return true.
+Challenge 
+O(n) time and O(1) memory
+*/
+
+//最简单, n%3!=0, 先手赢 . . (. . .)

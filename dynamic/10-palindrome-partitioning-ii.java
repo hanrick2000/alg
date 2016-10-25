@@ -1,9 +1,3 @@
-/*
-// version 1
-f[i] 表示前i个字母，最少可以被分割为多少个回文串
-最后return f[n] - 1
-eg: f("aba")=1  最少分割成1个回文串, f("abab")=2 最少分割成2个回文串
-*/
 public class Solution {
     private boolean[][] getIsPalindrome(String s) {//存在依赖关系, 一个长的字符串是否回文依赖于小的回文, 这也是一个动态规划(区间型动态规划), 严格意义来说是递推(因为暴力算法是n^3), 长区间依赖于短区间
         boolean[][] f = new boolean[s.length()][s.length()]; //f[i][j]表示i与j之间的字符串能否构成回文
@@ -24,17 +18,19 @@ public class Solution {
     }
     public int minCut(String s) {
         // 异常检测
-        if (s == null || s.length() == 0) return 0;
+        if (s == null || s.length() == 0){
+            return 0;
+        }
         // preparation
-        boolean[][] isPalindrome = getIsPalindrome(s);
-        // initialize
+        boolean[][] isPalindrome = getIsPalindrome(s); //这个子问题也可以考
+        // init
         int[] f = new int[s.length() + 1]; //表示前i个字母，最少可以被分割为多少个回文串
         f[0] = 0; //空串一个回文串都没有
         // function 
         for (int i = 1; i <= s.length(); i++) {
             f[i] = Integer.MAX_VALUE; // or f[i] = i
-            for (int j = 0; j < i; j++) {
-                if (isPalindrome[j][i - 1]) { //用预处理的矩阵, 如果[j, i-1]是个回文串, 这里是i-1因为i表示的是前i个字母, i-1才是以0为开始的第i个字母
+            for (int j = 0; j < i; j++) { //     [0,...j,...i-1],  分成[0,j]
+                if (isPalindrome[j][i - 1]) { //如果j+1到i这一段是个回文串, 这里j是以0开始的第j+1个字母, i-1因为i表示的是前i个字母, i-1才是以0为开始的第i个字母
                     f[i] = Math.min(f[i], f[j] + 1); //f[j]表示的是前j个字母, 最少可以被分割为多少个回文串, min{f[j]+1}, j< i && [j+1,i]这一段是一个回文串
                 }
             }
@@ -99,3 +95,74 @@ public class Solution {
         return f[s.length()];
     }
 }
+
+/*
+Palindrome Partitioning II
+Given a string s, cut s into some substrings such that every substring is a palindrome.
+Return the minimum cuts needed for a palindrome partitioning of s.
+Example
+Given s = "aab",
+Return 1 since the palindrome partitioning ["aa", "b"] could be produced using 1 cut.
+*/
+
+/*
+// version 1
+f[i] 表示前i个字母，最少可以被分割为多少个回文串
+最后return f[n] - 1
+eg: f("aba")=1  最少分割成1个回文串, f("abab")=2 最少分割成2个回文串
+*/
+
+isPalindrome的填表过程, 先for长度, 再for起点 
+for length 2->n
+  for start 0->n-length
+    update f[start][start+length]
+
+     01234
+str="aabbc"
+  0 1 2 3 4 end
+0 T        
+1   T      
+2     T    
+3       T  
+4         T
+start
+
+     01234
+str="aabbc"
+  0 1 2 3 4 end
+0 T T      
+1   T F    
+2     T T  
+3       T F 
+4         T
+start
+
+     01234
+str="aabbc"
+  0 1 2 3 4 end
+0 T T F    
+1   T F F  
+2     T T F
+3       T F 
+4         T
+start
+
+     01234
+str="aabbc"
+  0 1 2 3 4 end
+0 T T F F  
+1   T F F F
+2     T T F
+3       T F 
+4         T
+start
+
+     01234
+str="aabbc"
+  0 1 2 3 4 end
+0 T T F F F
+1   T F F F
+2     T T F
+3       T F
+4         T
+start

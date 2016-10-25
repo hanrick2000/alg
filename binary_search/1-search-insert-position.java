@@ -29,20 +29,12 @@ ary[start] A[end] ? target
 分别判断即可
 */
 public class Solution {
-  /**
-   * param A : an integer sorted array
-   * param target :  an integer to be inserted
-   * return : an integer
-   */
   public int searchInsert(int[] ary, int target) {
-    // write your code here
-    if (ary == null || ary.length == 0) {
+    if (ary == null || ary.length == 0){
       return 0;
     }
-
     int start = 0;
     int end = ary.length - 1;
-
     while (start + 1 < end) {
       int mid = start + (end - start) / 2;
       if (ary[mid] == target) {
@@ -53,8 +45,7 @@ public class Solution {
         end = mid;
       }
     }
-
-    if (ary[start] >= target) {
+    if (ary[start] >= target) {     ^ ary[start] ^ ary[end] ^, 这三个位置是候选插入位置
       return start;
     } else if (ary[end] >= target) {
       return end;

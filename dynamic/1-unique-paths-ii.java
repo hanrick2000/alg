@@ -1,16 +1,3 @@
-/*
-Follow up for "Unique Paths":
-Now consider if some obstacles are added to the grids. How many unique paths would there be?
-An obstacle and empty space is marked as 1 and 0 respectively in the grid.
-m and n will be at most 100.
-There is one obstacle in the middle of a 3x3 grid as illustrated below.
-[
-  [0,0,0],
-  [0,1,0],
-  [0,0,0]
-]
-The total number of unique paths is 2.
-*/
 public class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         //异常检测
@@ -48,3 +35,17 @@ public class Solution {
         return paths[n - 1][m - 1];
     }
 }
+
+/*
+Follow up for "Unique Paths":
+Now consider if some obstacles are added to the grids. How many unique paths would there be?
+An obstacle and empty space is marked as 1 and 0 respectively in the grid.
+m and n will be at most 100.
+There is one obstacle in the middle of a 3x3 grid as illustrated below.
+[
+  [0,0,0],
+  [0,1,0],
+  [0,0,0]
+]
+The total number of unique paths is 2.
+*/

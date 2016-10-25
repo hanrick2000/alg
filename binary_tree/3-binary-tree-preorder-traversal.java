@@ -20,23 +20,6 @@ public class Solution {
         return preorder;
     }
 }
-//Version 1: Traverse
-public class Solution {
-    public ArrayList<Integer> preorderTraversal(TreeNode root) {
-        ArrayList<Integer> result = new ArrayList<Integer>();
-        traverse(root, result);
-        return result;
-    }
-    // 把root为跟的preorder加入result里面
-    private void traverse(TreeNode root, ArrayList<Integer> result) {
-        if (root == null) {
-            return;
-        }
-        result.add(root.val);
-        traverse(root.left, result);
-        traverse(root.right, result);
-    }
-}
 //Version 2: Divide & Conquer
 public class Solution {
     public ArrayList<Integer> preorderTraversal(TreeNode root) {
@@ -53,5 +36,22 @@ public class Solution {
         result.addAll(left);
         result.addAll(right);
         return result;
+    }
+}
+//Version 1: Traverse
+public class Solution {
+    public ArrayList<Integer> preorderTraversal(TreeNode root) {
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        traverse(root, result);
+        return result;
+    }
+    // 把root为跟的preorder加入result里面
+    private void traverse(TreeNode root, ArrayList<Integer> result) {
+        if (root == null) {
+            return;
+        }
+        result.add(root.val);
+        traverse(root.left, result);
+        traverse(root.right, result);
     }
 }

@@ -1,0 +1,385 @@
+17 % 578. Lowest Common Ancestor III Medium
+30 % 575. Expression Expand Medium
+12 % 574. Build Post Office Easy
+25 % 573. Build Post Office II Medium
+19 % 570. Find the Missing Number II Medium
+33 % 566. GFS Client Medium
+35 % 565. Heart Beat Medium
+30 % 564. Backpack VI Medium
+41 % 563. Backpack V Medium
+38 % 562. Backpack IV Medium
+41 % 559. Trie Service Medium
+35 % 558. Sliding Window Matrix Maximum Hard
+44 % 556. Standard Bloom Filter Medium
+51 % 555. Counting Bloom Filter Medium
+33 % 553. Bomb Enemy Medium
+16 % 552. Create Maximum Number Hard
+41 % 551. Nested List Weight Sum Easy
+19 % 549. Top K Frequent Words (Map Reduce) Medium
+21 % 548. Intersection of Two Arrays II Easy
+24 % 547. Intersection of Two Arrays Easy
+28 % 545. Top k Largest Numbers II Medium
+29 % 544. Top k Largest Numbers Medium
+24 % 543. Kth Largest in N Arrays Easy
+26 % 541. Zigzag Iterator II Medium
+38 % 540. Zigzag Iterator Medium
+31 % 539. Move Zeroes Easy
+25 % 538. Memcache Medium
+28 % 535. House Robber III Medium
+29 % 534. House Robber II Medium
+39 % 533. Two Sum Closest Medium
+24 % 532. Reverse Pairs Medium
+31 % 531. Six Degrees Medium
+42 % 530. Geohash II Medium
+35 % 529. Geohash Medium
+23 % 528. Flatten Nested List Iterator Medium
+34 % 527. Trie Serialization Hard
+39 % 526. Load Balancer Medium
+29 % 525. Mini Uber Medium
+37 % 524. Left Pad Easy
+21 % 523. Url Parser Medium
+17 % 522. Tiny Url II Medium
+28 % 520. Consistent Hashing II Medium
+26 % 519. Consistent Hashing Easy
+26 % 518. Super Ugly Number Medium
+37 % 517. Ugly Number Easy
+27 % 516. Paint House II Hard
+35 % 515. Paint House Medium
+29 % 514. Paint Fence Easy
+27 % 513. Perfect Squares Medium
+19 % 512. Decode Ways Medium
+19 % 511. Swap Two Nodes in Linked List Medium
+25 % 510. Maximal Rectangle Hard
+33 % 509. Mini Yelp Hard
+40 % 508. Wiggle Sort Medium
+24 % 507. Wiggle Sort II Medium
+40 % 505. Web Logger Medium
+35 % 504. Inverted Index (Map Reduce) Medium
+40 % 503. Anagram (Map Reduce) Medium
+26 % 502. Mini Cassandra Medium
+16 % 501. Mini Twitter Medium
+26 % 500. Inverted Index Easy
+40 % 499. Word Count (Map Reduce) Easy
+13 % 498. Parking Lot Hard
+24 % 497. Shape Factory Easy
+37 % 496. Toy Factory Easy
+42 % 495. Implement Stack Easy
+29 % 494. Implement Stack by Two Queues Easy
+30 % 493. Implement Queue by Linked List II Easy
+35 % 492. Implement Queue by Linked List Easy
+31 % 488. Happy Number Easy
+23 % 486. Merge k Sorted Arrays Medium
+23 % 480. Binary Tree Paths Easy
+20 % 477. Surrounded Regions Medium
+26 % 476. Stone Game Medium
+42 % 475. Binary Tree Maximum Path Sum II Medium
+31 % 474. Lowest Common Ancestor II Easy
+21 % 473. Add and Search Word Medium
+16 % 471. Top K Frequent Words Medium
+39 % 470. Tweaked Identical Binary Tree Easy
+46 % 469. Identical Binary Tree Easy
+39 % 468. Symmetric Binary Tree Easy
+26 % 467. Complete Binary Tree Easy
+23 % 465. Kth Smallest Sum In Two Sorted Arrays Hard
+29 % 464. Sort Integers II Easy
+36 % 463. Sort Integers Naive
+25 % 462. Total Occurrence of Target Easy
+20 % 460. K Closest Numbers In Sorted Array Medium
+39 % 459. Closest Number in Sorted Array Easy
+41 % 458. Last Position of Target Easy
+45 % 457. Classical Binary Search Easy
+29 % 453. Flatten Binary Tree to Linked List Easy
+22 % 452. Remove Linked List Elements Naive
+34 % 451. Swap Nodes in Pairs Easy
+31 % 450. Reverse Nodes in k-Group Hard
+30 % 448. Inorder Successor in Binary Search Tree Medium
+28 % 447. Search in a Big Sorted Array Medium
+30 % 445. Cosine Similarity Easy
+35 % 443. Two Sum II Medium
+28 % 442. Implement Trie Medium
+52 % 440. Backpack III Hard
+38 % 439. Segment Tree Build II Medium
+12 % 438. Copy Books II Hard
+24 % 437. Copy Books Hard
+27 % 436. Maximal Square Medium
+24 % 435. Post Office Problem Hard
+17 % 434. Number of Islands II Hard
+23 % 433. Number of Islands Easy
+24 % 432. Find the Weak Connected Component in the Directed Graph Medium
+22 % 431. Find the Connected Component in the Undirected Graph Medium
+31 % 430. Scramble String Hard
+38 % 428. Pow(x, n) Medium
+34 % 427. Generate Parentheses Medium
+21 % 426. Restore IP Addresses Medium
+26 % 425. Letter Combinations of a Phone Number Medium
+26 % 424. Evaluate Reverse Polish Notation Medium
+27 % 423. Valid Parentheses Easy
+35 % 422. Length of Last Word Easy
+22 % 421. Simplify Path Medium
+28 % 420. Count and Say Easy
+41 % 419. Roman to Integer Medium
+41 % 418. Integer to Roman Medium
+25 % 417. Valid Number Hard
+22 % 415. Valid Palindrome Easy
+15 % 414. Divide Two Integers Medium
+27 % 413. Reverse Integer Easy
+32 % 412. Candy Hard
+36 % 411. Gray Code Medium
+23 % 408. Add Binary Easy
+31 % 407. Plus One Easy
+26 % 406. Minimum Size Subarray Sum Medium
+23 % 405. Submatrix Sum Medium
+28 % 404. Subarray Sum II Hard
+13 % 403. Continuous Subarray Sum II Medium
+24 % 402. Continuous Subarray Sum Medium
+21 % 401. Kth Smallest Number in Sorted Matrix Medium
+25 % 400. Maximum Gap Hard
+17 % 399. Nuts & Bolts Problem Medium
+25 % 398. Longest Increasing Continuous subsequence II Hard
+29 % 397. Longest Increasing Continuous Subsequence Easy
+31 % 396. Coins in a Line III Hard
+31 % 395. Coins in a Line II Medium
+41 % 394. Coins in a Line Medium
+24 % 393. Best Time to Buy and Sell Stock IV Hard
+33 % 392. House Robber Medium
+24 % 391. Number of Airplanes in the Sky Medium
+35 % 390. Find Peak Element II Hard
+26 % 389. Valid Sudoku Easy
+28 % 388. Permutation Sequence Medium
+37 % 387. The Smallest Difference Medium
+22 % 386. Longest Substring with At Most K Distinct Characters Medium
+27 % 384. Longest Substring Without Repeating Characters Medium
+41 % 383. Container With Most Water Medium
+35 % 382. Triangle Count Hard
+36 % 381. Spiral Matrix II Medium
+39 % 380. Intersection of Two Linked Lists Medium
+15 % 379. Reorder array to construct the minimum number Medium
+27 % 378. Convert Binary Search Tree to Doubly Linked List Medium
+22 % 376. Binary Tree Path Sum Easy
+46 % 375. Clone Binary Tree Easy
+24 % 374. Spiral Matrix Medium
+40 % 373. Partition Array by Odd and Even Easy
+44 % 372. Delete Node in the Middle of Singly Linked List Easy
+25 % 371. Print Numbers by Recursion Medium
+25 % 370. Convert Expression to Reverse Polish Notation Hard
+23 % 369. Convert Expression to Polish Notation Hard
+22 % 368. Expression Evaluation Hard
+20 % 367. Expression Tree Build Hard
+25 % 366. Fibonacci Naive
+34 % 365. Count 1 in Binary Easy
+22 % 364. Trapping Rain Water II Hard
+36 % 363. Trapping Rain Water Medium
+26 % 362. Sliding Window Maximum Super
+19 % 360. Sliding Window Median Hard
+23 % 279. Number of Ways to Represent N Cents Medium
+35 % 272. Climbing Stairs II Easy
+29 % 254. Drop Eggs Easy
+19 % 249. Count of Smaller Number before itself Hard
+20 % 248. Count of Smaller Number Medium
+29 % 247. Segment Tree Query II Medium
+22 % 245. Subtree Easy
+25 % 234. Webpage Crawler Hard
+28 % 232. Tiny Url Medium
+32 % 231. Typeahead Hard
+26 % 230. Animal Shelter Hard
+35 % 229. Stack Sorting Medium
+41 % 228. Middle of Linked List Naive
+35 % 227. Mock Hanoi Tower by Stacks Easy
+37 % 224. Implement Three Stacks by Single Array Medium
+28 % 223. Palindrome Linked List Medium
+30 % 221. Add Two Numbers II Medium
+36 % 217. Remove Duplicates from Unsorted List Easy
+28 % 215. Rate Limiter Hard
+17 % 212. Space Replacement Easy
+22 % 208. Assignment Operator Overloading (C++ Only) Medium
+25 % 207. Interval Sum II Hard
+25 % 206. Interval Sum Medium
+24 % 205. Interval Minimum Number Medium
+37 % 204. Singleton Easy
+37 % 203. Segment Tree Modify Medium
+35 % 202. Segment Tree Query Medium
+37 % 201. Segment Tree Build Medium
+27 % 200. Longest Palindromic Substring Medium
+22 % 198. Permutation Index II Medium
+29 % 197. Permutation Index Easy
+31 % 196. Find the Missing Number Medium
+25 % 192. Wildcard Matching Hard
+29 % 191. Maximum Product Subarray Medium
+33 % 190. Next Permutation II Medium
+22 % 189. First Missing Positive Medium
+30 % 187. Gas Station Medium
+14 % 186. Max Points on a Line Medium
+24 % 185. Matrix Zigzag Traversal Easy
+18 % 184. Largest Number Medium
+22 % 183. Wood Cut Medium
+18 % 182. Delete Digits Medium
+31 % 181. Flip Bits Easy
+19 % 180. Binary Representation Hard
+21 % 179. Update Bits Medium
+24 % 178. Graph Valid Tree Medium
+32 % 177. Convert Sorted Array to Binary Search Tree With Minimal Height Easy
+36 % 176. Route Between Two Nodes in Graph Medium
+45 % 175. Invert Binary Tree Easy
+30 % 174. Remove Nth Node From End of List Easy
+31 % 173. Insertion Sort List Easy
+31 % 172. Remove Element Easy
+23 % 171. Anagrams Medium
+25 % 170. Rotate List Medium
+29 % 168. Burst Balloons Hard
+21 % 167. Add Two Numbers Easy
+42 % 166. Nth to Last Node in List Easy
+38 % 165. Merge Two Sorted Lists Easy
+31 % 164. Unique Binary Search Trees II Medium
+34 % 163. Unique Binary Search Trees Medium
+32 % 162. Set Matrix Zeroes Medium
+34 % 161. Rotate Image Medium
+35 % 160. Find Minimum in Rotated Sorted Array II Medium
+36 % 159. Find Minimum in Rotated Sorted Array Medium
+30 % 158. Two Strings Are Anagrams Easy
+43 % 157. Unique Characters Easy
+21 % 156. Merge Intervals Easy
+31 % 155. Minimum Depth of Binary Tree Easy
+22 % 154. Regular Expression Matching Hard
+27 % 153. Combination Sum II Medium
+31 % 152. Combinations Medium
+27 % 151. Best Time to Buy and Sell Stock III Medium
+49 % 150. Best Time to Buy and Sell Stock II Medium
+42 % 149. Best Time to Buy and Sell Stock Medium
+34 % 148. Sort Colors Medium
+21 % 144. Interleaving Positive and Negative Numbers Medium
+34 % 143. Sort Colors II Medium
+29 % 142. O(1) Check Power of 2 Easy
+24 % 141. Sqrt(x) Easy
+21 % 140. Fast Power Medium
+18 % 139. Subarray Sum Closest Medium
+28 % 138. Subarray Sum Easy
+28 % 137. Clone Graph Medium
+24 % 136. Palindrome Partitioning Medium
+28 % 135. Combination Sum Medium
+20 % 134. LRU Cache Hard
+39 % 133. Longest Words Easy
+21 % 132. Word Search II Hard
+13 % 131. Building Outline Super
+35 % 130. Heapify Medium
+27 % 129. Rehashing Medium
+18 % 128. Hash Function Easy
+27 % 127. Topological Sorting Medium
+30 % 126. Max Tree Hard
+37 % 125. Backpack II Medium
+33 % 124. Longest Consecutive Sequence Medium
+24 % 123. Word Search Medium
+26 % 122. Largest Rectangle in Histogram Hard
+17 % 121. Word Ladder II Hard
+21 % 120. Word Ladder Medium
+29 % 119. Edit Distance Medium
+31 % 118. Distinct Subsequences Medium
+35 % 117. Jump Game II Medium
+37 % 116. Jump Game Medium
+28 % 115. Unique Paths II Easy
+39 % 114. Unique Paths Easy
+28 % 113. Remove Duplicates from Sorted List II Medium
+39 % 112. Remove Duplicates from Sorted List Easy
+31 % 111. Climbing Stairs Easy
+34 % 110. Minimum Path Sum Easy
+25 % 109. Triangle Easy
+22 % 108. Palindrome Partitioning II Medium
+14 % 107. Word Break Medium
+29 % 106. Convert Sorted List to Balanced BST Medium
+30 % 105. Copy List with Random Pointer Medium
+28 % 104. Merge k Sorted Lists Medium
+36 % 103. Linked List Cycle II Hard
+46 % 102. Linked List Cycle Medium
+31 % 101. Remove Duplicates from Sorted Array II Easy
+32 % 100. Remove Duplicates from Sorted Array Easy
+23 % 99. Reorder List Medium
+29 % 98. Sort List Medium
+55 % 97. Maximum Depth of Binary Tree Easy
+31 % 96. Partition List Easy
+21 % 95. Validate Binary Search Tree Medium
+24 % 94. Binary Tree Maximum Path Sum Medium
+38 % 93. Balanced Binary Tree Easy
+23 % 92. Backpack Medium
+29 % 91. Minimum Adjustment Cost Medium
+34 % 90. k Sum II Medium
+23 % 89. k Sum Hard
+37 % 88. Lowest Common Ancestor Medium
+26 % 87. Remove Node in Binary Search Tree Hard
+34 % 86. Binary Search Tree Iterator Hard
+42 % 85. Insert Node in a Binary Search Tree Easy
+36 % 84. Single Number III Medium
+39 % 83. Single Number II Medium
+51 % 82. Single Number Easy
+27 % 81. Data Stream Median Hard
+23 % 80. Median Easy
+31 % 79. Longest Common Substring Medium
+28 % 78. Longest Common Prefix Medium
+39 % 77. Longest Common Subsequence Medium
+28 % 76. Longest Increasing Subsequence Medium
+48 % 75. Find Peak Element Medium
+34 % 74. First Bad Version Medium
+28 % 73. Construct Binary Tree from Preorder and Inorder Traversal Medium
+31 % 72. Construct Binary Tree from Inorder and Postorder Traversal Medium
+28 % 71. Binary Tree Zigzag Level Order Traversal Medium
+41 % 70. Binary Tree Level Order Traversal II Medium
+33 % 69. Binary Tree Level Order Traversal Medium
+40 % 68. Binary Tree Postorder Traversal Easy
+40 % 67. Binary Tree Inorder Traversal Easy
+41 % 66. Binary Tree Preorder Traversal Easy
+23 % 65. Median of two Sorted Arrays Hard
+33 % 64. Merge Sorted Array Easy
+40 % 63. Search in Rotated Sorted Array II Medium
+29 % 62. Search in Rotated Sorted Array Medium
+23 % 61. Search for a Range Medium
+29 % 60. Search Insert Position Easy
+30 % 59. 3Sum Closest Medium
+21 % 58. 4Sum Medium
+20 % 57. 3Sum Medium
+28 % 56. Two Sum Medium
+27 % 55. Compare Strings Easy
+14 % 54. String to Integer II Hard
+24 % 53. Reverse Words in a String Easy
+23 % 52. Next Permutation Medium
+26 % 51. Previous Permutation Medium
+26 % 50. Product of Array Exclude Itself Easy
+38 % 49. Sort Letters by Case Medium
+27 % 48. Majority Number III Medium
+30 % 47. Majority Number II Medium
+42 % 46. Majority Number Easy
+23 % 45. Maximum Subarray Difference Medium
+38 % 44. Minimum Subarray Easy
+23 % 43. Maximum Subarray III Hard
+25 % 42. Maximum Subarray II Medium
+38 % 41. Maximum Subarray Easy
+40 % 40. Implement Queue by Two Stacks Medium
+26 % 39. Recover Rotated Sorted Array Easy
+34 % 38. Search a 2D Matrix II Medium
+30 % 36. Reverse Linked List II Medium
+41 % 35. Reverse Linked List Easy
+39 % 34. N-Queens II Medium
+23 % 33. N-Queens Medium
+22 % 32. Minimum Window Substring Medium
+28 % 31. Partition Array Medium
+23 % 30. Insert Interval Easy
+26 % 29. Interleaving String Medium
+28 % 28. Search a 2D Matrix Easy
+16 % 24. LFU Cache Hard
+32 % 22. Flatten List Easy
+19 % 20. Dices Sum Hard
+23 % 18. Subsets II Medium
+25 % 17. Subsets Medium
+24 % 16. Permutations II Medium
+26 % 15. Permutations Medium
+33 % 14. First Position of Target Easy
+18 % 13. strStr Easy
+32 % 12. Min Stack Medium
+37 % 11. Search Range in Binary Search Tree Medium
+17 % 10. String Permutation II Medium
+78 % 9. Fizz Buzz Easy
+20 % 8. Rotate String Easy
+19 % 7. Binary Tree Serialization Medium
+36 % 6. Merge Two Sorted Arrays Easy
+24 % 5. Kth Largest Element Medium
+23 % 4. Ugly Number II Medium
+28 % 3. Digit Counts Medium
+28 % 2. Trailing Zeros Easy
+45 % 1. A + B Problem Easy

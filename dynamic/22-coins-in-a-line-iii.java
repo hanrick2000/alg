@@ -1,22 +1,5 @@
-/*
-There are n coins in a line. 
-Two players take turns to take a coin from one of the ends of the line until there are no more coins left.  从头或者尾取
-The player with the larger amount of money wins.
-Could you please decide the first player will win or lose?
-Have you met this question in a real interview? Yes
-Example
-Given array A = [3,2,2], return true.
-Given array A = [1,2,4], return true.
-Given array A = [1,20,4], return false.
-Challenge 
-Follow Up Question:
-If n is even. Is there any hacky algorithm that can decide whether first player will win or lose in O(1) memory and O(n) time?
-*/
-
 //区间+博弈+记忆话搜索
-
 // 方法一
-import java.util.*;
 public class Solution {
     public boolean firstWillWin(int[] values) {
         int n = values.length;
@@ -25,18 +8,19 @@ public class Solution {
         int[][] sum = new int[n + 1][n + 1]; //从第i到第j的和
         for (int i = 0; i < n; i++) {
             sum[i][i] = values[i];
-            for (int j = i; j < n; j++) {
-                else sum[i][j] = sum[i][j-1] + values[j];
+            for (int j = i + 1; j < n; j++) {
+                sum[i][j] = sum[i][j-1] + values[j];
             }
         }
         int allsum = 0;
-        for(int now : values) allsum += now;
+        for(int now : values){
+            allsum += now;
+        }
         return allsum < 2 * MemorySearch(0, n-1, dp, flag, values, sum); //表示从第0到第n-1的硬币中取, 先手能获得的最大价值
     }
     int MemorySearch(int left, int right, int [][]dp, boolean [][]flag, int []values, int [][]sum) {
         if(flag[left][right])   
             return dp[left][right];
-        flag[left][right] = true;  
         if(left > right) {
             dp[left][right] = 0;
         } else if (left == right) {
@@ -50,6 +34,7 @@ public class Solution {
             // 先手为了让自己多拿一些, 必然从上面的两种情况中选取后手获得最少的方式
             dp[left][right] = sum[left][right] - cur;
         }
+        flag[left][right] = true;  
         return dp[left][right];   
     }
 }
@@ -87,7 +72,7 @@ public class Solution {
     }
 }
 
-//这么写是错误的, 因为dp[i][j]是依赖于dp[i+1][j]和dp[i][j-1], 这样的for循环是无法在此时知道dp[i+1][j]的, 所以还是要用记忆话搜索
+//这么写是错误的, 因为dp[i][j]是依赖于dp[i+1][j]和dp[i][j-1], 这样的for循环是无法在此时知道dp[i+1][j]的, 所以还是要用记忆化搜索
 public class Solution{
     public boolean firstWillWin(int[] values){
         int n = values.length;
@@ -118,4 +103,17 @@ public class Solution{
     }
 }
 
-
+/*
+There are n coins in a line. 
+Two players take turns to take a coin from one of the ends of the line until there are no more coins left.  从头或者尾取
+The player with the larger amount of money wins.
+Could you please decide the first player will win or lose?
+Have you met this question in a real interview? Yes
+Example
+Given array A = [3,2,2], return true.
+Given array A = [1,2,4], return true.
+Given array A = [1,20,4], return false.
+Challenge 
+Follow Up Question:
+If n is even. Is there any hacky algorithm that can decide whether first player will win or lose in O(1) memory and O(n) time?
+*/

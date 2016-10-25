@@ -15,7 +15,6 @@ public class Solution {
         return Math.max(left, right) + 1;
     }
 }
-
 //With ResultType
 class ResultType {
     public boolean isBalanced;

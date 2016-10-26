@@ -26,7 +26,7 @@ public class Solution {
                 ans = Math.max(f[i][j], ans);
             }
         }
-        return ans*ans;
+        return ans * ans;
     }
 }
 
@@ -61,8 +61,6 @@ public class Solution {//滚动数组, 直接%2
     }
 }
 
-
-
 //直接想到的版本, 不能转化成滚动数组, 要把初始化溶于内部才能变成滚动数组
 public class Solution {
     public int maxSquare(int[][] matrix){
@@ -74,7 +72,9 @@ public class Solution {
         }else{
             return 0;
         }
+        // state
         int[][] f = new int[n][m];
+        // init
         for(int i=0; i<n; i++){
             f[i][0] = matrix[i][0];
             if(f[i][0] == 1){
@@ -87,6 +87,7 @@ public class Solution {
                 ans = 1;
             }
         }
+        // fuction
         for(int i=1; i<n; i++){
             for(int j=1; j<m; j++){
                 if(matrix[i][j]==1){
@@ -97,6 +98,7 @@ public class Solution {
                 ans = Math.max(ans, f[i][j]);
             }
         }
+        // result
         return ans*ans;
     }
 }

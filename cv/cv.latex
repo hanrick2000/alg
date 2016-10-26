@@ -1,0 +1,109 @@
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+              
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+  \textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%                  % Change font of \section command
+  \usefont{OT1}{phv}{b}{n}%    % bch-b-n: CharterBT-Bold font
+  \sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}      % Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}    % Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+    \Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+    \par \normalsize \normalfont}
+    
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+    \large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+    \par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+    \noindent\hangindent=2em\hangafter=0 % Indentation
+    \parbox{\spacebox}{        % Box to align text
+    \textit{#1}}           % Entry name (birth, address, etc.)
+    \hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      
+    \noindent \textbf{#1} \hfill                          % items
+    \noindent\hangindent=2em\hangafter=0 \small #2 \par   % skills
+    \normalsize \par}
+    
+\newcommand{\EducationEntryMaster}[3]{
+    \noindent \textbf{#1} \hfill      % Study
+    #2 \par  % Duration
+    \noindent \textit{#3} \par        % School
+    \normalsize \par}
+        
+\newcommand{\EducationEntryBachler}[4]{
+    \noindent \textbf{#1} \hfill      % Study
+    #2 \par  % Duration
+    \noindent \textit{#3} \par        % School 1
+        \noindent \textit{#4} \par        % School 2
+    \normalsize \par}
+
+%%% Begin Document
+\begin{document}
+\MyName{Wang Yang}
+\MySlogan{Target: Software Engineer}
+\sepspace
+
+%%% Personal details
+\NewPart{Personal details}{}
+\PersonalEntry{Phone}{(+86) 13552133119}
+\PersonalEntry{Mail}{\url{khil.wang@gmail.com}}
+
+%%% Education
+\NewPart{Education}{}
+\EducationEntryMaster{MSc. Computer Science}{2009-2012}{Chinese Academy of Science Software Institude}
+\sepspace
+\EducationEntryBachler{BSc. Telecommunication Engineering}{2005-2009}{Queen Mary, University of London} {Beijing University of Posts Telecommunications}
+
+%%% Work experience
+\NewPart{Work experience}{}
+                     
+\noindent \textbf{Senior Software Engineer, Tencent} \hfill
+2012-present \par 
+\noindent \textit{1. Online Advertising Training System.} 
+{2015.1-now} \par 
+\noindent\hangindent=2em\hangafter=0 \small 
+{I developed a distributed model training system. The model is used to predict Click Through Rate(CTR) of Advertisement. The system is based on Storm/Kafka-like infrastructure. The training data is generated via click/impression log and join with user/ads/context features(stored in distributed KV), then feed into one-pass(online) algorithm(FTRL) and periodically dump the model for serving. In order to equally placed the memory consumed component I designed custom scheduler of storm.} \par 
+\noindent \textit{2. Training Data Generation System.} 
+{2013.1-2014.12} \par 
+\noindent\hangindent=2em\hangafter=0 \small 
+{The click/impression log first fill into distributed queuing system(Kafka-like), then divided into different Ad position and extract keys to join with user/ads/context features, and finally dump training data into HDFS for offline model training purpose. I use 32*8 CPU to handle 15 Billions impression for each cluster set(I have 2 set, one for production, another for experiment)} \par 
+\noindent \textit{3. Online Training Monitor} 
+{2015.1-2015.5} \par 
+\noindent\hangindent=2em\hangafter=0 \small 
+{I developed plenty of metric for monitoring task, for the model specific: Delay AUC, Real-time AUC, Loss, Miss-classification-rate, model-size; for the system specific: memory-used, batch-process-time. This project initially base on Graphite. Then I expanded the monitoring system to include metric from Training Data Generation System and Online Advertising Training System and migrated it into another more featured monitoring system(dev by another team).} \par
+\noindent \textit{4. Distributed Database Engine Optimizer} 
+{2012.6 - 2013.1} \par 
+\noindent\hangindent=2em\hangafter=0 \small 
+{I developed Bool Expression Analyzer which is the fundamental component of Optimizer in SQL compiler. I implemented the Quine McCluskey algorithm to generate conjunctive normal form(CNF) and use Petrick Method to get Minimal-CNF. Based on the bool expression analyzer, I developed Predicate Push-down Optimizer for logical plan. And I also developed Reduce Shuffling Optimizer for physical plan.} \par
+
+
+%%% Skills
+\NewPart{Skills}{}
+\SkillsEntry{Languages}{Java, Python, C++, Unix-like (*nix) Shell}
+\SkillsEntry{Knowledge}{Data structure and Algorithm, Machine Learning, Distributed System}
+
+\end{document}
+

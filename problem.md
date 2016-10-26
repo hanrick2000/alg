@@ -48,27 +48,49 @@ OK   M                                      www.lintcode.com/problem/binary-tree
      M                                      www.lintcode.com/problem/search-range-in-binary-search-tree
      M                                      www.lintcode.com/problem/binary-tree-serialization
      H                                      www.lintcode.com/problem/remove-node-in-binary-search-tree 
-OK   E                                      http://www.lintcode.com/problem/unique-paths-ii =======================================Dynamic Program I
-OK   E                                      http://www.lintcode.com/problem/unique-paths                                                                                         
-OK   E                                      http://www.lintcode.com/problem/climbing-stairs                                                                                      
-OK   E                                      http://www.lintcode.com/problem/minimum-path-sum                                                                                     
-OK   E                                      http://www.lintcode.com/problem/triangle                                                                                             
-OK   M                                      http://www.lintcode.com/problem/jump-game-ii                                                                                         
-OK   M                                      http://www.lintcode.com/problem/jump-game                                                                                            
-OK   M                                      http://www.lintcode.com/problem/longest-increasing-subsequence                                                                       
-OK   M                                      http://www.lintcode.com/problem/edit-distance =========================================Dynamic Program II
-OK   M                                      http://www.lintcode.com/problem/distinct-subsequences                                                                                
-OK   M                                      http://www.lintcode.com/problem/word-break                                                                                           
-OK   M                                      http://www.lintcode.com/problem/palindrome-partitioning-ii                                                                           
+OK   E          坐标型                      http://www.lintcode.com/problem/unique-paths-ii =======================================Dynamic Program
+OK   E          坐标型                      http://www.lintcode.com/problem/unique-paths                                                                                         
+OK   E          坐标型                      http://www.lintcode.com/problem/climbing-stairs                                                                                      
+OK   E          坐标型                      http://www.lintcode.com/problem/minimum-path-sum                                                                                     
+OK   E          坐标型                      http://www.lintcode.com/problem/triangle                                                                                             
+OK   M          坐标型                      http://www.lintcode.com/problem/jump-game-ii                                                                                         
+OK   M          坐标型                      http://www.lintcode.com/problem/jump-game                                                                                            
+OK   M          坐标型                      http://www.lintcode.com/problem/longest-increasing-subsequence                                                                       
+OK   M          单序列型                    http://www.lintcode.com/problem/house-robber                                                                                         
+OK   M          单序列型                    http://www.lintcode.com/problem/house-robber-ii                                                                                      
+OK   M          单序列型                    http://www.lintcode.com/problem/longest-common-subsequence                                                                           
+OK   M          单序列型                    http://www.lintcode.com/problem/word-break                                                                                           
+OK   M          单序列型                    http://www.lintcode.com/problem/palindrome-partitioning-ii                                                                           
+OK   M          双序列型                    http://www.lintcode.com/problem/edit-distance 
+OK   M          双序列型                    http://www.lintcode.com/problem/distinct-subsequences                                                                                
+OK   M          双序列型                    http://www.lintcode.com/problem/interleaving-string                                                                                  
+OK   E          记忆话搜索                  http://www.lintcode.com/problem/longest-increasing-continuous-subsequence 
+OK   H          记忆话搜索                  http://www.lintcode.com/problem/longest-increasing-continuous-subsequence-ii                                                         
+OK   M          记忆话搜索                  http://www.lintcode.com/problem/coins-in-a-line
+OK   M          记忆话搜索                  http://www.lintcode.com/problem/coins-in-a-line-ii
+OK   H          记忆话搜索                  http://www.lintcode.com/problem/coins-in-a-line-iii
+OK   M          记忆话搜索                  http://www.lintcode.com/problem/stone-game 
+OK   H          记忆话搜索                  http://www.lintcode.com/problem/scramble-string                                                                                      
+OK   M          背包                        http://www.lintcode.com/problem/backpack 
+OK   M          背包                        http://www.lintcode.com/problem/backpack-ii
+OK   H          背包                        http://www.lintcode.com/problem/backpack-iii
+OK   M          背包                        http://www.lintcode.com/problem/backpack-iv
+OK   M          背包                        http://www.lintcode.com/problem/backpack-v
+OK   M          背包                        http://www.lintcode.com/problem/backpack-vi
+OK   M          ????                        http://www.lintcode.com/problem/maximal-square                                                                                       
      M                                      http://www.lintcode.com/problem/longest-common-substring
-OK   M                                      http://www.lintcode.com/problem/longest-common-subsequence                                                                           
-OK   M                                      http://www.lintcode.com/problem/interleaving-string                                                                                  
      M                                      http://www.lintcode.com/problem/decode-ways
-OK   M                                      http://www.lintcode.com/problem/backpack-ii                                                                                          
-OK   M                                      http://www.lintcode.com/problem/backpack                                                                                             
      M                                      http://www.lintcode.com/problem/minimum-adjustment-cost
      H                                      http://www.lintcode.com/problem/wildcard-matching
      H                                      http://www.lintcode.com/problem/k-sum
+     E                                      http://www.lintcode.com/problem/maximum-subarray                                                                                     
+     M                                      http://www.lintcode.com/problem/longest-palindromic-substring
+     M                                      http://www.lintcode.com/problem/maximum-product-subarray
+     H                                      http://www.lintcode.com/problem/copy-books-ii
+     H                                      http://www.lintcode.com/problem/copy-books
+     H                                      http://www.lintcode.com/problem/post-office-problem
+     H                                      http://www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iv
+     H                                      http://www.lintcode.com/problem/burst-balloons
 OK   E   重复                               http://www.lintcode.com/problem/remove-nth-node-from-end-of-list ======================LinkedList
 OK   E                                      http://www.lintcode.com/problem/partition-list                                                                                       
 OK   M                                      http://www.lintcode.com/problem/remove-duplicates-from-sorted-list-ii                                                                
@@ -230,51 +252,20 @@ OK   H   重复   前向型指针 快慢类           http://www.lintcode.com/pr
 OK   E   重复   两个数组两个指针            http://www.lintcode.com/problem/merge-two-sorted-lists                                                        
 OK   M          两个数组两个指针            http://www.lintcode.com/problem/the-smallest-difference                               
 OK   H          ????                        http://www.lintcode.com/problem/sliding-window-matrix-maximum
-OK   E                                      http://www.lintcode.com/problem/longest-increasing-continuous-subsequence =============Dynamic Program I
-     E                                      http://www.lintcode.com/problem/maximum-subarray                                                                                     
-OK   M                                      http://www.lintcode.com/problem/maximal-square                                                                                       
-     M                                      http://www.lintcode.com/problem/longest-palindromic-substring
-OK   M                                      http://www.lintcode.com/problem/coins-in-a-line-ii                                                                                   
-OK   M                                      http://www.lintcode.com/problem/coins-in-a-line                                                                                      
-OK   M                                      http://www.lintcode.com/problem/house-robber                                                                                         
-OK   M                                      http://www.lintcode.com/problem/house-robber-ii                                                                                      
-     M                                      http://www.lintcode.com/problem/maximum-product-subarray
-OK   M                                      http://www.lintcode.com/problem/longest-increasing-subsequence                                                                       
-OK   H                                      http://www.lintcode.com/problem/longest-increasing-continuous-subsequence-ii                                                         
-     H                                      http://www.lintcode.com/problem/copy-books-ii
-     H                                      http://www.lintcode.com/problem/copy-books
-     H                                      http://www.lintcode.com/problem/post-office-problem
-OK   H                                      http://www.lintcode.com/problem/coins-in-a-line-iii                                                                                  
-     H                                      http://www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iv
-OK   M                                      http://www.lintcode.com/problem/stone-game ============================================Dynamic Program II
-OK   M                                      http://www.lintcode.com/problem/coins-in-a-line-ii                                                                                   
-OK   M                                      http://www.lintcode.com/problem/coins-in-a-line                                                                                      
-OK   M                                      http://www.lintcode.com/problem/backpack                                                                                             
-OK   H                                      http://www.lintcode.com/problem/scramble-string                                                                                      
-OK   H                                      http://www.lintcode.com/problem/coins-in-a-line-iii                                                                                  
-OK   M                                      http://www.lintcode.com/problem/backpack-vi                                                                                          
-OK   M                                      http://www.lintcode.com/problem/backpack-v                                                                                           
-OK   M                                      http://www.lintcode.com/problem/backpack-iv                                                                                          
-OK   M                                      http://www.lintcode.com/problem/backpack-ii                                                                                          
-     M                                      http://www.lintcode.com/problem/minimum-adjustment-cost
-     H                                      http://www.lintcode.com/problem/burst-balloons
-OK   H                                      http://www.lintcode.com/problem/backpack-iii                                                                                         
-     H                                      http://www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iv
-     H                                      http://www.lintcode.com/problem/k-sum
      E                                      http://www.lintcode.com/problem/subarray-sum ==========================================Follow Up
+     H                                      http://www.lintcode.com/problem/subarray-sum-ii
+     M                                      http://www.lintcode.com/problem/subarray-sum-closest
      M                                      http://www.lintcode.com/problem/submatrix-sum
+     M                                      http://www.lintcode.com/problem/minimum-size-subarray-sum
      M                                      http://www.lintcode.com/problem/continuous-subarray-sum
      M                                      http://www.lintcode.com/problem/continuous-subarray-sum-ii
      M                                      http://www.lintcode.com/problem/kth-smallest-number-in-sorted-matrix
-     M                                      http://www.lintcode.com/problem/minimum-size-subarray-sum
-     M                                      http://www.lintcode.com/problem/subarray-sum-closest
-     M                                      http://www.lintcode.com/problem/find-peak-element
+OK   M                                      http://www.lintcode.com/problem/find-peak-element
+     H                                      http://www.lintcode.com/problem/find-peak-element-ii
      H                                      http://www.lintcode.com/problem/maximum-gap
      E                                      http://www.lintcode.com/problem/build-post-office
-     E                                      http://www.lintcode.com/problem/nested-list-weight-sum
      M                                      http://www.lintcode.com/problem/build-post-office-ii
+     E                                      http://www.lintcode.com/problem/nested-list-weight-sum
      M                                      http://www.lintcode.com/problem/bomb-enemy
-     M                                      http://www.lintcode.com/problem/zigzag-iterator-ii
      M                                      http://www.lintcode.com/problem/zigzag-iterator
-     H                                      http://www.lintcode.com/problem/subarray-sum-ii
-     H                                      http://www.lintcode.com/problem/find-peak-element-ii
+     M                                      http://www.lintcode.com/problem/zigzag-iterator-ii

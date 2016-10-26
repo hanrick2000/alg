@@ -3,3 +3,7 @@ medium:     167
 hard:       49
 super:      3
 total:      280
+
+独孤九剑
+破剑式: 比O(n)更优的时间复杂度几乎只能是O(logn)的二分法
+ 

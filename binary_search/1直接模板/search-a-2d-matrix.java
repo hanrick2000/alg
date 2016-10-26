@@ -1,20 +1,3 @@
-/*
-要点是把矩阵看成是一维的，然后根据数学计算来得到行列
-当成一维的index
-行 index / column
-列 index % column
-Write an efficient algorithm that searches for a value in an m x n matrix.
-This matrix has the following properties:
-Integers in each row are sorted from left to right.
-The first integer of each row is greater than the last integer of the previous row.
-Consider the following matrix:
-[
-    [1, 3, 5, 7],
-    [10, 11, 16, 20],
-    [23, 30, 34, 50]
-]
-Given target = 3, return true.
-*/
 public class Solution {
   public boolean searchMatrix(int[][] matrix, int target) {
     if (matrix == null || matrix.length == 0){
@@ -34,14 +17,33 @@ public class Solution {
         return true;
       } else if (number < target) {
         start = mid;
-      } else {
+      } else if (number > target) {
         end = mid;
       }
     }
-    if (matrix[start / column][start % column] == target) 
+    if (matrix[start / column][start % column] == target) {
       return true;
-    } else if (matrix[end / column][end % column] == target) 
+    } else if (matrix[end / column][end % column] == target) {
       return true;
+    }
     return false;
   }
 }
+
+/*
+要点是把矩阵看成是一维的，然后根据数学计算来得到行列
+当成一维的index
+行 index / column
+列 index % column
+Write an efficient algorithm that searches for a value in an m x n matrix.
+This matrix has the following properties:
+Integers in each row are sorted from left to right.
+The first integer of each row is greater than the last integer of the previous row.
+Consider the following matrix:
+[
+    [1, 3, 5, 7],
+    [10, 11, 16, 20],
+    [23, 30, 34, 50]
+]
+Given target = 3, return true.
+*/

@@ -1,6 +1,6 @@
 //Divide & Conquer
 public class Solution {
-    public ArrayList<Integer> preorderTraversal(TreeNode root) {
+    public ArrayList<Integer> preorderTraversal(TreeNode root) { //回报工作
         ArrayList<Integer> result = new ArrayList<Integer>();
         if (root == null) {
             return result;
@@ -42,7 +42,7 @@ public class Solution {
 
 //Traverse
 public class Solution {
-    public ArrayList<Integer> preorderTraversal(TreeNode root) {
+    public ArrayList<Integer> preorderTraversal(TreeNode root) { //拿着记事本到处走
         ArrayList<Integer> result = new ArrayList<Integer>();
         traverse(root, result);
         return result;

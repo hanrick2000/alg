@@ -51,7 +51,6 @@ public class Solution {
     }
 }
 
-/*
 Given n items with size Ai, an integer m denotes the size of a backpack. How full you can fill this backpack?
 You can not divide any item into small pieces.
 Example
@@ -62,4 +61,3 @@ You function should return the max size we can fill in the given backpack.
 Challenge 
 O(nm) time and O(m) memory.
 O(nm) memory is also acceptable if you do not know how to optimize memory.
-*/

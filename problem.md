@@ -9,7 +9,7 @@ OK   M   二分位置                          www.lintcode.com/problem/search-a
 OK   M   二分位置                          www.lintcode.com/problem/find-minimum-in-rotated-sorted-array
 OK   M   二分位置                          www.lintcode.com/problem/find-minimum-in-rotated-sorted-array-ii
 OK   M   二分答案                          www.lintcode.com/problem/first-bad-version
-OK   E   二分答案                          www.lintcode.com/en/problem/sqrtx
+OK   E   二分答案                          www.lintcode.com/problem/sqrtx
 OK   M   二分答案                          www.lintcode.com/problem/wood-cut
 OK   M   二分位置                          www.lintcode.com/problem/search-in-rotated-sorted-array
 OK   M   二分位置                          www.lintcode.com/problem/search-in-rotated-sorted-array-ii
@@ -120,7 +120,6 @@ O    M                                     www.lintcode.com/problem/subarray-sum
 O    H                                     www.lintcode.com/problem/median-of-two-sorted-arrays
 O    E                                     www.lintcode.com/problem/minimum-subarray
 O    E                                     www.lintcode.com/problem/merge-two-sorted-arrays
-     M                                     www.lintcode.com/problem/maximum-product-subarray
      M                                     www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii
      M                                     www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii
      M                                     www.lintcode.com/problem/best-time-to-buy-and-sell-stock
@@ -131,7 +130,6 @@ O    E                                     www.lintcode.com/problem/merge-two-so
      M                                     www.lintcode.com/problem/top-k-largest-numbers
      M                                     www.lintcode.com/problem/merge-k-sorted-arrays
      M                                     www.lintcode.com/problem/rehashing
-     M                                     www.lintcode.com/problem/merge-k-sorted-lists
      M                                     www.lintcode.com/problem/implement-queue-by-two-stacks
      M                                     www.lintcode.com/problem/min-stack
      M                                     www.lintcode.com/problem/ugly-number-ii
@@ -151,7 +149,6 @@ O    E                                     www.lintcode.com/problem/merge-two-so
      H                                     www.lintcode.com/problem/max-tree
      M                                     www.lintcode.com/problem/six-degrees =========================================== Graph & Search
      M                                     www.lintcode.com/problem/palindrome-partitioning
-     M                                     www.lintcode.com/problem/find-the-connected-component-in-the-undirected-graph
      M                                     www.lintcode.com/problem/clone-graph
      M                                     www.lintcode.com/problem/combination-sum
      M                                     www.lintcode.com/problem/topological-sorting
@@ -171,7 +168,6 @@ O    E                                     www.lintcode.com/problem/merge-two-so
      M                                     www.lintcode.com/problem/number-of-ways-to-represent-n-cents
      E                                     www.lintcode.com/problem/kth-largest-in-n-arrays =============================== Follow Up
 OK   M                                     www.lintcode.com/problem/two-sum-ii
-     M                                     www.lintcode.com/problem/kth-smallest-number-in-sorted-matrix
 OK   H                                     www.lintcode.com/problem/triangle-count
      M                                     www.lintcode.com/problem/segment-tree-build
      M                                     www.lintcode.com/problem/segment-tree-build-ii
@@ -192,22 +188,16 @@ O    H   Trie                              www.lintcode.com/problem/word-search-
      H                                     www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays
      H   SegmentTree                       www.lintcode.com/problem/count-of-smaller-number-before-itself
      H   SegmentTree                       www.lintcode.com/problem/interval-sum-ii
-     M                                     www.lintcode.com/problem/heapify =================================== SweepLine/Heap/HashHeep/Deque
-     H                                     www.lintcode.com/problem/trapping-rain-water-ii
+     H                                     www.lintcode.com/problem/trapping-rain-water-ii =================================== SweepLine/Heap/HashHeep/Deque
      H                                     www.lintcode.com/problem/sliding-window-median
      H                                     www.lintcode.com/problem/data-stream-median
      S                                     www.lintcode.com/problem/building-outline
      S                                     www.lintcode.com/problem/sliding-window-maximum
-     M                                     www.lintcode.com/problem/binary-tree-maximum-path-sum-ii
-     M                                     www.lintcode.com/problem/implement-queue-by-two-stacks
-     M                                     www.lintcode.com/problem/min-stack
      H                                     www.lintcode.com/problem/maximal-rectangle
      H                                     www.lintcode.com/problem/expression-tree-build
      H                                     www.lintcode.com/problem/convert-expression-to-reverse-polish-notation
      H                                     www.lintcode.com/problem/convert-expression-to-polish-notation
      H                                     www.lintcode.com/problem/expression-evaluation
-     H                                     www.lintcode.com/problem/max-tree
-     H                                     www.lintcode.com/problem/largest-rectangle-in-histogram
 OK   M   对撞型指针 2-sum类                www.lintcode.com/problem/container-with-most-water ==================================== Two Pointers
 OK   M   对撞型指针 2-sum类                www.lintcode.com/problem/trapping-rain-water
 OK   M   对撞型指针 2-sum类                www.lintcode.com/problem/two-sum
@@ -232,11 +222,8 @@ OK   H   前向型指针 快慢类                 www.lintcode.com/problem/link
 OK   E   两个数组两个指针                  www.lintcode.com/problem/merge-two-sorted-lists
 OK   M   两个数组两个指针                  www.lintcode.com/problem/the-smallest-difference
 OK   H   ????                              www.lintcode.com/problem/sliding-window-matrix-maximum
-     E                                     www.lintcode.com/problem/subarray-sum ========================================== Follow Up
-     H                                     www.lintcode.com/problem/subarray-sum-ii
-     M                                     www.lintcode.com/problem/subarray-sum-closest
+     H                                     www.lintcode.com/problem/subarray-sum-ii ========================================== Follow Up
      M                                     www.lintcode.com/problem/submatrix-sum
-     M                                     www.lintcode.com/problem/minimum-size-subarray-sum
      M                                     www.lintcode.com/problem/continuous-subarray-sum
      M                                     www.lintcode.com/problem/continuous-subarray-sum-ii
      M                                     www.lintcode.com/problem/kth-smallest-number-in-sorted-matrix

@@ -54,7 +54,8 @@ OK   M  坐标型     贪心                  www.lintcode.com/problem/jump-game
 OK   M  坐标型                           www.lintcode.com/problem/longest-increasing-subsequence 最长的递增子序列长度  
 OK   M  单-序列型                        www.lintcode.com/problem/house-robber 在一个条状小区内最大的偷盗价值  
 OK   M  单-序列型  拆环                  www.lintcode.com/problem/house-robber-ii 在一个环状小区内最大的偷盗价值  
-OK   M  单-序列型                        www.lintcode.com/problem/word-break 字符串能否用字典分割 TODO word-break-ii  
+OK   M  单-序列型                        www.lintcode.com/problem/word-break 字符串能否用字典分割
+O    H                                   www.lintcode.com/problem/word-break-ii 
 OK   M  单-序列型                        www.lintcode.com/problem/palindrome-partitioning-ii 得到最少的回文串需要切几刀  
 OK   E  单-序列型  贪心 presum           www.lintcode.com/problem/maximum-subarray 连续数组的最大和  
 OK   M  单-序列型                        www.lintcode.com/problem/decode-ways 解码方案数 chatAt(x)  
@@ -122,29 +123,29 @@ O    M                                   www.lintcode.com/problem/subarray-sum-c
 O    H                                   www.lintcode.com/problem/median-of-two-sorted-arrays  
 O    E                                   www.lintcode.com/problem/minimum-subarray  
 O    E                                   www.lintcode.com/problem/merge-two-sorted-arrays  
-     M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii  
-     M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
-     M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock  
+O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii  
+O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
+O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock  
      M                                   www.lintcode.com/problem/maximum-subarray-difference  
      M                                   www.lintcode.com/problem/maximum-subarray-ii  
      H                                   www.lintcode.com/problem/maximum-subarray-iii  
-  ===E  ================================ www.lintcode.com/problem/hash-function ========================================= Data Structure  
-     M                                   www.lintcode.com/problem/top-k-largest-numbers  
-     M                                   www.lintcode.com/problem/merge-k-sorted-arrays  
+O ===E  ================================ www.lintcode.com/problem/hash-function ========================================= Data Structure  
+O    M                                   www.lintcode.com/problem/top-k-largest-numbers  
+O    M                                   www.lintcode.com/problem/merge-k-sorted-arrays  
      M                                   www.lintcode.com/problem/rehashing  
      M                                   www.lintcode.com/problem/implement-queue-by-two-stacks  
      M                                   www.lintcode.com/problem/min-stack  
      M                                   www.lintcode.com/problem/ugly-number-ii  
-     H                                   www.lintcode.com/problem/lru-cache  
+O    H                                   www.lintcode.com/problem/lru-cache  
      H                                   www.lintcode.com/problem/largest-rectangle-in-histogram  
      E                                   www.lintcode.com/problem/implement-stack  
      E                                   www.lintcode.com/problem/implement-stack-by-two-queues  
      E                                   www.lintcode.com/problem/implement-queue-by-linked-list-ii  
-     E                                   www.lintcode.com/problem/implement-queue-by-linked-list  
+O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list  
      M                                   www.lintcode.com/problem/top-k-largest-numbers-ii  
      M                                   www.lintcode.com/problem/stack-sorting  
      M                                   www.lintcode.com/problem/top-k-frequent-words  
-     M                                   www.lintcode.com/problem/heapify  
+O    M                                   www.lintcode.com/problem/heapify  
      M                                   www.lintcode.com/problem/longest-consecutive-sequence  
      H                                   www.lintcode.com/problem/animal-shelter  
      H                                   www.lintcode.com/problem/lfu-cache  
@@ -157,13 +158,13 @@ O    M                                   www.lintcode.com/problem/clone-graph
      M                                   www.lintcode.com/problem/six-degrees   
      M                                   www.lintcode.com/problem/palindrome-partitioning  
      M                                   www.lintcode.com/problem/combination-sum  
-     M                                   www.lintcode.com/problem/topological-sorting  
-     M                                   www.lintcode.com/problem/n-queens  
-     M                                   www.lintcode.com/problem/n-queens-ii  
+O    M                                   www.lintcode.com/problem/topological-sorting  
+O    M                                   www.lintcode.com/problem/n-queens  
+O    M                                   www.lintcode.com/problem/n-queens-ii  
      M                                   www.lintcode.com/problem/string-permutation-ii  
-     M                                   www.lintcode.com/problem/word-ladder  
+O    M                                   www.lintcode.com/problem/word-ladder  
+O    H                                   www.lintcode.com/problem/word-ladder-ii  
      M                                   www.lintcode.com/problem/k-sum-ii  
-     H                                   www.lintcode.com/problem/word-ladder-ii  
 O ===E  UF  ============================ www.lintcode.com/problem/number-of-islands ===================================== UnionFind/Trie/SweepLine/Heap/HashHeep/Deque  
 O    H  UF                               www.lintcode.com/problem/number-of-islands-ii  
 O    M  UF                               www.lintcode.com/problem/graph-valid-tree  
@@ -215,12 +216,12 @@ OK   H  ????                             www.lintcode.com/problem/sliding-window
      M                                   www.lintcode.com/problem/continuous-subarray-sum  
      M                                   www.lintcode.com/problem/continuous-subarray-sum-ii  
      M                                   www.lintcode.com/problem/kth-smallest-number-in-sorted-matrix  
-     H                                   www.lintcode.com/problem/find-peak-element-ii  
+O    H                                   www.lintcode.com/problem/find-peak-element-ii  
      H                                   www.lintcode.com/problem/maximum-gap  
      E                                   www.lintcode.com/problem/build-post-office  
      M                                   www.lintcode.com/problem/build-post-office-ii  
      E                                   www.lintcode.com/problem/nested-list-weight-sum  
-     M                                   www.lintcode.com/problem/bomb-enemy  
+O    M                                   www.lintcode.com/problem/bomb-enemy  
      M                                   www.lintcode.com/problem/zigzag-iterator  
      M                                   www.lintcode.com/problem/zigzag-iterator-ii  
   ===E================================== www.lintcode.com/problem/climbing-stairs-ii ==================================== Selected Problems in Past Exam  

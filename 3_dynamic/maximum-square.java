@@ -42,19 +42,19 @@ public class Solution {//滚动数组, 直接%2
         }
         int [][]f = new int [2][m];
         for(int i = 0; i < n; i++){
-            f[i%2][0] = matrix[i][0];
-            ans = Math.max(f[i%2][0] , ans);
+            f[i % 2][0] = matrix[i][0];
+            ans = Math.max(f[i % 2][0] , ans);
             for(int j = 1; j < m; j++) {
                 if(i == 0) {
-                    f[i%2][j] = matrix[i%2][j];
+                    f[i % 2][j] = matrix[i % 2][j];
                 }else { //i > 0
                     if(matrix[i][j] > 0) {
-                        f[i%2][j] = Math.min(f[(i - 1)%2][j],Math.min(f[i%2][j-1], f[(i-1)%2][j-1])) + 1;
+                        f[i % 2][j] = Math.min(f[(i - 1) % 2][j],Math.min(f[i % 2][j - 1], f[(i - 1) % 2][j - 1])) + 1;
                     } else {
-                        f[i%2][j] = 0;
+                        f[i % 2][j] = 0;
                     }
                 }
-                ans = Math.max(f[i%2][j], ans);
+                ans = Math.max(f[i % 2][j], ans);
             }
         }
         return ans*ans;

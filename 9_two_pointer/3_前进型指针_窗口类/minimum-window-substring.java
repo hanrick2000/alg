@@ -5,9 +5,9 @@ public class Solution {
         int[] sourcehash = new int[256];
         int[] targethash = new int[256];
         initTargetHash(targethash, Target);
+
         int j = 0;
-        int i = 0;
-        for(i = 0; i < Source.length(); i++) {
+        for(int i = 0; i < Source.length(); i++) {
             while(!valid(sourcehash, targethash) && j < Source.length()) {
                 sourcehash[Source.charAt(j)]++;
                 if(j < Source.length()){
@@ -18,7 +18,7 @@ public class Solution {
             }
             if(valid(sourcehash, targethash) ){
                 if(ans > j - i){
-                    ans = Math.min(ans, j - i);
+                    ans = j - i;
                     minStr = Source.substring(i, j);
                 }
             }

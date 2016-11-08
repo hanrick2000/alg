@@ -3,10 +3,10 @@ public class Solution {
         if (head == null || head.next == null) {
             return;
         }
-        ListNode mid = findMiddle(head);
-        ListNode tail = reverse(mid.next);
-        mid.next = null;
-        merge(head, tail);
+        ListNode mid = findMiddle(head); //找到中点
+        ListNode tail = reverse(mid.next); //后半截逆序
+        mid.next = null; //断开
+        merge(head, tail); //合并
     }
     private ListNode reverse(ListNode head) {
         ListNode newHead = null;

@@ -21,7 +21,7 @@ class Solution{
             return helper(nums, position + 1, r, k);
         }
     }
-    public int partition(int[] nums, int l, int r){
+    public int partition(int[] nums, int l, int r){ //降序
         int left = l;
         int right = r;
         int pivot = nums[left];

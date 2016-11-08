@@ -16,7 +16,7 @@ public class Solution {
                     continue;
                 }
                 for(int k = 1; k <= 100; k++){ //要枚举第i-1个数的各种情况
-                    if (Math.abs(j - k) <= target) {
+                    if (Math.abs(j - k) <= target) { //当前i位置的数字调整到j, j要与k的距离小于target, 调整过去的代价就是下面的abs(A.get(i-1)-j)
                         f[i][j] = Math.min(f[i][j], f[i - 1][k] + Math.abs(A.get(i - 1) - j));
                     }
                 }

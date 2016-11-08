@@ -1,14 +1,14 @@
 public class Solution {
     public ListNode removeDuplicates(ListNode head) { 
-        HashSet<Integer> hash = new HashSet<Integer>();
+        HashSet<Integer> set = new HashSet<Integer>();
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         head = dummy;
         while (head.next != null) {
-            if (hash.contains(head.next.val)) {
+            if (set.contains(head.next.val)) {
                head.next = head.next.next;
             } else {
-                hash.add(head.next.val);
+                set.add(head.next.val);
                 head = head.next;
             }
         }

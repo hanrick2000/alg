@@ -4,11 +4,11 @@ public class Solution {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode mid = findMiddle(head);
-        ListNode right = sortList(mid.next);
-        mid.next = null;
-        ListNode left = sortList(head);
-        return merge(left, right);
+        ListNode mid = findMiddle(head); //找到中点
+        ListNode right = sortList(mid.next); //先排后半截
+        mid.next = null; //断开
+        ListNode left = sortList(head); //再排前半截
+        return merge(left, right); //合并
     }
     private ListNode findMiddle(ListNode head) {
         ListNode slow = head, fast = head.next;
@@ -46,8 +46,8 @@ public class Solution {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode mid = findMedian(head); // O(n)
-        ListNode leftDummy = new ListNode(0);
+        ListNode mid = findMedian(head); // 找到中点
+        ListNode leftDummy = new ListNode(0); //做个parition
         ListNode leftTail = leftDummy;
         ListNode rightDummy = new ListNode(0);
         ListNode rightTail = rightDummy;
@@ -69,9 +69,9 @@ public class Solution {
         leftTail.next = null;
         middleTail.next = null;
         rightTail.next = null;
-        ListNode left = sortList(leftDummy.next);
-        ListNode right = sortList(rightDummy.next);
-        return concat(left, middleDummy.next, right);
+        ListNode left = sortList(leftDummy.next); //把小于mid的排序
+        ListNode right = sortList(rightDummy.next); //把大于mid的排序
+        return concat(left, middleDummy.next, right); //合并
     }
     private ListNode findMedian(ListNode head) {
         ListNode slow = head;

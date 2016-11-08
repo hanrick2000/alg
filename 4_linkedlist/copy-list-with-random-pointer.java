@@ -3,47 +3,6 @@ public class Solution {
         if (head == null) {
             return null;
         }
-        HashMap<RandomListNode, RandomListNode> map = new HashMap<RandomListNode, RandomListNode>();
-        RandomListNode dummy = new RandomListNode(0);
-        RandomListNode pre = dummy;
-        RandomListNode newNode;
-        while (head != null) {
-            if (map.containsKey(head)) { //map里面有head就取出来
-                newNode = map.get(head);
-            } else {
-                newNode = new RandomListNode(head.label);//map里面没有head就新建一个node, 并放入map
-                map.put(head, newNode);
-            }
-            pre.next = newNode; 
-            if (head.random != null) {
-                if (map.containsKey(head.random)) {
-                    newNode.random = map.get(head.random); //random有就连过去
-                } else {
-                    newNode.random = new RandomListNode(head.random.label); //没有的话就新建一个连过去, 并放入map
-                    map.put(head.random, newNode.random);
-                }
-            }
-            pre = pre.next;
-            head = head.next;
-        }
-        return dummy.next;
-    }
-}
-
-/*
-No HashMap version
-第一遍扫的时候巧妙运用next指针，开始数组是1->2->3->4 。 
-然后扫描过程中先建立copy节点 1->1`->2->2`->3->3`->4->4`, 
-然后第二遍copy的时候去建立random的copy， 
-最后一遍,拆分节点, 一边扫描一边拆成两个链表，
-这里用到两个dummy node。
-第一个链表变回  1->2->3 , 然后第二变成 1`->2`->3`  
-*/
-public class Solution {
-    public RandomListNode copyRandomList(RandomListNode head) {
-        if (head == null) {
-            return null;
-        }
         copyNext(head);
         copyRandom(head);
         return splitList(head);
@@ -78,7 +37,48 @@ public class Solution {
         return newHead;
     }
 }
+/*
+No HashMap version
+第一遍扫的时候巧妙运用next指针，开始数组是1->2->3->4 。 
+然后扫描过程中先建立copy节点 1->1`->2->2`->3->3`->4->4`, 
+然后第二遍copy的时候去建立random的copy， 
+最后一遍,拆分节点, 一边扫描一边拆成两个链表，
+这里用到两个dummy node。
+第一个链表变回  1->2->3 , 然后第二变成 1`->2`->3`  
+*/
 
+
+public class Solution {
+    public RandomListNode copyRandomList(RandomListNode head) {
+        if (head == null) {
+            return null;
+        }
+        HashMap<RandomListNode, RandomListNode> map = new HashMap<RandomListNode, RandomListNode>();
+        RandomListNode dummy = new RandomListNode(0);
+        RandomListNode pre = dummy;
+        RandomListNode newNode;
+        while (head != null) {
+            if (map.containsKey(head)) { //map里面有head就取出来
+                newNode = map.get(head);
+            } else {
+                newNode = new RandomListNode(head.label);//map里面没有head就新建一个node, 并放入map
+                map.put(head, newNode);
+            }
+            pre.next = newNode; 
+            if (head.random != null) {
+                if (map.containsKey(head.random)) {
+                    newNode.random = map.get(head.random); //random有就连过去
+                } else {
+                    newNode.random = new RandomListNode(head.random.label); //没有的话就新建一个连过去, 并放入map
+                    map.put(head.random, newNode.random);
+                }
+            }
+            pre = pre.next;
+            head = head.next;
+        }
+        return dummy.next;
+    }
+}
 
 
 A linked list is given such that each node contains an additional random pointer 

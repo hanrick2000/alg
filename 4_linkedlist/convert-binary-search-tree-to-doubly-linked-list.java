@@ -12,7 +12,7 @@ public class Solution {
         }
         ResultType left = helper(root.left);
         ResultType right = helper(root.right);
-        DoublyListNode node = new DoublyListNode(root.val);
+        DoublyListNode node = new DoublyListNode(root.val); //构造list node节点
         ResultType result = new ResultType(null, null);
         if (left == null) {
             result.first = node;
@@ -30,7 +30,6 @@ public class Solution {
         }
         return result;
     }
-
     class ResultType {
         DoublyListNode first; //以当前root为跟的树, 最小值的node
         DoubleListNode last; //以当前root为跟的树, 最大值的node

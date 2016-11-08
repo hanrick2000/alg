@@ -9,10 +9,10 @@ public class Solution {
         if (a.val != b.val) { //递归退出条件
             return false;
         }
-        if (isTweakedIdentical(a.left, b.left) && isTweakedIdentical(a.right, b.right)) {
+        if (isTweakedIdentical(a.left, b.left) && isTweakedIdentical(a.right, b.right)) { //相同
             return true;
         }
-        if (isTweakedIdentical(a.left, b.right) && isTweakedIdentical(a.right, b.left)) {
+        if (isTweakedIdentical(a.left, b.right) && isTweakedIdentical(a.right, b.left)) { //镜像
             return true;
         }
         return false;

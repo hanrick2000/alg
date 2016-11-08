@@ -9,7 +9,7 @@ public class Solution {
         if( a.val != b.val) {
             return false;
         }
-        if (isIdentical(a.left, b.left) && isIdentical(a.right, b.right)) {
+        if (isIdentical(a.left, b.left) && isIdentical(a.right, b.right)) { //相同
             return true;
         }
         return false;

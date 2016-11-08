@@ -8,7 +8,7 @@ public class Solution {
         for (int i = 2; i <= k; ++i) { //前i个人
             for (int j = 0; j <= n; ++j) { // 前j本书
                 f[i][j] = Integer.MAX_VALUE;
-                for (int l = 0; l <= j; ++l) { //枚举新加进来的人i, 处理多少本书
+                for (int l = 0; l <= j; ++l) { //枚举新加进来的人i, 处理多少本书, l是这个人处理的本书
                     f[i][j] = Math.min(f[i][j], Math.max(f[i - 1][j - l], times[i - 1] * l)); //i-1个人处理j-l本书, 新加进来的第i人处理l本书
                     if (f[i - 1][j - l] <= times[i - 1] * l) { //如果处理l本书的时间已经大于了i-1个人的处理时间, 增加l只会更大
                         break;

@@ -15,7 +15,7 @@ public class Solution {
         if (root1.val != root2.val) {
             return false;
         }
-        return check(root1.left, root2.right) && check(root1.right, root2.left);
+        return check(root1.left, root2.right) && check(root1.right, root2.left); //镜像
     }
 }
 

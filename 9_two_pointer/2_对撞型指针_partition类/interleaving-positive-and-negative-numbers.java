@@ -16,6 +16,7 @@ class Solution {
             A[right] = A[left];
         }
         A[left] = pivot;
+
         int negative_count = 0;
         // 看看正数和负数哪个多
         if(pivot <= 0){
@@ -24,6 +25,7 @@ class Solution {
             negative_count = left;
         }
         int positive_count = A.length - negative_count;
+
         if(negative_count > positive_count){
             //-7 -3 -2 -1 5 4 6
             left = 1;

@@ -20,13 +20,13 @@ public class Solution {
         }
         // go left
         if (root.left != null) {
-            path.add(root.left.val);
+            path.add(root.left.val); //把左儿子加入path, 更新sum
             helper(root.left, path, sum + root.left.val, target, result);
             path.remove(path.size() - 1);
         }
         // go right
         if (root.right != null) {
-            path.add(root.right.val);
+            path.add(root.right.val); //把右儿子加入path, 更新sum
             helper(root.right, path, sum + root.right.val, target, result);
             path.remove(path.size() - 1);
         }

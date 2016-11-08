@@ -36,10 +36,10 @@ public class Solution {
         int[] f = new int[2];
         f[0] = 0;
         f[1] = nums[st];
-        for(int i=2; i<=n; i++){
-          f[i%2] = Math.max(f[(i-2)%2]+nums[st+i-1], f[(i-1)%2]);
+        for(int i = 2; i <= n; i++){
+          f[i % 2] = Math.max(f[(i - 2) % 2]+nums[st + i - 1], f[(i - 1) % 2]);
         }
-        return f[n%2];
+        return f[n % 2];
     }
 }
 /*

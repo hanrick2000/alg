@@ -10,10 +10,10 @@ public class Solution{
             f[i][0] = 0;
         }
         //fuction
-        for(int i = 1; i <= A.length; i++){
-            for(int j = 1; j <= m; j++){
+        for(int i = 1; i <= A.length; i++){ //遍历物品
+            for(int j = 1; j <= m; j++){ //遍历容量
                 f[i][j] = f[i - 1][j];
-                if(j >= A[i - 1]){//notice: A[i-1]
+                if(j >= A[i - 1]){ //notice: A[i-1]
                     f[i][j] = Math.max(f[i - 1][j], f[i - 1][j - A[i - 1]] + A[i - 1]);
                     //                 不放第i个物品,  放第i个物品
                 }

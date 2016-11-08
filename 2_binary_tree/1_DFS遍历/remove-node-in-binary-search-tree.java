@@ -46,7 +46,7 @@ public class Solution {
                 parent.right = node.right;
             }
         }
-        if(node.right != null && node.left != null){ //第三种情况: node两棵子树都不为空
+        if(node.right != null && node.left != null){ //情况3: node两棵子树都不为空, 先顺着node的右儿子一直向左下找到最左下方的节点, 把这个节点的右儿子与这个节点的father连接, 然后用这个节点把node题换掉
             TreeNode temp = node.right;
             TreeNode father = node;
             while(temp.left != null){

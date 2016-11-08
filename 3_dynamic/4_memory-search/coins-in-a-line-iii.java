@@ -4,7 +4,7 @@ public class Solution {
     public boolean firstWillWin(int[] values) {
         int n = values.length;
         int[][] f = new int[n + 1][n + 1]; //f[i][j]表示还剩从第i到第j的硬币, 现在当前取硬币的人能得到的最大价值
-        boolean[][] flag =new boolean[n + 1][n + 1];
+        boolean[][] flag = new boolean[n + 1][n + 1];
         int[][] sum = new int[n + 1][n + 1]; //sum[i][j]表示从第i到第j的和
         for (int i = 0; i < n; i++) {
             sum[i][i] = values[i];
@@ -29,8 +29,8 @@ public class Solution {
         } else if(left + 1 == right) {
             f[left][right] = Math.max(values[left], values[right]);
         } else {
-            int cur = Math.min(MemorySearch(left+1, right,   f, flag, values, sum), 
-                               MemorySearch(left,   right-1, f, flag, values, sum));
+            int cur = Math.min(MemorySearch(left + 1, right,   f, flag, values, sum), 
+                               MemorySearch(left,   right - 1, f, flag, values, sum));
             // 先手若是取了左边, 则后手能获得的最大价值就是MemorySearch(left+1, right, f, flag, values, sum), 若先手取了右边, 则后手能得到的最大价值就是MemorySearch(left,right-1, f, flag, values, sum)
             // 先手为了让自己多拿一些, 必然从上面的两种情况中选取后手获得最少的方
             f[left][right] = sum[left][right] - cur;

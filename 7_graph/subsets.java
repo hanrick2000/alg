@@ -1,20 +1,20 @@
 public class Solution {
     public ArrayList<ArrayList<Integer>> subsets(int[] num) {
-        ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
+        ArrayList<ArrayList<Integer>> results = new ArrayList<ArrayList<Integer>>();
         if(num == null || num.length == 0) {
-            return result;
+            return results;
         }
         ArrayList<Integer> list = new ArrayList<Integer>();
         Arrays.sort(num);    
-        subsetsHelper(result, list, num, 0); //把所有以list为开头的子集加到result中去, 从num的0位置开始
-        return result;
+        subsetsHelper(results, list, num, 0); 
+        return results;
     }
-    private void subsetsHelper(ArrayList<ArrayList<Integer>> result, ArrayList<Integer> list, int[] num, int pos) {
-        result.add(new ArrayList<Integer>(list)); //注意new
-        for (int i = pos; i < num.length; i++) {
-            list.add(num[i]);
-            subsetsHelper(result, list, num, i + 1);
-            list.remove(list.size() - 1);
+    private void subsetsHelper(ArrayList<ArrayList<Integer>> results, ArrayList<Integer> list, int[] num, int startIndex) { //把所有以list为开头的子集加到results中去, 从num的startIndex位置开始到num.length进行尝试
+        results.add(new ArrayList<Integer>(list)); //注意new
+        for (int i = startIndex; i < num.length; i++) {
+            list.add(num[i]); //放入
+            subsetsHelper(results, list, num, i + 1);
+            list.remove(list.size() - 1); //把本轮循环放入的取出
         }
     }
 }

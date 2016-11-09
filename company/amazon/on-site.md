@@ -1,26 +1,31 @@
 算法题:
-word ladder i ii              +++    wc
-LRU cache                     ++     wc
-island of numbers             ++     wc    
-jump game变种                 ++     wc
-2 stack implement queue       +      wc
-word break i ii               +
-product of array except self  +      wc
 堆积木                        +      wc
-reverse linked list i ii      +      
-sqrt x                        +      wc
-phone number combination      +      wc
 auto complete                 +    
-roman to integer              +    
 abstract symbol tree          +
-validate BST                  +  
-gas station                   +
-search 2d matrix ii           +      wc
-determine graph is tree       +      
 tnary-tree求和                +    
-same BST                      +          
 phone book                    +    
+
+gas station                   +
+product of array except self  +      wc
+determine graph is tree       +      
+phone number combination      +      wc
+roman to integer              +    
+word break ii                 +
+
+做过的:
+LRU cache                     ++     wc
+2 stack implement queue       +      wc
+island of numbers             ++     wc    
+word ladder i                 +++    wc
+word ladder ii                +++    wc
+word break i                  +
+jump game变种                 ++     wc
+same BST                      +          
+validate BST                  +  
 mirrow tree                   +      wc  
+search 2d matrix ii           +      wc
+sqrt x                        +      wc
+reverse linked list i ii      +      
 
 系统设计
 Instgram                      ++
@@ -34,4 +39,3 @@ Amazon Locker                 +  wc
 furniture test                +  
 calender design               +
 message log queue             +
-

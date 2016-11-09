@@ -1,28 +1,42 @@
 public class Solution {
-    public ArrayList<ArrayList<Integer>> permute(ArrayList<Integer> nums) {
-         ArrayList<ArrayList<Integer>> rst = new ArrayList<ArrayList<Integer>>();
-         if (nums == null || nums.size() == 0) {
-             return rst; 
-         }
-         ArrayList<Integer> list = new ArrayList<Integer>();
-         helper(rst, list, nums);
-         return rst;
+    public List<List<Integer>> permute(int[] nums) {
+        ArrayList<List<Integer>> results = new ArrayList<List<Integer>>();
+        if (nums == null) {
+            return results; 
+        }
+        if (nums.length == 0) {
+            results.add(new ArrayList<Integer>());
+            return results;
+        }
+        //Arrays.sort(nums); //加不加无所谓
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        helper(results, list, nums);
+        return results;
     }
-    public void helper(ArrayList<ArrayList<Integer>> rst, ArrayList<Integer> list, ArrayList<Integer> nums){
-        if(list.size() == nums.size()) {
-            rst.add(new ArrayList<Integer>(list));
+    public void helper(ArrayList<List<Integer>> results, ArrayList<Integer> list, int[] nums){
+        if(list.size() == nums.length) {
+            results.add(new ArrayList<Integer>(list));
             return;
         }
-        for(int i = 0; i < nums.size(); i++){
-            if(list.contains(nums.get(i))){ //不加入相同元素,每次进入都是查看nums中所有元素
+        for(int i = 0; i < nums.length; i++){
+            if(list.contains(nums[i])){
                 continue;
             }
-            list.add(nums.get(i));
-            helper(rst, list, nums);
+            list.add(nums[i]);
+            helper(results, list, nums);
             list.remove(list.size() - 1);
         }
     }
 }
+
+/*
+ * 第一个版本你可以画一颗搜索树
+ * 树的每一层就是递归的那一层 树上每个分支就是for循环中的每个选择
+                       / 
+              1        2         3   
+           2    3   1    3    1    2
+           3    2   3    1    2    1
+ */
 
 // Non-Recursion
 class Solution {
@@ -356,11 +370,3 @@ Do it without recursion.
 [3,2,1]
 */
 
-/*
- * 第一个版本你可以画一颗搜索树
- * 树的每一层就是递归的那一层 树上每个分支就是for循环中的每个选择
-                       \ 
-              1        2         3   
-           2    3   1    3    1    2
-           3    2   3    1    2    1
- */

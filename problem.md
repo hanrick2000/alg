@@ -133,13 +133,13 @@ O ===E  ================================ www.lintcode.com/problem/hash-function 
 O    M                                   www.lintcode.com/problem/top-k-largest-numbers  
 O    M                                   www.lintcode.com/problem/merge-k-sorted-arrays  
      M                                   www.lintcode.com/problem/rehashing  
-     M                                   www.lintcode.com/problem/implement-queue-by-two-stacks  
+OK   M                                   www.lintcode.com/problem/implement-queue-by-two-stacks  
      M                                   www.lintcode.com/problem/min-stack  
      M                                   www.lintcode.com/problem/ugly-number-ii  
 O    H                                   www.lintcode.com/problem/lru-cache  
      H                                   www.lintcode.com/problem/largest-rectangle-in-histogram  
      E                                   www.lintcode.com/problem/implement-stack  
-     E                                   www.lintcode.com/problem/implement-stack-by-two-queues  
+O    E                                   www.lintcode.com/problem/implement-stack-by-two-queues  
      E                                   www.lintcode.com/problem/implement-queue-by-linked-list-ii  
 O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list  
      M                                   www.lintcode.com/problem/top-k-largest-numbers-ii  
@@ -150,10 +150,10 @@ O    M                                   www.lintcode.com/problem/heapify
      H                                   www.lintcode.com/problem/animal-shelter  
      H                                   www.lintcode.com/problem/lfu-cache  
      H                                   www.lintcode.com/problem/max-tree  
-O ===M ================================= www.lintcode.com/problem/subsets =========================================== Graph & Search  
-O    M                                   www.lintcode.com/problem/subsets-ii  
-O    M                                   www.lintcode.com/problem/permutations  
-O    M                                   www.lintcode.com/problem/permutations-ii  
+OK===M ================================= www.lintcode.com/problem/subsets =========================================== Graph & Search  
+OK   M                                   www.lintcode.com/problem/subsets-ii  
+OK   M                                   www.lintcode.com/problem/permutations  
+OK   M                                   www.lintcode.com/problem/permutations-ii  
 O    M                                   www.lintcode.com/problem/clone-graph  
      M                                   www.lintcode.com/problem/six-degrees   
      M                                   www.lintcode.com/problem/palindrome-partitioning  
@@ -162,10 +162,10 @@ O    M                                   www.lintcode.com/problem/topological-so
 O    M                                   www.lintcode.com/problem/n-queens  
 O    M                                   www.lintcode.com/problem/n-queens-ii  
      M                                   www.lintcode.com/problem/string-permutation-ii  
-O    M                                   www.lintcode.com/problem/word-ladder  
-O    H                                   www.lintcode.com/problem/word-ladder-ii  
+OK   M                                   www.lintcode.com/problem/word-ladder  
+OK   H                                   www.lintcode.com/problem/word-ladder-ii  
      M                                   www.lintcode.com/problem/k-sum-ii  
-O ===E  UF  ============================ www.lintcode.com/problem/number-of-islands ===================================== UnionFind/Trie/SweepLine/Heap/HashHeep/Deque  
+OK===E  UF  ============================ www.lintcode.com/problem/number-of-islands ===================================== UnionFind/Trie/SweepLine/Heap/HashHeep/Deque  
 O    H  UF                               www.lintcode.com/problem/number-of-islands-ii  
 O    M  UF                               www.lintcode.com/problem/graph-valid-tree  
 O    M  UF                               www.lintcode.com/problem/find-the-weak-connected-component-in-the-directed-graph  

@@ -1,10 +1,9 @@
 public class Solution {
-    private class Node{
+    private class Node{ //双向链表
         Node prev;
         Node next;
         int key;
         int value;
-
         public Node(int key, int value) {
             this.key = key;
             this.value = value;
@@ -12,51 +11,43 @@ public class Solution {
             this.next = null;
         }
     }
-
     private int capacity;
-    private HashMap<Integer, Node> hs = new HashMap<Integer, Node>();
-    private Node head = new Node(-1, -1);
-    private Node tail = new Node(-1, -1);
+    private HashMap<Integer, Node> hs = new HashMap<Integer, Node>(); //map
+    private Node head = new Node(-1, -1); //dummy, 其next指向lru
+    private Node tail = new Node(-1, -1); //dummy, 其prev指向最近使用的node的
     
-    // @param capacity, an integer
     public Solution(int capacity) {
-        // write your code here
         this.capacity = capacity;
         tail.prev = head;
         head.next = tail;
     }
 
-    public int get(int key) {
-        if( !hs.containsKey(key)) {
-            return -1;
-        }
-
-        // remove current
-        Node current = hs.get(key);
-        current.prev.next = current.next;
-        current.next.prev = current.prev;
-
-        // move current to tail
-        move_to_tail(current);
-
-        return hs.get(key).value;
-    }
-
     public void set(int key, int value) {
-        if( get(key) != -1) {
+        if(get(key) != -1) { //值存在时直接更新
             hs.get(key).value = value;
             return;
         }
-
-        if (hs.size() == capacity) {
+        if(hs.size() == capacity) { //满了时先移除lru
             hs.remove(head.next.key);
             head.next = head.next.next;
             head.next.prev = head;
         }
-
         Node insert = new Node(key, value);
         hs.put(key, insert);
         move_to_tail(insert);
+    }
+
+    public int get(int key) {
+        if(!hs.containsKey(key)) {
+            return -1;
+        }
+        // remove current
+        Node current = hs.get(key);
+        current.prev.next = current.next;
+        current.next.prev = current.prev;
+        // move current to tail
+        move_to_tail(current);
+        return hs.get(key).value;
     }
 
     private void move_to_tail(Node current) {
@@ -67,12 +58,21 @@ public class Solution {
     }
 }
 
-Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and set.
+Design and implement a data structure for Least Recently Used (LRU) cache. 
+It should support the following operations: get and set.
 
 get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
-set(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
+set(key, value) - Set or insert the value if the key is not already present. 
+When the cache reached its capacity, 
+it should invalidate the least recently used item before inserting a new item.
 
-Have you met this question in a real interview? Yes
-Example
 Tags 
-Linked List Zenefits Uber Google
+Linked List, Zenefits, Uber, Google
+
+用HashMap来存key和和其对应的node，便于之后检索key是否已经存在。
+用双向链表，便于操作数组中间的元素移动和删除。
+get()：如果key不存在，则返回－1；
+       如果key存在，则将该key对应的node移到链表尾部。
+set()：如果key存在，则将修改过value的该key对应node移到链表尾部；
+       如果key不存在，分两种情况：1）若chache已经达到其capacity，则删去链表第一个node（least recently used item），再加入该key的node；
+                                  2）若chache还没达到其capacity，则在链表尾部加入该key的node。

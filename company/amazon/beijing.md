@@ -1,4 +1,5 @@
-This is Louise from Amazon recruiting team. Here I would like to give you a quick introduction about the team who is hiring in Beijing and Seattle.
+This is Louise from Amazon recruiting team. 
+Here I would like to give you a quick introduction about the team who is hiring in Beijing and Seattle.
 Interview process:
   2 rounds of phone screens on tech
   Final loop in Beijing
@@ -6,10 +7,11 @@ Interview process:
 Interview prep deck:
 A few important Leadership Principles
 1. Customer Obsession: Make sure to work backwards from the customer in your tech problems and describe a situation where you went above and beyond for your customers(想客户可能的需求, monitor)
+   spark -> storm训练
 2. Have Backbone; Disagree and Commit: Be prepared to talk about how you have worked with conflict in your team. (与团队的冲突, batch to online)
-3. Vocally Self Critical: Never blame your team members/managers for a project being unsuccessful. Make sure you understand your contributions and what you could have done better.(不抱怨, 以后做的更好)
+3. Vocally Self Critical: Never blame your team members/managers for a project being unsuccessful. Make sure you understand your contributions and what you could have done better.(不抱怨,以后做的更好)
 4. Deliver Results: Make sure you use "I" instead of too many "we" as we want to be able to differentiate what decisions you have made instead of what instructions you have followed. (体现个人价值) 
-5. Dive Deep: Make sure that you understand the big picture of why your team is doing certain things, so not only an understanding of the technology, but why is this important for the business. (了解整体价值, 而非技术本身)
+5. Dive Deep: Make sure that you understand the big picture of why your team is doing certain things, so not only an understanding of the technology, but why is this important for the business. (了解整体价值, 而非仅仅技术本身)
 
 Answer all behavioral questions using the STAR format.
 a. Situation: Open with a brief description of the Situation and context of the story (who, what, where, when, how).

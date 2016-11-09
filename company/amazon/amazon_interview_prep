@@ -1,0 +1,184 @@
+Thank you taking the time to speak with us. The below tips are intended to enhance your candidate experience.
+
+Amazon – a place where builders can build. 
+We hire the world's brightest minds and offer them an environment in which they can invent and innovate to improve the experience for our customers. 
+We want you to help share and shape our mission to be Earth's most customer-centric company. 
+Amazon's evolution from Web site to e-commerce partner to development platform is driven by the spirit of invention that is part of our DNA. 
+We do this every day by solving complex technical and business problems with ingenuity and simplicity. 
+We're making history and the good news is that we've only just begun.
+Our engineers tackle some of the most complex challenges in large-scale computing. 
+Software development engineers, technical program managers, test engineers, and user-interface experts 
+work in small teams company-wide to contribute to the e-commerce platform that's used by:
+Over 152 million active Amazon customer accounts 
+Over 2.0 million active seller accounts
+Hundreds of thousands of external developers
+
+Amazon Interview Prep
+
+1)  Brush up on your Computer Science fundamentals (overview provided below): 
+during your technical phone interview, we will ask you to code in the language of your choice and solve CS focused problems. 
+Visit www.codechef.com, www.topcoder.com or similar websites to brush up on problem solving and core Computer Science fundamentals.
+"Random forests, naïve Bayesian estimators, RESTful services, gossip protocols, eventual consistency, data sharding, anti-entropy, Byzantine quorum, erasure coding, vector clocks ... walk into certain Amazon meetings, and you may momentarily think you've stumbled into a computer science lecture." - Jeff Bezos, 2010 Shareholder letter
+
+Programming Languages 
+We do not require that you know any specific language before interviewing for a technical position at Amazon.com, 
+but familiarity with a prominent object oriented language is generally a prerequisite for success. 
+Not only should you be familiar with the syntax of a language like C++, Java, or C#, 
+you should also know some of the language nuances such as how memory management works, 
+what some of the most commonly used collections or libraries are, etc. 
+You should be able to compare languages and talk about the tradeoffs between using language X vs. language Y. 
+It’s considered a plus to be familiar with some scripting language such as Perl, Ruby, Awk, etc. 
+It’s also nice to know the basics of regular expression as they are now a mainstay in both the object oriented and scripting worlds. 
+
+Data Structures 
+Most of the work we do involves storing and providing access to data in efficient ways. 
+This necessitates a very strong background in standard data structures. 
+You should know what each of these data structures is and how they’re implemented; 
+what their runtimes are for common operations; 
+and under what circumstances it would be beneficial to use one. 
+Array 
+Linked List 
+Binary Tree, Binary Search Tree, Red-Black Tree
+Heap 
+Hash Table 
+Stack 
+Queue 
+Trie 
+Graph (both directed and undirected) 
+
+Algorithms 
+It’s also important to know efficient ways manipulate data. 
+One great way of doing this is brushing up on some common algorithms. 
+We’ll expect that you can apply and discuss the tradeoffs between some commonly used algorithms. 
+Sorting 
+Bubble Sort 
+Merge Sort 
+Quick Sort 
+Radix/Bucket Sort 
+
+Traversals (On multiple data structures) 
+Depth First Search 
+Breadth First Search 
+
+Coding 
+Expect to be asked to code syntactically correct code – no pseudo code. 
+If you’re a bit rusty coding without an IDE or coding in a specific language, 
+it’s probably a good idea to dust off the cobwebs and get comfortable coding with pen and paper. 
+The most important thing a software engineer does at Amazon.com is write scalable, stable, robust, and well tested code. 
+These are going to be the main criteria by which your code will be evaluated, 
+so make sure that you check for edge cases and common error inputs as well as the “happy paths” through the code. 
+
+Object Oriented Design 
+Good design is paramount to extensible, bug free, and long living code. 
+It’s possible to solve a software problem in an almost limitless number of ways, 
+but when software needs to be robust and extensible, it’s important to know some common techniques that help with this. 
+Using object oriented design best practices is one way to build lasting software. 
+You should have a working knowledge of a few common and useful design patterns 
+(singleton, factory, adapter, bridge, visitor, command, proxy, observer, etc.) 
+as well as know how to write software in an object oriented way with appropriate use of inheritance and aggregation. 
+
+Databases 
+Most of the software that we write is backed by a database somewhere. 
+A lot of the challenges we face come in to play when interfacing with existing data models and when designing new data models. You should know the basics of how relational databases work, how to design relational database schemas, as well as how to write basic SQL queries against a database. 
+
+Distributed Computing 
+Our systems at Amazon.com usually have to work under very strict tolerances at high load. 
+While we have some internal tools that help us with scaling it’s important to have an understanding of a few basic distributed computing concepts. 
+Having an understanding of topics such as map-reduce, service oriented architectures, 
+distributed caching, load balancing, etc. will help you in formulating answers to some of the more complicated distributed architecture questions you might encounter. 
+
+Internet Topics 
+This is Amazon.com, we’re an online company and we expect our engineers to be familiar with, at least, the basics of how the internet works. 
+You might want to brush up on how internet browsers do what they do, DNS lookups, what TCP/IP and HTTP are, sockets, etc. 
+We’re not looking for network engineering types of qualifications, but a solid understanding of the fundamentals of how the web works is a requirement. 
+
+Operating Systems 
+You won’t need to know how to build your own operating system, 
+but you should be familiar with some OS topics that can affect code performance, such as memory management, 
+processes, threads, synchronization, paging, multithreading, deadlocks (causes, detection, avoidance). 
+
+“Invention is in our DNA and technology is the fundamental tool we wield to evolve and improve every aspect of 
+the experience we provide our customers.” - Jeff Bezos, 2010 Shareholder letter
+
+2)  Be prepared to discuss technologies listed on your resume for example, 
+if you list Java or C++ you should expect technical questions about your experience with these technologies. 
+It’s also helpful to review the job description before your call to align your qualifications against the requirements/responsibilities.
+
+3)  Please ask questions if you need anything clarified. 
+We want the interview process to be collaborative. We also want to learn what it would be like to work with you on a day-to-day basis in our open environment. 
+If you are asked a question but not given all of the information needed to solve the problem, focus on how you would attempt to solve it given the imperfect information. 
+
+“Many of the problems we face have no textbook solution, and so we happily invent new ones.” - Jeff Bezos, 2010 Shareholder letter
+
+4)  When answering the question, try to be concise and detailed in your response. 
+We realize it’s hard to gauge how much information is too much vs. not sufficient enough during a phone conversation.  
+An effective litmus test is pausing after your succinct response to ask if you’ve provided enough data or if they’d like you to continue with more detail.
+
+5)  We want to hire smart, passionate people. 
+Please reflect on what motivated you to pursue a career with Amazon and be prepared to speak to it. 
+Although “Why Amazon?” is a standard type of question, it’s not a check the box type of formality for us. 
+We genuinely want to understand what inspired you to explore an opportunity with us so we get a better sense of who you are. 
+It’s also appreciated when candidates have put thought into a few questions for the Interviewer.  
+It also goes a long way when you’ve taken the initiative to research the company prior to your interview.
+
+
+Our Leadership Principles
+
+Whether you are an individual contributor or a manager of a large team, you are an Amazon leader. These are our leadership principles, unless you know better ones.  Please be a leader.
+
+Customer Obsession 
+Leaders start with the customer and work backwards. They work vigorously to earn and keep customer trust.  Although leaders pay attention to competitors, they obsess over customers.
+
+Ownership
+Leaders are owners.  They think long term and don’t sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team.  They never say “that’s not my job”.  
+
+Invent and Simplify
+Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by “not invented here”. As we do new things, we accept that we may be misunderstood for long periods of time. 
+
+Are Right, A Lot
+Leaders are right a lot. They have strong judgment and good instincts.  They seek diverse perspectives and work to disconfirm their beliefs. 
+
+Learn and Be Curious
+Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them. 
+
+Hire and Develop the Best
+Leaders raise the performance bar with every hire and promotion. They recognize exceptional talent, and willingly move them throughout the organization. Leaders develop leaders and take seriously their role in coaching others.  We work on behalf of our people to invent mechanisms for development like Career Choice.
+
+Insist on the Highest Standards
+Leaders have relentlessly high standards - many people may think these standards are unreasonably high. Leaders are continually raising the bar and drive their teams to deliver high quality products, services and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.
+
+Think Big
+Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.  
+
+Bias for Action
+Speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk taking.
+
+Frugality
+Accomplish more with less. Constraints breed resourcefulness, self-sufficiency and invention.  There are no extra points for growing headcount, budget size or fixed expense. 
+
+Earn Trust
+Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when doing so is awkward or embarrassing.  Leaders do not believe their or their team’s body odor smells of perfume.  They benchmark themselves and their teams against the best.
+
+Dive Deep
+Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ. No task is beneath them.  
+ 
+Have Backbone; Disagree and Commit
+Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.
+
+Deliver Results
+Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never settle. 
+
+
+Amazon Press
+
+America’s Best And Worst CEOs: http://www.forbes.com/sites/scottdecarlo/2012/04/04/americas-best-ceos/
+Jeff Bezos’ Top Ten Leadership Lessons:  http://www.forbes.com/sites/georgeanders/2012/04/04/bezos-tips/
+#2 on Forbes “Most Innovative Global Company” list: http://www.forbes.com/special-features/innovative-companies-list.html  
+Most Reputable Company Award: http://www.businessinsider.com/amazon-is-the-most-reputable-company-in-the-world-2011-4#ixzz1IfpPZ2jx
+Bezos receives CEO of the Year: http://www.marketwatch.com/story/ceo-of-the-year-cloud-fire-lifted-amazons-bezos-2012-01-17?dist=afterbell
+Bezos is committed to looking beyond the short-term: http:/www.economist.com/node/21548487
+
+We appreciate your interest in Amazon.
+Work hard. Have fun. Make history.
+
+

@@ -1,4 +1,31 @@
 public class Solution {
+    public boolean wordBreak(String s, Set<String> dict){
+        if(s == null || s.length() == 0){
+            return true;
+        }
+        boolean[] f = new boolean[s.length() + 1];
+        f[0] = true;
+        int maxLength = 0;
+        for(String word : dict){
+            maxLength = Math.max(maxLength, word.length());
+        }
+        for(int i = 1; i <= s.length(); i++){
+            for(int j = 0; j <= i && j <= maxLength; j++){
+                if(f[i - j] == true && dict.contains(s.substring(i - j, i))){
+                    f[i] = true;
+                    break;
+                }
+            }
+        }
+        return f[s.length()];
+    }
+}
+
+
+
+
+
+public class Solution {
     public boolean wordBreak(String s, Set<String> dict) {
         if (s == null || s.length() == 0){ 
             return true;

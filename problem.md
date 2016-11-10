@@ -55,7 +55,6 @@ OK   M  坐标型                           www.lintcode.com/problem/longest-inc
 OK   M  单-序列型                        www.lintcode.com/problem/house-robber 在一个条状小区内最大的偷盗价值  
 OK   M  单-序列型  拆环                  www.lintcode.com/problem/house-robber-ii 在一个环状小区内最大的偷盗价值  
 OK   M  单-序列型                        www.lintcode.com/problem/word-break 字符串能否用字典分割
-O    H                                   www.lintcode.com/problem/word-break-ii 
 OK   M  单-序列型                        www.lintcode.com/problem/palindrome-partitioning-ii 得到最少的回文串需要切几刀  
 OK   E  单-序列型  贪心 presum           www.lintcode.com/problem/maximum-subarray 连续数组的最大和  
 OK   M  单-序列型                        www.lintcode.com/problem/decode-ways 解码方案数 chatAt(x)  
@@ -164,6 +163,7 @@ O    M                                   www.lintcode.com/problem/n-queens-ii
      M                                   www.lintcode.com/problem/string-permutation-ii  
 OK   M                                   www.lintcode.com/problem/word-ladder  
 OK   H                                   www.lintcode.com/problem/word-ladder-ii  
+OK   H  利用word-break来避免搜索不肯能的 www.lintcode.com/problem/word-break-ii 跟permutation很像, 属于dfs
      M                                   www.lintcode.com/problem/k-sum-ii  
 OK===E  UF  ============================ www.lintcode.com/problem/number-of-islands ===================================== UnionFind/Trie/SweepLine/Heap/HashHeep/Deque  
 O    H  UF                               www.lintcode.com/problem/number-of-islands-ii  

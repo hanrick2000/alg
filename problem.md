@@ -121,7 +121,7 @@ O    M                                   www.lintcode.com/problem/two-sum-closes
 O    M                                   www.lintcode.com/problem/subarray-sum-closest  
 O    H                                   www.lintcode.com/problem/median-of-two-sorted-arrays  
 O    E                                   www.lintcode.com/problem/minimum-subarray  
-O    E                                   www.lintcode.com/problem/merge-two-sorted-arrays  
+OK   E                                   www.lintcode.com/problem/merge-two-sorted-arrays  
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii  
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock  
@@ -149,22 +149,22 @@ O    M                                   www.lintcode.com/problem/heapify
      H                                   www.lintcode.com/problem/animal-shelter  
      H                                   www.lintcode.com/problem/lfu-cache  
      H                                   www.lintcode.com/problem/max-tree  
-OK===M ================================= www.lintcode.com/problem/subsets =========================================== Graph & Search  
+OK===M ================================= www.lintcode.com/problem/subsets =========================================== Graph & Search & BackTracking 
 OK   M                                   www.lintcode.com/problem/subsets-ii  
 OK   M                                   www.lintcode.com/problem/permutations  
 OK   M                                   www.lintcode.com/problem/permutations-ii  
 O    M                                   www.lintcode.com/problem/clone-graph  
-     M                                   www.lintcode.com/problem/six-degrees   
-     M                                   www.lintcode.com/problem/palindrome-partitioning  
-     M                                   www.lintcode.com/problem/combination-sum  
+OK   M                                   www.lintcode.com/problem/six-degrees   
+O    M                                   www.lintcode.com/problem/palindrome-partitioning  
+O    M                                   www.lintcode.com/problem/combination-sum  
 O    M                                   www.lintcode.com/problem/topological-sorting  
 O    M                                   www.lintcode.com/problem/n-queens  
 O    M                                   www.lintcode.com/problem/n-queens-ii  
-     M                                   www.lintcode.com/problem/string-permutation-ii  
+O    M                                   www.lintcode.com/problem/string-permutation-ii  
 OK   M                                   www.lintcode.com/problem/word-ladder  
 OK   H                                   www.lintcode.com/problem/word-ladder-ii  
 OK   H  利用word-break来避免搜索不肯能的 www.lintcode.com/problem/word-break-ii 跟permutation很像, 属于dfs
-     M                                   www.lintcode.com/problem/k-sum-ii  
+O    M                                   www.lintcode.com/problem/k-sum-ii  
 OK===E  UF  ============================ www.lintcode.com/problem/number-of-islands ===================================== UnionFind/Trie/SweepLine/Heap/HashHeep/Deque  
 O    H  UF                               www.lintcode.com/problem/number-of-islands-ii  
 O    M  UF                               www.lintcode.com/problem/graph-valid-tree  

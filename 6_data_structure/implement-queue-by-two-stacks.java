@@ -40,5 +40,6 @@ top()     // return 2
 pop()     // return 2
 Challenge 
 implement it by two stacks, do not use any other data structure and push, pop and top should be O(1) by AVERAGE.
+
 Tags 
-LintCode Copyright Stack Queue
+LintCode Copyright, Stack, Queue

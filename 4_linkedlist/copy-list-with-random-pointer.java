@@ -24,17 +24,21 @@ public class Solution {
             head = head.next.next;
         }
     }
-    private RandomListNode splitList(RandomListNode head) {
-        RandomListNode newHead = head.next; //newHead指向clone出来的节点
-        while (head != null) {
-            RandomListNode temp = head.next; //temp暂存clone出的节点
-            head.next = temp.next;
-            head = head.next;
-            if (temp.next != null) {
-                temp.next = temp.next.next;
-            }
+    private RandomListNode splitList(RandomListNode head) { //跟partition list类似的过程
+        RandomListNode dummyOld = new RandomListNode(0);
+        RandomListNode dummyNew = new RandomListNode(0);
+        RandomListNode oldTail = dummyOld;
+        RandomListNode newTail = dummyNew;
+        while(head != null){
+            oldTail.next = head;
+            newTail.next = head.next;
+            oldTail = oldTail.next;
+            newTail = newTail.next;
+            head = head.next.next;
         }
-        return newHead;
+        oldTail.next = null;
+        head = dummyOld.next;
+        return dummyNew.next;
     }
 }
 /*

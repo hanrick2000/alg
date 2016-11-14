@@ -40,45 +40,62 @@ public class Solution {
 }
 
 // Merge lists two by two
+/**
+ * Definition for ListNode.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int val) {
+ *         this.val = val;
+ *         this.next = null;
+ *     }
+ * }
+ */ 
 public class Solution {
+    /**
+     * @param lists: a list of ListNode
+     * @return: The head of one sorted list.
+     */
     public ListNode mergeKLists(List<ListNode> lists) {  
-        if (lists == null || lists.size() == 0) {
+        // write your code here
+        if(lists == null || lists.size() == 0){
             return null;
         }
-        while (lists.size() > 1) { //每轮迭两两合并array相邻的list, 放到一个新的array中, 然后最后用新array替换老的array
-            List<ListNode> new_lists = new ArrayList<ListNode>();
-            for (int i = 0; i + 1 < lists.size(); i += 2) {
-                ListNode merged_list = merge(lists.get(i), lists.get(i + 1));
-                new_lists.add(merged_list);
+        while(lists.size() > 1){
+            List<ListNode> tmpLists = new ArrayList<ListNode>();
+            for(int i = 0; i < lists.size() - 1; i += 2){
+                ListNode list = merge(lists.get(i), lists.get(i + 1));
+                tmpLists.add(list);
             }
-            if (lists.size() % 2 == 1) { //注意array长度是奇数的情况
-                new_lists.add(lists.get(lists.size() - 1));
+            if(lists.size() % 2 == 1){
+                tmpLists.add(lists.get(lists.size() - 1));
             }
-            lists = new_lists;
+            lists = tmpLists;
         }
         return lists.get(0);
     }
-    private ListNode merge(ListNode list1, ListNode list2) {
+    public ListNode merge(ListNode l1, ListNode l2){
         ListNode dummy = new ListNode(0);
         ListNode tail = dummy;
-        while (list1 != null && list2 != null) {
-            if (list1.val < list2.val) {
-                tail.next = list1;
-                list1 = list1.next;
-            } else {
-                tail.next = list2;
-                list2 = list2.next;
+        while(l1 != null && l2 != null){
+            if(l1.val < l2.val){
+                tail.next = l1;
+                l1 = l1.next;
+            }else{
+                tail.next = l2;
+                l2 = l2.next;
             }
             tail = tail.next;
         }
-        if (list1 != null) {
-            tail.next = list1;
-        } else {
-            tail.next = list2;
+        if(l1 == null){
+            tail.next = l2;
+        }else{
+            tail.next = l1;
         }
         return dummy.next;
     }
 }
+
 
 // Priority Queue (Heap) 
 public class Solution {

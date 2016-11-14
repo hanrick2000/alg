@@ -1,16 +1,41 @@
+/**
+ * Definition for ListNode.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int val) {
+ *         this.val = val;
+ *         this.next = null;
+ *     }
+ * }
+ */ 
 public class Solution {
-    public void reorderList(ListNode head) {
-        if (head == null || head.next == null) {
+    /**
+     * @param head: The head of linked list.
+     * @return: void
+     */
+    public void reorderList(ListNode head) {  
+        // write your code here
+        if(head == null){
             return;
         }
-        ListNode mid = findMiddle(head); //找到中点
-        ListNode tail = reverse(mid.next); //后半截逆序
-        mid.next = null; //断开
-        merge(head, tail); //合并
+        ListNode mid = findMid(head);
+        ListNode tail = reverse(mid.next);
+        mid.next = null;
+        merge(head, tail);
     }
-    private ListNode reverse(ListNode head) {
+    public ListNode findMid(ListNode head){
+        ListNode slow = head;
+        ListNode fast = head.next;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+    public ListNode reverse(ListNode head){
         ListNode newHead = null;
-        while (head != null) {
+        while(head != null) {
             ListNode temp = head.next;
             head.next = newHead;
             newHead = head;
@@ -18,37 +43,29 @@ public class Solution {
         }
         return newHead;
     }
-    private void merge(ListNode head1, ListNode head2) {
-        int index = 0;
+    public void merge(ListNode l1, ListNode l2){
         ListNode dummy = new ListNode(0);
-        while (head1 != null && head2 != null) {
-            if (index % 2 == 0) {
-                dummy.next = head1;
-                head1 = head1.next;
-            } else {
-                dummy.next = head2;
-                head2 = head2.next;
+        ListNode tail = dummy;
+        int index = 0;
+        while(l1 != null && l2 != null){
+            if(index % 2 == 0){
+                tail.next = l1;
+                l1 = l1.next;
+            }else{
+                tail.next = l2;
+                l2 = l2.next;
             }
-            dummy = dummy.next;
-            index ++;
+            tail = tail.next;
+            index++;
         }
-        if (head1 != null) {
-            dummy.next = head1;
-        } else {
-            dummy.next = head2;
+        if(l1 == null){
+            tail.next = l2;
+        }else{
+            tail.next = l1;
         }
-    }
-    private ListNode findMiddle(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head.next;
-        while (fast != null && fast.next != null) {
-            fast = fast.next.next;
-            slow = slow.next;
-        }
-        return slow;
+        l1 = dummy.next;
     }
 }
-
 
 Given a singly linked list L: L0 → L1 → … → Ln-1 → Ln
 reorder it to: L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …

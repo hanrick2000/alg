@@ -1,4 +1,4 @@
-class Langford{
+class LangfordPairing{
     public static void findLangford(int[] arr, int n) {
         if (n == 0) {
             for (int i = 0; i< arr.length; i++){
@@ -23,5 +23,7 @@ class Langford{
     }
 }
 
+/*
 find the Langford sequence for a given N if it exists? 
 Details of Langford sequence - https://en.wikipedia.org/wiki/Langford_pairing
+*/

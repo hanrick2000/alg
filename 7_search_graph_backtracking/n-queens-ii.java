@@ -8,12 +8,10 @@ public class Solution {
     }
     public void placeQueen(int[] usedColumns, int row) {
         int n = usedColumns.length;
-        
         if (row == n) {
             sum ++;
             return;
         }
-        
         for (int i = 0; i < n; i++) {
             if (isValid(usedColumns, row, i)) {
                 usedColumns[row] = i;
@@ -35,11 +33,8 @@ public class Solution {
 }
 
 Follow up for N-Queens problem.
-
 Now, instead outputting board configurations, return the total number of distinct solutions.
-
 Example
 For n=4, there are 2 distinct solutions.
-
 Tags 
 Recursion

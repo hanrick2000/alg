@@ -17,6 +17,8 @@ OK   M  二分答案                         www.lintcode.com/problem/first-bad-
 OK   E  二分答案                         www.lintcode.com/problem/sqrtx  
 OK   M  二分答案                         www.lintcode.com/problem/wood-cut 先确定一个木头长度的上界, 根据是否满足最少获得的木头个数, 然后二分的方法缩小  
 OK   M  保留有解的一半                   www.lintcode.com/problem/find-peak-element  
+O    M                                   www.lintcode.com/problem/maximum-number-in-mountain-sequence
+O    M                                   www.lintcode.com/problem/divide-two-integers
 OK===E  DFS遍历 递归+非递归============= www.lintcode.com/problem/binary-tree-preorder-traversal 需栈,根先入栈,然后while循环栈顶出栈加入结果,按照先右后左的顺序放入栈====Binary Tree & Divide Conquer  
 OK   M  DFS遍历 递归+非递归              www.lintcode.com/problem/binary-tree-inorder-traversal 需要栈, 最外while循环, 内层先while循环左子树遍历入栈, 栈若空返回结果, 否则栈顶出栈加入结果, 检查右子树  
 OK   E  DFS遍历 递归+非递归              www.lintcode.com/problem/binary-tree-postorder-traversal 类似先序, 需要两个栈, 栈顶元素出栈后加入另一个栈, 先左后右, 最后栈2出栈到结果集  
@@ -44,6 +46,8 @@ OK   M  BFS遍历 1队列,root入队,进入while www.lintcode.com/problem/binary
 OK   M  BFS遍历 从下向上                 www.lintcode.com/problem/binary-tree-level-order-traversal-ii Collections.reverse()  
 OK   M  BFS遍历 两个stack版本            www.lintcode.com/problem/binary-tree-zigzag-level-order-traversal normalOrder决定当前层顺序  
 OK   M  BFS遍历 deserial时用一个queue    www.lintcode.com/problem/binary-tree-serialization index指出当前处理那个node,当处理完左右时index增,ser:先把所有节点按层序入queue, 去掉最后的null, 按顺序输出.  
+O    E                                   www.lintcode.com/problem/sort-integers-ii
+O    M                                   www.lintcode.com/problem/expression-expand
 OK===E  坐标型 ========================= www.lintcode.com/problem/unique-paths-ii ======================================= Dynamic Program  
 OK   E  坐标型                           www.lintcode.com/problem/unique-paths 从矩形左上角走到右下角的方案数  
 OK   E  坐标型                           www.lintcode.com/problem/climbing-stairs 从1层到顶层的爬楼梯方法  
@@ -87,6 +91,8 @@ OK   M  经典题                           www.lintcode.com/problem/maximal-squ
 OK   M  区间型                           www.lintcode.com/problem/longest-palindromic-substring  
 O    H                                   www.lintcode.com/problem/post-office-problem  
 O    H                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iv  
+OK   E                                   www.lintcode.com/problem/drop-eggs
+OK   M                                   www.lintcode.com/problem/drop-eggs-ii
 OK===M  使用dummy 如果head.next的值和=== www.lintcode.com/problem/remove-duplicates-from-sorted-list-ii head.next.next的值相等, 那么记录这个值, 循环删除所有等于这个值的node========== LinkedList  
 OK   E  用HashSet记录访问过的node, dummy www.lintcode.com/problem/remove-duplicates-from-unsorted-list 用了dummy的, while都是判断head.next不为空  
 OK   E                                   www.lintcode.com/problem/remove-duplicates-from-sorted-list node指向head,如果node.next不为空,那么判断下node的值和node.next的值是否相等,相等就删掉node.next  
@@ -125,49 +131,52 @@ OK   E                                   www.lintcode.com/problem/merge-two-sort
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii  
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock  
-     M                                   www.lintcode.com/problem/maximum-subarray-difference  
-     M                                   www.lintcode.com/problem/maximum-subarray-ii  
-     H                                   www.lintcode.com/problem/maximum-subarray-iii  
+O    M                                   www.lintcode.com/problem/maximum-subarray-difference  
+O    M                                   www.lintcode.com/problem/maximum-subarray-ii  
+O    H                                   www.lintcode.com/problem/maximum-subarray-iii  
 O ===E  ================================ www.lintcode.com/problem/hash-function ========================================= Data Structure  
 O    M                                   www.lintcode.com/problem/top-k-largest-numbers  
 O    M                                   www.lintcode.com/problem/merge-k-sorted-arrays  
-     M                                   www.lintcode.com/problem/rehashing  
+O    M                                   www.lintcode.com/problem/rehashing  
 OK   M                                   www.lintcode.com/problem/implement-queue-by-two-stacks  
-     M                                   www.lintcode.com/problem/min-stack  
-     M                                   www.lintcode.com/problem/ugly-number-ii  
-O    H                                   www.lintcode.com/problem/lru-cache  
-     H                                   www.lintcode.com/problem/largest-rectangle-in-histogram  
-     E                                   www.lintcode.com/problem/implement-stack  
+O    M                                   www.lintcode.com/problem/min-stack  
+O    M                                   www.lintcode.com/problem/ugly-number-ii  
+OK   H                                   www.lintcode.com/problem/lru-cache  
+O    H                                   www.lintcode.com/problem/largest-rectangle-in-histogram  
+O    E                                   www.lintcode.com/problem/implement-stack  
 O    E                                   www.lintcode.com/problem/implement-stack-by-two-queues  
-     E                                   www.lintcode.com/problem/implement-queue-by-linked-list-ii  
+O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list-ii  
 O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list  
-     M                                   www.lintcode.com/problem/top-k-largest-numbers-ii  
-     M                                   www.lintcode.com/problem/stack-sorting  
-     M                                   www.lintcode.com/problem/top-k-frequent-words  
+O    M                                   www.lintcode.com/problem/top-k-largest-numbers-ii  
+O    M                                   www.lintcode.com/problem/stack-sorting  
+O    M                                   www.lintcode.com/problem/top-k-frequent-words  
 O    M                                   www.lintcode.com/problem/heapify  
-     M                                   www.lintcode.com/problem/longest-consecutive-sequence  
-     H                                   www.lintcode.com/problem/animal-shelter  
-     H                                   www.lintcode.com/problem/lfu-cache  
-     H                                   www.lintcode.com/problem/max-tree  
-OK===M ================================= www.lintcode.com/problem/subsets =========================================== Graph & Search & BackTracking 
-OK   M                                   www.lintcode.com/problem/subsets-ii  
-OK   M                                   www.lintcode.com/problem/permutations  
-OK   M                                   www.lintcode.com/problem/permutations-ii  
+O    M                                   www.lintcode.com/problem/longest-consecutive-sequence  
+O    H                                   www.lintcode.com/problem/animal-shelter  
+O    H                                   www.lintcode.com/problem/lfu-cache  
+O    H                                   www.lintcode.com/problem/max-tree  
+O    M                                   www.lintcode.com/problem/implement-three-stacks-by-single-array
+OK===M BackTracking ==================== www.lintcode.com/problem/subsets =========================================== Graph & Search & BackTracking 
+OK   M BackTracking                      www.lintcode.com/problem/subsets-ii  
+OK   M BackTracking                      www.lintcode.com/problem/permutations  
+OK   M BackTracking                      www.lintcode.com/problem/permutations-ii  
+O    M BackTracking                      www.lintcode.com/problem/palindrome-partitioning  
+OK   H BackTracking                      www.lintcode.com/problem/word-ladder-ii  
+OK   H BackTracking                      www.lintcode.com/problem/word-break-ii 跟permutation很像, 利用word-break来避免搜索不肯能的
+O    M BackTracking                      www.lintcode.com/problem/k-sum-ii  
+OK   M BackTracking                      langford-pairing
+O    M BackTracking                      www.lintcode.com/problem/combination-sum  
+OK   M BackTracking                      www.lintcode.com/problem/letter-combinations-of-a-phone-number StringBuilder.append() StrinbBuilder.deleteCharAt()
 O    M                                   www.lintcode.com/problem/clone-graph  
+OK   M                                   www.lintcode.com/problem/word-ladder  
 OK   M                                   www.lintcode.com/problem/six-degrees   
-O    M                                   www.lintcode.com/problem/palindrome-partitioning  
-O    M                                   www.lintcode.com/problem/combination-sum  
 O    M                                   www.lintcode.com/problem/topological-sorting  
 O    M                                   www.lintcode.com/problem/n-queens  
 O    M                                   www.lintcode.com/problem/n-queens-ii  
 O    M                                   www.lintcode.com/problem/string-permutation-ii  
-OK   M                                   www.lintcode.com/problem/word-ladder  
-OK   H                                   www.lintcode.com/problem/word-ladder-ii  
-OK   H  利用word-break来避免搜索不肯能的 www.lintcode.com/problem/word-break-ii 跟permutation很像, 属于dfs
-O    M                                   www.lintcode.com/problem/k-sum-ii  
 OK===E  UF  ============================ www.lintcode.com/problem/number-of-islands ===================================== UnionFind/Trie/SweepLine/Heap/HashHeep/Deque  
 O    H  UF                               www.lintcode.com/problem/number-of-islands-ii  
-O    M  UF                               www.lintcode.com/problem/graph-valid-tree  
+OK   M  UF                               www.lintcode.com/problem/graph-valid-tree  
 O    M  UF                               www.lintcode.com/problem/find-the-weak-connected-component-in-the-directed-graph  
 O    M  UF                               www.lintcode.com/problem/find-the-connected-component-in-the-undirected-graph  
 O    M  UF                               www.lintcode.com/problem/surrounded-regions  
@@ -175,20 +184,20 @@ O    M  SweepLine                        www.lintcode.com/problem/number-of-airp
 O    M  Trie                             www.lintcode.com/problem/add-and-search-word  
 O    M                                   www.lintcode.com/problem/word-search  
 O    H  Trie                             www.lintcode.com/problem/word-search-ii  
-     M  SegmentTree                      www.lintcode.com/problem/segment-tree-query-ii  
-     H                                   www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays  
-     H  SegmentTree                      www.lintcode.com/problem/count-of-smaller-number-before-itself  
-     H  SegmentTree                      www.lintcode.com/problem/interval-sum-ii  
-     H                                   www.lintcode.com/problem/trapping-rain-water-ii   
-     H                                   www.lintcode.com/problem/sliding-window-median  
-     H                                   www.lintcode.com/problem/data-stream-median  
-     S                                   www.lintcode.com/problem/building-outline  
-     S                                   www.lintcode.com/problem/sliding-window-maximum  
-     H                                   www.lintcode.com/problem/maximal-rectangle  
-     H                                   www.lintcode.com/problem/expression-tree-build  
-     H                                   www.lintcode.com/problem/convert-expression-to-reverse-polish-notation  
-     H                                   www.lintcode.com/problem/convert-expression-to-polish-notation  
-     H                                   www.lintcode.com/problem/expression-evaluation  
+O    M  SegmentTree                      www.lintcode.com/problem/segment-tree-query-ii  
+O    H                                   www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays  
+O    H  SegmentTree                      www.lintcode.com/problem/count-of-smaller-number-before-itself  
+O    H  SegmentTree                      www.lintcode.com/problem/interval-sum-ii  
+O    H                                   www.lintcode.com/problem/trapping-rain-water-ii   
+O    H                                   www.lintcode.com/problem/sliding-window-median  
+O    H                                   www.lintcode.com/problem/data-stream-median  
+O    S                                   www.lintcode.com/problem/building-outline  
+O    S                                   www.lintcode.com/problem/sliding-window-maximum  
+O    H                                   www.lintcode.com/problem/maximal-rectangle  
+O    H                                   www.lintcode.com/problem/expression-tree-build  
+O    H                                   www.lintcode.com/problem/convert-expression-to-reverse-polish-notation  
+O    H                                   www.lintcode.com/problem/convert-expression-to-polish-notation  
+O    H                                   www.lintcode.com/problem/expression-evaluation  
 OK===M  对撞型指针 2-sum类 ============= www.lintcode.com/problem/container-with-most-water ==================================== Two Pointers  
 OK   M  对撞型指针 2-sum类               www.lintcode.com/problem/trapping-rain-water  
 OK   M  对撞型指针 2-sum类               www.lintcode.com/problem/two-sum  
@@ -211,27 +220,30 @@ OK * M  前向型指针 窗口类                www.lintcode.com/problem/longes
 OK * M  前向型指针 窗口类                www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters  
 OK   M  两个数组两个指针                 www.lintcode.com/problem/the-smallest-difference 求两个数组A和B中任意两个元素的最小差值  
 OK   H  ????                             www.lintcode.com/problem/sliding-window-matrix-maximum 先求出sum[i][j]表示[i][j]位置的矩形和, 再利用sum数组遍历求k矩形最大值  
-  ===H================================== www.lintcode.com/problem/subarray-sum-ii ========================================== Follow Up  
-     M                                   www.lintcode.com/problem/submatrix-sum  
-     M                                   www.lintcode.com/problem/continuous-subarray-sum  
-     M                                   www.lintcode.com/problem/continuous-subarray-sum-ii  
-     M                                   www.lintcode.com/problem/kth-smallest-number-in-sorted-matrix  
+O ===H================================== www.lintcode.com/problem/subarray-sum-ii ========================================== Follow Up  
+O    M                                   www.lintcode.com/problem/submatrix-sum  
+O    M                                   www.lintcode.com/problem/continuous-subarray-sum  
+O    M                                   www.lintcode.com/problem/continuous-subarray-sum-ii  
+O    M                                   www.lintcode.com/problem/kth-smallest-number-in-sorted-matrix  
 O    H                                   www.lintcode.com/problem/find-peak-element-ii  
-     H                                   www.lintcode.com/problem/maximum-gap  
-     E                                   www.lintcode.com/problem/build-post-office  
-     M                                   www.lintcode.com/problem/build-post-office-ii  
-     E                                   www.lintcode.com/problem/nested-list-weight-sum  
+O    H                                   www.lintcode.com/problem/maximum-gap  
+O    E                                   www.lintcode.com/problem/build-post-office  
+O    M                                   www.lintcode.com/problem/build-post-office-ii  
+O    E                                   www.lintcode.com/problem/nested-list-weight-sum  
 O    M                                   www.lintcode.com/problem/bomb-enemy  
-     M                                   www.lintcode.com/problem/zigzag-iterator  
-     M                                   www.lintcode.com/problem/zigzag-iterator-ii  
-  ===E================================== www.lintcode.com/problem/climbing-stairs-ii ==================================== Selected Problems in Past Exam  
-     M                                   www.lintcode.com/problem/lowest-common-ancestor-iii  
-     M                                   www.lintcode.com/problem/find-the-missing-number-ii  
-     M                                   www.lintcode.com/problem/number-of-ways-to-represent-n-cents  
-  ===E================================== www.lintcode.com/problem/kth-largest-in-n-arrays =============================== Follow Up  
-     M                                   www.lintcode.com/problem/segment-tree-build  
-     M                                   www.lintcode.com/problem/segment-tree-build-ii  
-     M                                   www.lintcode.com/problem/segment-tree-modify  
-     M                                   www.lintcode.com/problem/segment-tree-query  
-     M                                   www.lintcode.com/problem/interval-minimum-number  
+O    M                                   www.lintcode.com/problem/zigzag-iterator  
+O    M                                   www.lintcode.com/problem/zigzag-iterator-ii  
+O ===E================================== www.lintcode.com/problem/climbing-stairs-ii ==================================== Selected Problems in Past Exam  
+O    M                                   www.lintcode.com/problem/lowest-common-ancestor-iii  
+O    M                                   www.lintcode.com/problem/find-the-missing-number-ii  
+O    M                                   www.lintcode.com/problem/number-of-ways-to-represent-n-cents  
+O ===E================================== www.lintcode.com/problem/kth-largest-in-n-arrays =============================== Follow Up  
+O    M                                   www.lintcode.com/problem/segment-tree-build  
+O    M                                   www.lintcode.com/problem/segment-tree-build-ii  
+O    M                                   www.lintcode.com/problem/segment-tree-modify  
+O    M                                   www.lintcode.com/problem/segment-tree-query  
+O    M                                   www.lintcode.com/problem/interval-minimum-number  
 OK===E  两层for搞定,注意for的范围        www.lintcode.com/problem/strstr ======================================================= Coding Style  
+OK===M  字符串操作                       www.lintcode.com/problem/roman-to-integer ============================================= Amazon
+OK   M  Greedy                           www.lintcode.com/problem/gas-station
+OK   M                                   www.leetcode.com/problems/product-of-array-except-self

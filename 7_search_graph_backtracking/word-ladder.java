@@ -72,7 +72,7 @@ dict = ["hot","dot","dog","lot","log"]
 As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
 return its length 5.
 Tags 
-LinkedIn Breadth First Search
+LinkedIn, Breadth First Search
 */
 
 /*
@@ -84,6 +84,7 @@ LeetCode中为数不多的考图的难题。
 1. 将每个单词看成图的一个节点。
 2. 当单词s1改变一个字符可以变成存在于字典的单词s2时，则s1与s2之间有连接。
 3. 给定s1和s2，问题I转化成了求在图中从s1->s2的最短路径长度。而问题II转化为了求所有s1->s2的最短路径。
+
 无论是求最短路径长度还是求所有最短路径, 都是用BFS. 在BFS中有三个关键步骤需要实现:
 1. 如何找到与当前节点相邻的所有节点.
 这里可以有两个策略：

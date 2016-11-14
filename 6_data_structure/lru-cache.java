@@ -12,7 +12,7 @@ public class Solution {
         }
     }
     private int capacity;
-    private HashMap<Integer, Node> hs = new HashMap<Integer, Node>(); //map
+    private HashMap<Integer, Node> map = new HashMap<Integer, Node>(); //map
     private Node head = new Node(-1, -1); //dummy, 其next指向lru
     private Node tail = new Node(-1, -1); //dummy, 其prev指向最近使用的node的
     
@@ -24,30 +24,30 @@ public class Solution {
 
     public void set(int key, int value) {
         if(get(key) != -1) { //值存在时直接更新
-            hs.get(key).value = value;
+            map.get(key).value = value;
             return;
         }
-        if(hs.size() == capacity) { //满了时先移除lru
-            hs.remove(head.next.key);
+        if(map.size() == capacity) { //满了时先移除lru
+            map.remove(head.next.key);
             head.next = head.next.next;
             head.next.prev = head;
         }
         Node insert = new Node(key, value);
-        hs.put(key, insert);
+        map.put(key, insert);
         move_to_tail(insert);
     }
 
     public int get(int key) {
-        if(!hs.containsKey(key)) {
+        if(!map.containsKey(key)) {
             return -1;
         }
         // remove current
-        Node current = hs.get(key);
+        Node current = map.get(key);
         current.prev.next = current.next;
         current.next.prev = current.prev;
         // move current to tail
         move_to_tail(current);
-        return hs.get(key).value;
+        return map.get(key).value;
     }
 
     private void move_to_tail(Node current) {
@@ -69,10 +69,10 @@ it should invalidate the least recently used item before inserting a new item.
 Tags 
 Linked List, Zenefits, Uber, Google
 
-用HashMap来存key和和其对应的node，便于之后检索key是否已经存在。
-用双向链表，便于操作数组中间的元素移动和删除。
-get()：如果key不存在，则返回－1；
-       如果key存在，则将该key对应的node移到链表尾部。
-set()：如果key存在，则将修改过value的该key对应node移到链表尾部；
-       如果key不存在，分两种情况：1）若chache已经达到其capacity，则删去链表第一个node（least recently used item），再加入该key的node；
-                                  2）若chache还没达到其capacity，则在链表尾部加入该key的node。
+用HashMap来存key和和其对应的node, 便于之后检索key是否已经存在.
+用双向链表,便于操作数组中间的元素移动和删除.
+get():如果key不存在, 则返回-1;
+      如果key存在, 则将该key对应的node移到链表尾部.
+set():如果key存在, 则将修改过value的该key对应node移到链表尾部;
+      如果key不存在, 分两种情况:1)若chache已经达到其capacity, 则删去链表第一个node（least recently used item）,再加入该key的node;
+                                2)若chache还没达到其capacity, 则在链表尾部加入该key的node.

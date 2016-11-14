@@ -17,7 +17,7 @@ public class Solution {
             }
             head = head.next;
         }
-        right.next = null;
+        right.next = null; //这句必须有哦, 要不然会有环产生
         left.next = rightDummy.next;
         return leftDummy.next;
     }

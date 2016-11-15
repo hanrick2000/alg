@@ -5,6 +5,12 @@
   4 图片caption模型(neuraltalk, show and tell)
   5 手机信令API处理平台
 
+
+
+
+
+
+
 1. Online Advertising Training System. 2015.1 - now
 I developed a distributed model training system. The model is used to predict Click Through Rate(CTR) of Adversiment. The system is based on Storm/Kafka-like infrastructure. The training data is generated via click/impression log and join with user/ads/context features(stored in distributed KV), then feed into one-pass(online) algorithm(FTRL) and periodically dump the model for serving. In order to equally placed the memory consumed component I developed custom scheduler of storm.
 2. Training Data Generation System. 2013.1 - 2014.12
@@ -13,8 +19,6 @@ The click/impression log first fill into distributed queuing system(Kafka-like),
 I designed and developed plenty of metric for monitoring task, for the model specific: Delay AUC, Realtime AUC, Loss, Misclassification-rate, model-size; for the system specific: memory-used, batch-process-time. This project initially base on Graphite. Then I expanded the monitoring system to include metric from Training Data Generation System and Online Advertising Training System and migrated it into another more featured monitoring system(dev by another team).
 4. Distributed Database Engine Optimizer 2012.6 - 2013.1
 I developed Bool Expression Analyzer which is the fundamental component of Optimizer in SQL compiler. I implemented the Quine McCluskey algorithm to generate conjunctive normal form(CNF) and use Petrick Method to get Minimal-CNF. Based on the bool expression analyzer, I developed Predicate PushDown Optimzer for logical plan. And I also developed Reduce Shuffling Optimzer for physical plan.
-
-
 
 
 

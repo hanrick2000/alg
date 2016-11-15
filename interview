@@ -1,15 +1,23 @@
-schedule:
-1109 amazon china
+schedule=========================
+1122 google 新加坡 phone screen
 
-contact:
+
+old==============================
+1109 amazon china           NO
+1116 hortonworks phone      YES
+
+
+contact==========================
 amazon jp
 amazon seatle
 microsoft seatle
 hulu beijing
 
-want:
+
+want=============================
 airbnb
-google
 facebook
 linkedin
+cloudera
+uber
 

@@ -1,8 +1,18 @@
+面经顺序:
 jiuzhang google
 lintcode google
 leetcode google
 一亩三分地 google
 
+查询的资料:
+The Algorithm Design Manual
+graph coloring
+merge sort/quick sort
+balanced binary tree: red/black, AVL tree
+*graph: object+pointer, matrix, adjacency list, pro and cons, DFS,BFS,tradeoff, Dijkstra, A*
+NP-complete problems: traveling salesman, knapsack problem, NP-complete means
+Math: n-choose-k problems, 
+OS: locks,mutexes,semaphores,monitors,deadlock,livelock,resources a processes/thread need, how context switching works,
 
 1 building process
 2 ood

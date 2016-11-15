@@ -102,3 +102,13 @@ boolean removeLastOccurrence(Object o)               | 删除从头部开始最�
 E set(int index, E element)                          | 更新指定位置元素
 Object[] toArray()                                   | 从头到尾转换成array
 <T> T[] toArray(T[] a)                               | 按照指定格式转换成array
+
+Mics
+     0123456
+str="1234567"
+str.substring(3,5) => "45" 是索引[3,5)之间的字符串
+Character.toLowerCase(s.charAt(front)) 
+Character.isLetter(c)
+Character.isDigit(c);
+Character.isLowerCase(c) 
+Character.isUpperCase(c) 

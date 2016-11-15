@@ -1,3 +1,6 @@
+45 % 585. Maximum Number in Mountain Sequence Medium
+32 % 584. Drop Eggs II Medium
+17 % 582. Word Break II 
 17 % 578. Lowest Common Ancestor III Medium
 30 % 575. Expression Expand Medium
 12 % 574. Build Post Office Easy
@@ -291,95 +294,95 @@
 46 % 102. Linked List Cycle Medium
 31 % 101. Remove Duplicates from Sorted Array II Easy
 32 % 100. Remove Duplicates from Sorted Array Easy
-23 % 99. Reorder List Medium
-29 % 98. Sort List Medium
-55 % 97. Maximum Depth of Binary Tree Easy
-31 % 96. Partition List Easy
-21 % 95. Validate Binary Search Tree Medium
-24 % 94. Binary Tree Maximum Path Sum Medium
-38 % 93. Balanced Binary Tree Easy
-23 % 92. Backpack Medium
-29 % 91. Minimum Adjustment Cost Medium
-34 % 90. k Sum II Medium
-23 % 89. k Sum Hard
-37 % 88. Lowest Common Ancestor Medium
-26 % 87. Remove Node in Binary Search Tree Hard
-34 % 86. Binary Search Tree Iterator Hard
-42 % 85. Insert Node in a Binary Search Tree Easy
-36 % 84. Single Number III Medium
-39 % 83. Single Number II Medium
-51 % 82. Single Number Easy
-27 % 81. Data Stream Median Hard
-23 % 80. Median Easy
-31 % 79. Longest Common Substring Medium
-28 % 78. Longest Common Prefix Medium
-39 % 77. Longest Common Subsequence Medium
-28 % 76. Longest Increasing Subsequence Medium
-48 % 75. Find Peak Element Medium
-34 % 74. First Bad Version Medium
-28 % 73. Construct Binary Tree from Preorder and Inorder Traversal Medium
-31 % 72. Construct Binary Tree from Inorder and Postorder Traversal Medium
-28 % 71. Binary Tree Zigzag Level Order Traversal Medium
-41 % 70. Binary Tree Level Order Traversal II Medium
-33 % 69. Binary Tree Level Order Traversal Medium
-40 % 68. Binary Tree Postorder Traversal Easy
-40 % 67. Binary Tree Inorder Traversal Easy
-41 % 66. Binary Tree Preorder Traversal Easy
-23 % 65. Median of two Sorted Arrays Hard
-33 % 64. Merge Sorted Array Easy
-40 % 63. Search in Rotated Sorted Array II Medium
-29 % 62. Search in Rotated Sorted Array Medium
-23 % 61. Search for a Range Medium
-29 % 60. Search Insert Position Easy
-30 % 59. 3Sum Closest Medium
-21 % 58. 4Sum Medium
-20 % 57. 3Sum Medium
-28 % 56. Two Sum Medium
-27 % 55. Compare Strings Easy
-14 % 54. String to Integer II Hard
-24 % 53. Reverse Words in a String Easy
-23 % 52. Next Permutation Medium
-26 % 51. Previous Permutation Medium
-26 % 50. Product of Array Exclude Itself Easy
-38 % 49. Sort Letters by Case Medium
-27 % 48. Majority Number III Medium
-30 % 47. Majority Number II Medium
-42 % 46. Majority Number Easy
-23 % 45. Maximum Subarray Difference Medium
-38 % 44. Minimum Subarray Easy
-23 % 43. Maximum Subarray III Hard
-25 % 42. Maximum Subarray II Medium
-38 % 41. Maximum Subarray Easy
-40 % 40. Implement Queue by Two Stacks Medium
-26 % 39. Recover Rotated Sorted Array Easy
-34 % 38. Search a 2D Matrix II Medium
-30 % 36. Reverse Linked List II Medium
-41 % 35. Reverse Linked List Easy
-39 % 34. N-Queens II Medium
-23 % 33. N-Queens Medium
-22 % 32. Minimum Window Substring Medium
-28 % 31. Partition Array Medium
-23 % 30. Insert Interval Easy
-26 % 29. Interleaving String Medium
-28 % 28. Search a 2D Matrix Easy
-16 % 24. LFU Cache Hard
-32 % 22. Flatten List Easy
-19 % 20. Dices Sum Hard
-23 % 18. Subsets II Medium
-25 % 17. Subsets Medium
-24 % 16. Permutations II Medium
-26 % 15. Permutations Medium
-33 % 14. First Position of Target Easy
-18 % 13. strStr Easy
-32 % 12. Min Stack Medium
-37 % 11. Search Range in Binary Search Tree Medium
-17 % 10. String Permutation II Medium
-78 % 9. Fizz Buzz Easy
-20 % 8. Rotate String Easy
-19 % 7. Binary Tree Serialization Medium
-36 % 6. Merge Two Sorted Arrays Easy
-24 % 5. Kth Largest Element Medium
-23 % 4. Ugly Number II Medium
-28 % 3. Digit Counts Medium
-28 % 2. Trailing Zeros Easy
-45 % 1. A + B Problem Easy
+23 % 099. Reorder List Medium
+29 % 098. Sort List Medium
+55 % 097. Maximum Depth of Binary Tree Easy
+31 % 096. Partition List Easy
+21 % 095. Validate Binary Search Tree Medium
+24 % 094. Binary Tree Maximum Path Sum Medium
+38 % 093. Balanced Binary Tree Easy
+23 % 092. Backpack Medium
+29 % 091. Minimum Adjustment Cost Medium
+34 % 090. k Sum II Medium
+23 % 089. k Sum Hard
+37 % 088. Lowest Common Ancestor Medium
+26 % 087. Remove Node in Binary Search Tree Hard
+34 % 086. Binary Search Tree Iterator Hard
+42 % 085. Insert Node in a Binary Search Tree Easy
+36 % 084. Single Number III Medium
+39 % 083. Single Number II Medium
+51 % 082. Single Number Easy
+27 % 081. Data Stream Median Hard
+23 % 080. Median Easy
+31 % 079. Longest Common Substring Medium
+28 % 078. Longest Common Prefix Medium
+39 % 077. Longest Common Subsequence Medium
+28 % 076. Longest Increasing Subsequence Medium
+48 % 075. Find Peak Element Medium
+34 % 074. First Bad Version Medium
+28 % 073. Construct Binary Tree from Preorder and Inorder Traversal Medium
+31 % 072. Construct Binary Tree from Inorder and Postorder Traversal Medium
+28 % 071. Binary Tree Zigzag Level Order Traversal Medium
+41 % 070. Binary Tree Level Order Traversal II Medium
+33 % 069. Binary Tree Level Order Traversal Medium
+40 % 068. Binary Tree Postorder Traversal Easy
+40 % 067. Binary Tree Inorder Traversal Easy
+41 % 066. Binary Tree Preorder Traversal Easy
+23 % 065. Median of two Sorted Arrays Hard
+33 % 064. Merge Sorted Array Easy
+40 % 063. Search in Rotated Sorted Array II Medium
+29 % 062. Search in Rotated Sorted Array Medium
+23 % 061. Search for a Range Medium
+29 % 060. Search Insert Position Easy
+30 % 059. 3Sum Closest Medium
+21 % 058. 4Sum Medium
+20 % 057. 3Sum Medium
+28 % 056. Two Sum Medium
+27 % 055. Compare Strings Easy
+14 % 054. String to Integer II Hard
+24 % 053. Reverse Words in a String Easy
+23 % 052. Next Permutation Medium
+26 % 051. Previous Permutation Medium
+26 % 050. Product of Array Exclude Itself Easy
+38 % 049. Sort Letters by Case Medium
+27 % 048. Majority Number III Medium
+30 % 047. Majority Number II Medium
+42 % 046. Majority Number Easy
+23 % 045. Maximum Subarray Difference Medium
+38 % 044. Minimum Subarray Easy
+23 % 043. Maximum Subarray III Hard
+25 % 042. Maximum Subarray II Medium
+38 % 041. Maximum Subarray Easy
+40 % 040. Implement Queue by Two Stacks Medium
+26 % 039. Recover Rotated Sorted Array Easy
+34 % 038. Search a 2D Matrix II Medium
+30 % 036. Reverse Linked List II Medium
+41 % 035. Reverse Linked List Easy
+39 % 034. N-Queens II Medium
+23 % 033. N-Queens Medium
+22 % 032. Minimum Window Substring Medium
+28 % 031. Partition Array Medium
+23 % 030. Insert Interval Easy
+26 % 029. Interleaving String Medium
+28 % 028. Search a 2D Matrix Easy
+16 % 024. LFU Cache Hard
+32 % 022. Flatten List Easy
+19 % 020. Dices Sum Hard
+23 % 018. Subsets II Medium
+25 % 017. Subsets Medium
+24 % 016. Permutations II Medium
+26 % 015. Permutations Medium
+33 % 014. First Position of Target Easy
+18 % 013. strStr Easy
+32 % 012. Min Stack Medium
+37 % 011. Search Range in Binary Search Tree Medium
+17 % 010. String Permutation II Medium
+78 % 009. Fizz Buzz Easy
+20 % 008. Rotate String Easy
+19 % 007. Binary Tree Serialization Medium
+36 % 006. Merge Two Sorted Arrays Easy
+24 % 005. Kth Largest Element Medium
+23 % 004. Ugly Number II Medium
+28 % 003. Digit Counts Medium
+28 % 002. Trailing Zeros Easy
+45 % 001. A + B Problem Easy

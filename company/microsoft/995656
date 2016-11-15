@@ -1,0 +1,23 @@
+Job #
+995656
+Locations
+United States, Bellevue (WA)
+Job families
+Development (engineering)
+Teams
+Bing
+
+Software Engineer
+As part of Bing Live Site Engineering Team, we work to measure and improve availability, resiliency, reliability, capacity and supportability across all Bing services. Bing engineers develop and support large scale services, serving billions of transactions a day and leveraging a modern, resilient platform to deliver highly reliable services to millions of daily users. One of our goals is to improve the end-user and partner experience by working across Bing to ensure the services provide the right level of performance and resiliency. 
+
+Key Responsibilities:
+This position requires development and maintenance of infrastructure that processes Bing data at scale of big data and produces metrics for Bing and partners. We build automation that processes large amount of data and detect anomalies or find issues. Live site infrastructure is developed and hosted on Azure, Microsoft’s Hadoop and needs to meet high availability 24x7 and produce accurate metrics for official reporting. We employ complex analysis of high-volume, high-dimensionality data from varying sources using a variety of tools. 
+
+Requirements:
+• 2+ years of product development experience in C#/C++, SQL 
+• A Bachelor’s degree in Computer Science or related field.
+• Excellent communication and collaboration skills.
+• Experience with distributed systems, and exposure to Azure, AWS, Google cloud is a plus. 
+• Experience with working with big data and data mining is a plus.
+
+Microsoft is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, sex, sexual orientation, gender identity or expression, religion, national origin or ancestry, age, disability, marital status, pregnancy, protected veteran status, protected genetic information, political affiliation, or any other characteristics protected by local laws, regulations, or ordinances.

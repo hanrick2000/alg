@@ -1,0 +1,10 @@
+The Algorithm Design Manual
+graph coloring
+merge sort/quick sort
+balanced binary tree: red/black, AVL tree
+*graph: object+pointer, matrix, adjacency list, pro and cons, DFS,BFS,tradeoff, Dijkstra, A*
+NP-complete problems: traveling salesman, knapsack problem, NP-complete means
+Math: n-choose-k problems, 
+OS: locks,mutexes,semaphores,monitors,deadlock,livelock,resources a processes/thread need, how context switching works,
+
+

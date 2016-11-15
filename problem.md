@@ -120,14 +120,14 @@ O    M                                   www.lintcode.com/problem/add-two-number
 O    E                                   www.lintcode.com/problem/nth-to-last-node-in-list  
 O    M                                   www.lintcode.com/problem/swap-two-nodes-in-linked-list  
 O    M                                   www.lintcode.com/problem/palindrome-linked-list  
-O ===E  ================================ www.lintcode.com/problem/intersection-of-two-arrays ============================ Array&Numbers  
+OK===E  ================================ www.lintcode.com/problem/intersection-of-two-arrays ============================ Array&Numbers  
+OK   E                                   www.lintcode.com/problem/merge-two-sorted-arrays  
+OK   E                                   www.lintcode.com/problem/merge-sorted-array 把B合并进A, 从后向前合并即可 
+OK   H                                   www.lintcode.com/problem/median-of-two-sorted-arrays 转化成找有序数列中的第k个数, log(m+n)的复杂度
 O    E                                   www.lintcode.com/problem/subarray-sum  
-O    E                                   www.lintcode.com/problem/merge-sorted-array  
 O    M                                   www.lintcode.com/problem/two-sum-closest  
 O    M                                   www.lintcode.com/problem/subarray-sum-closest  
-O    H                                   www.lintcode.com/problem/median-of-two-sorted-arrays  
 O    E                                   www.lintcode.com/problem/minimum-subarray  
-OK   E                                   www.lintcode.com/problem/merge-two-sorted-arrays  
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii  
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
 O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock  
@@ -167,6 +167,8 @@ O    M BackTracking                      www.lintcode.com/problem/k-sum-ii
 OK   M BackTracking                      langford-pairing
 O    M BackTracking                      www.lintcode.com/problem/combination-sum  
 OK   M BackTracking                      www.lintcode.com/problem/letter-combinations-of-a-phone-number StringBuilder.append() StrinbBuilder.deleteCharAt()
+OK   M BFS 图                            evaluate-division
+OK   M DFS                               battleships-in-a-board
 O    M                                   www.lintcode.com/problem/clone-graph  
 OK   M                                   www.lintcode.com/problem/word-ladder  
 OK   M                                   www.lintcode.com/problem/six-degrees   
@@ -247,3 +249,6 @@ OK===E  两层for搞定,注意for的范围        www.lintcode.com/problem/strst
 OK===M  字符串操作                       www.lintcode.com/problem/roman-to-integer ============================================= Amazon
 OK   M  Greedy                           www.lintcode.com/problem/gas-station
 OK   M                                   www.leetcode.com/problems/product-of-array-except-self
+OK   M  模拟题                           design-snake-game ===================================================================== Google
+                                         
+

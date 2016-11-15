@@ -1,9 +1,8 @@
-// version 1: sort & merge
+// version 1: sort & merge nlog(n)
 public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
-        
         int i = 0, j = 0;
         int[] temp = new int[nums1.length];
         int index = 0;
@@ -20,18 +19,15 @@ public class Solution {
                 j++;
             }
         }
-        
         int[] result = new int[index];
         for (int k = 0; k < index; k++) {
             result[k] = temp[k];
         }
-        
         return result;
     }
 }
 
-// version 2: hash map
-/*
+// version 2: hash map O(n)
 public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         if (nums1 == null || nums2 == null) {
@@ -60,10 +56,8 @@ public class Solution {
         return result;
     }
 }
-*/
 
-// version 3: sort & binary search
-/*
+// version 3: sort & binary search, nlog(n)
 public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         if (nums1 == null || nums2 == null) {
@@ -119,17 +113,12 @@ public class Solution {
         return false;
     }
 }
-*/
 
 Given two arrays, write a function to compute their intersection.
-
- Notice
-
-Each element in the result must be unique.
-The result can be in any order.
-Have you met this question in a real interview? Yes
+Notice
+1 Each element in the result must be unique.
+2 The result can be in any order.
 Example
 Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
-
 Challenge 
 Can you implement it in three different algorithms?

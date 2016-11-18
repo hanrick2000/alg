@@ -93,6 +93,9 @@ O    H                                   www.lintcode.com/problem/post-office-pr
 O    H                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iv  
 OK   E                                   www.lintcode.com/problem/drop-eggs
 OK   M                                   www.lintcode.com/problem/drop-eggs-ii
+OK   M  数学归纳法                       www.leetcode.com/problems/count-numbers-with-unique-digits
+O    E                                   www.lintcode.com/problem/count-and-say
+O    H  两个状态的坐标DP                 www.leetcode.com/problems/frog-jump
 OK===M  使用dummy 如果head.next的值和=== www.lintcode.com/problem/remove-duplicates-from-sorted-list-ii head.next.next的值相等, 那么记录这个值, 循环删除所有等于这个值的node========== LinkedList  
 OK   E  用HashSet记录访问过的node, dummy www.lintcode.com/problem/remove-duplicates-from-unsorted-list 用了dummy的, while都是判断head.next不为空  
 OK   E                                   www.lintcode.com/problem/remove-duplicates-from-sorted-list node指向head,如果node.next不为空,那么判断下node的值和node.next的值是否相等,相等就删掉node.next  
@@ -167,7 +170,7 @@ O    M BackTracking                      www.lintcode.com/problem/k-sum-ii
 OK   M BackTracking                      langford-pairing
 O    M BackTracking                      www.lintcode.com/problem/combination-sum  
 OK   M BackTracking                      www.lintcode.com/problem/letter-combinations-of-a-phone-number StringBuilder.append() StrinbBuilder.deleteCharAt()
-OK   M BFS 图                            evaluate-division
+OK   M BFS 图                            www.leetcode.com/problems/evaluate-division
 OK   M DFS                               battleships-in-a-board
 O    M                                   www.lintcode.com/problem/clone-graph  
 OK   M                                   www.lintcode.com/problem/word-ladder  
@@ -245,10 +248,120 @@ O    M                                   www.lintcode.com/problem/segment-tree-b
 O    M                                   www.lintcode.com/problem/segment-tree-modify  
 O    M                                   www.lintcode.com/problem/segment-tree-query  
 O    M                                   www.lintcode.com/problem/interval-minimum-number  
-OK===E  两层for搞定,注意for的范围        www.lintcode.com/problem/strstr ======================================================= Coding Style  
-OK===M  字符串操作                       www.lintcode.com/problem/roman-to-integer ============================================= Amazon
-OK   M  Greedy                           www.lintcode.com/problem/gas-station
+OK   E 两层for搞定,注意for的范围         www.lintcode.com/problem/strstr ======================================================= Mics
+OK   M 字符串操作                        www.lintcode.com/problem/roman-to-integer 
+OK   M Greedy                            www.lintcode.com/problem/gas-station
 OK   M                                   www.leetcode.com/problems/product-of-array-except-self
-OK   M  模拟题                           design-snake-game ===================================================================== Google
-                                         
+OK   M 模拟题                            www.leetcode.com/problems/design-snake-game 
+OK   M 使用stack记录当前层的最大路径长   www.leetcode.com/problems/longest-absolute-file-path
+OK   M                                   www.leetcode.com/problems/sentence-screen-fitting 把sentence重复拼接
+OK   M                                   www.leetcode.com/problems/binary-tree-longest-consecutive-sequence 求tree上的最长连续序列(3-4-5这样的才叫consecutive, 而且本体要求是升序的)
+OK   M                                   www.leetcode.com/problems/missing-ranges
+OK   E                                   www.leetcode.com/problems/add-strings/ 利用carry记录进位, 从num1和num2的最低位开始相加, 逐个append到StringBuilder中
+OK   E                                   www.leetcode.com/problems/binary-tree-paths/
+OK   E                                   www.leetcode.com/problems/binary-watch/ 使用Integer.bitCount(i)来看i对应的二进制有多少个1, 然后用String.format("%d:%02d", i, j)来打印
+OK   E                                   www.leetcode.com/problems/closest-binary-search-tree-value/
 
+     E                                   www.leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+     E                                   www.leetcode.com/problems/find-the-difference/
+     E                                   www.leetcode.com/problems/flip-game/
+     E                                   www.leetcode.com/problems/group-shifted-strings/
+     E                                   www.leetcode.com/problems/guess-number-higher-or-lower/
+     E                                   www.leetcode.com/problems/logger-rate-limiter/
+O    E                                   www.leetcode.com/problems/longest-palindrome/
+     E                                   www.leetcode.com/problems/nth-digit/
+     E                                   www.leetcode.com/problems/number-of-boomerangs/
+     E                                   www.leetcode.com/problems/paint-fence/
+     E                                   www.leetcode.com/problems/palindrome-permutation/
+O    E                                   www.leetcode.com/problems/plus-one/
+     E                                   www.leetcode.com/problems/power-of-three/
+     E                                   www.leetcode.com/problems/power-of-two/
+     E                                   www.leetcode.com/problems/repeated-substring-pattern/
+O    E                                   www.leetcode.com/problems/reverse-vowels-of-a-string/
+     E                                   www.leetcode.com/problems/strobogrammatic-number/
+     E                                   www.leetcode.com/problems/unique-word-abbreviation/
+O    E                                   www.leetcode.com/problems/valid-parentheses/
+O    E                                   www.leetcode.com/problems/valid-word-abbreviation/
+     E                                   www.leetcode.com/problems/valid-word-square/
+     M                                   www.leetcode.com/problems/3sum-smaller/
+     M                                   www.leetcode.com/problems/android-unlock-patterns/
+     M                                   www.leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+     M                                   www.leetcode.com/problems/binary-tree-vertical-order-traversal/
+     M                                   www.leetcode.com/problems/combination-sum-iv/
+     M                                   www.leetcode.com/problems/decode-string/
+     M                                   www.leetcode.com/problems/design-hit-counter/
+     M                                   www.leetcode.com/problems/design-phone-directory/
+     M                                   www.leetcode.com/problems/design-tic-tac-toe/
+     M                                   www.leetcode.com/problems/encode-and-decode-strings/
+     M                                   www.leetcode.com/problems/find-k-pairs-with-smallest-sums/
+     M                                   www.leetcode.com/problems/flatten-2d-vector/
+     M                                   www.leetcode.com/problems/flatten-nested-list-iterator/
+O    M                                   www.leetcode.com/problems/flip-game-ii/
+     M                                   www.leetcode.com/problems/fraction-to-recurring-decimal/
+     M                                   www.leetcode.com/problems/game-of-life/
+     M                                   www.leetcode.com/problems/generalized-abbreviation/
+O    M                                   www.leetcode.com/problems/generate-parentheses/
+     M                                   www.leetcode.com/problems/guess-number-higher-or-lower-ii/
+     M                                   www.leetcode.com/problems/h-index/
+     M                                   www.leetcode.com/problems/implement-trie-prefix-tree/
+     M                                   www.leetcode.com/problems/integer-replacement/
+     M                                   www.leetcode.com/problems/kth-smallest-element-in-a-bst/
+O    M                                   www.leetcode.com/problems/largest-divisible-subset/
+O    M                                   www.leetcode.com/problems/line-reflection/
+     M                                   www.leetcode.com/problems/linked-list-random-node/
+     M                                   www.leetcode.com/problems/maximum-product-of-word-lengths/
+     M                                   www.leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/
+O    M                                   www.leetcode.com/problems/meeting-rooms-ii/
+     M                                   www.leetcode.com/problems/minimum-height-trees/
+O    M                                   www.leetcode.com/problems/next-permutation/
+     M                                   www.leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+     M                                   www.leetcode.com/problems/pacific-atlantic-water-flow/
+     M                                   www.leetcode.com/problems/peeking-iterator/
+O    M                                   www.leetcode.com/problems/perfect-squares/
+     M                                   www.leetcode.com/problems/plus-one-linked-list/
+O    M                                   www.leetcode.com/problems/powx-n/
+     M                                   www.leetcode.com/problems/queue-reconstruction-by-height/
+     M                                   www.leetcode.com/problems/range-addition/
+O    M                                   www.leetcode.com/problems/reconstruct-itinerary/
+     M                                   www.leetcode.com/problems/remove-k-digits/
+     M                                   www.leetcode.com/problems/sequence-reconstruction/
+     M                                   www.leetcode.com/problems/sort-characters-by-frequency/
+     M                                   www.leetcode.com/problems/sort-transformed-array/
+O    M                                   www.leetcode.com/problems/spiral-matrix/
+     M                                   www.leetcode.com/problems/strobogrammatic-number-ii/
+     M                                   www.leetcode.com/problems/summary-ranges/
+O    M                                   www.leetcode.com/problems/super-ugly-number/
+     M                                   www.leetcode.com/problems/utf-8-validation/
+O    M                                   www.leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/
+     M                                   www.leetcode.com/problems/walls-and-gates/
+O    M                                   www.leetcode.com/problems/wiggle-sort-ii/
+O    M                                   www.leetcode.com/problems/wiggle-sort/
+O    H                                   www.leetcode.com/problems/alien-dictionary/
+     H                                   www.leetcode.com/problems/basic-calculator/
+     H                                   www.leetcode.com/problems/closest-binary-search-tree-value-ii/
+     H                                   www.leetcode.com/problems/count-of-range-sum/
+     H                                   www.leetcode.com/problems/count-of-smaller-numbers-after-self/
+O    H                                   www.leetcode.com/problems/create-maximum-number/
+     H                                   www.leetcode.com/problems/expression-add-operators/
+     H                                   www.leetcode.com/problems/find-median-from-data-stream/
+     H                                   www.leetcode.com/problems/insert-delete-getrandom-o1/
+O    H                                   www.leetcode.com/problems/insert-interval/
+     H                                   www.leetcode.com/problems/longest-increasing-path-in-a-matrix/
+     H                                   www.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
+     H                                   www.leetcode.com/problems/max-sum-of-sub-matrix-no-larger-than-k/
+O    H                                   www.leetcode.com/problems/merge-intervals/
+     H                                   www.leetcode.com/problems/minimum-unique-word-abbreviation/
+     H                                   www.leetcode.com/problems/palindrome-pairs/
+     H                                   www.leetcode.com/problems/patching-array/
+     H                                   www.leetcode.com/problems/perfect-rectangle/
+     H                                   www.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
+     H                                   www.leetcode.com/problems/rearrange-string-k-distance-apart/
+O    H                                   www.leetcode.com/problems/regular-expression-matching/
+     H                                   www.leetcode.com/problems/remove-duplicate-letters/
+     H                                   www.leetcode.com/problems/russian-doll-envelopes/
+     H                                   www.leetcode.com/problems/shortest-distance-from-all-buildings/
+O    H                                   www.leetcode.com/problems/shortest-palindrome/
+     H                                   www.leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/
+     H                                   www.leetcode.com/problems/the-skyline-problem/
+O    H                                   www.leetcode.com/problems/word-search-ii/
+     H                                   www.leetcode.com/problems/word-squares/

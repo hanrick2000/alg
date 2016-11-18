@@ -131,18 +131,17 @@ public class Solution {
     }
 }
 
+/*
 Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
 How we serialize an undirected graph:
 Nodes are labeled uniquely.
 We use '#' as a separator for each node, and ',' as a separator for node label and each neighbor of the node.
 
 As an example, consider the serialized graph {0,1,2#1,2#2,2}.
-
 The graph has a total of three nodes, and therefore contains three parts as separated by #.
-
-First node is labeled as 0. Connect node 0 to both nodes 1 and 2.
-Second node is labeled as 1. Connect node 1 to node 2.
-Third node is labeled as 2. Connect node 2 to node 2 (itself), thus forming a self-cycle.
+1 First node is labeled as 0. Connect node 0 to both nodes 1 and 2.
+2 Second node is labeled as 1. Connect node 1 to node 2.
+3 Third node is labeled as 2. Connect node 2 to node 2 (itself), thus forming a self-cycle.
 Visually, the graph looks like the following:
 
    1
@@ -151,6 +150,7 @@ Visually, the graph looks like the following:
 0 --- 2
      / \
      \_/
+*/
 
 
 /*
@@ -165,3 +165,11 @@ Visually, the graph looks like the following:
  * };
  */
 
+
+要clone所有点和边，首先想到的是BFS。
+BFS:
+1) 首先用BFS遍历所有的点，同时复制。
+BFS用一个链表实现，待复制的点进入链表，同时用一个HashMap保存该原始点和其对应的复制点，
+出链表时将其neighbor加入链表，其中若neighbor已经进入过链表（用HashMap查询），则不重复进入。
+2) 再复制所有的边。遍历BFS链表中每一个点，同时取出HashMap中该点对应的复制点，将该点neighbor对应的复制点全部加入对应复制点的neighbor。
+也可以用DFS实现。方法与BFS类似，先遍历所有点并复制，再复制所有边（neighbor）。遍历时采用DFS搜索。

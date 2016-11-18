@@ -20,3 +20,30 @@ OS: locks,mutexes,semaphores,monitors,deadlock,livelock,resources a processes/th
 4 design pattern
 4 heron
 5 tensorflow
+
+面试前知识点自检
+以java为例
+数据结构：
+array数组
+arraylist动态数组
+linkedlist链表（单向，双向）
+string, string builder, string buffer, 字符串相关
+hashtable, hashmap, hashset，哈希
+binary tree二叉树
+stack 和 queue
+priorityqueue优先队列
+Trie 字典树/前缀树
+难一点的: 线段树segment tree，linkedHashMap链表哈希， hashheap
+算法：
+排序：merge sort, quick sort, heap sort，他们的平均时间复杂度和最坏时间复杂度
+搜索类：BFS和DFS，宽度优先搜索和深度优先搜索。
+什么时候用BFS，什么时候用DFS？他们的作用？
+难一点的：dijkstra算法，union find并查集，扫描线算法，拓扑排序
+其他CS基本概念:
+JAVA里什么是garbage collection
+什么是mutex，什么是死锁
+什么是多线程？
+singleton design pattern，单例设计模式
+factory design pattern，工厂设计模式
+什么是final? final可以用在什么地方
+什么是哈希？

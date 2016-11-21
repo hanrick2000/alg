@@ -1,31 +1,57 @@
-/**
- * Definition for Undirected graph.
- * class UndirectedGraphNode {
- *     int label;
- *     ArrayList<UndirectedGraphNode> neighbors;
- *     UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
- * };
- */
-// 并查集方法
 public class Solution {
+    public List<List<Integer> > connectedSet(ArrayList<UndirectedGraphNode> nodes){
+        HashSet<Integer> hashSet = new HashSet<Integer>(); //先构造并查集
+        for (UndirectedGraphNode node: nodes) {
+            hashSet.add(node.label);
+            for (UndirectedGraphNode neighbour : node.neighbors) {
+                hashSet.add(neighbour.label);
+            }
+        }
+        UnionFind uf = new UnionFind(hashSet); 
+        for (UndirectedGraphNode node: nodes) {
+            for (UndirectedGraphNode neighbour : node.neighbors) {
+                int father = uf.find(node.label);
+                int neighbourFather= uf.find(neighbour.label);
+                if (father != neighbourFather) {
+                    uf.union(node.label, neighbour.label);
+                }
+            }
+        }
+        return print(hashSet, uf, nodes.size());
+    }
+    private List<List<Integer>> print(HashSet<Integer> hashSet, UnionFind uf, int n) {
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        HashMap<Integer, List<Integer>> hashMap = new HashMap<Integer, List<Integer>>();
+        for (int i : hashSet) {
+            int fa = uf.find(i);
+            if (!hashMap.containsKey(fa)) {
+                hashMap.put(fa, new ArrayList<Integer>());
+            }
+            List<Integer> connected = hashMap.get(fa);
+            connected.add(i);
+            hashMap.put(fa, connected);
+        }
+        for (List<Integer> now : hashMap.values()) {
+            Collections.sort(now);
+            result.add(now);
+        }
+        return result;
+    }
     class UnionFind {
         HashMap<Integer, Integer> father = new HashMap<Integer, Integer>();
-        UnionFind(HashSet<Integer> hashSet)
-        {
+        public UnionFind(HashSet<Integer> hashSet){
             for (Integer now : hashSet) {
                 father.put(now, now);
             }
         }
-        int find(int x)
-        {
+        public int find(int x){
             int parent = father.get(x);
             while (parent != father.get(parent)) {
                 parent = father.get(parent);
             }
             return parent;
         }
-        int compressed_find(int x)
-        {
+        int compressed_find(int x){
             int parent = father.get(x);
             while (parent != father.get(parent)) {
                 parent = father.get(parent);
@@ -38,61 +64,13 @@ public class Solution {
             }
             return parent;
         }
-
-        void union(int x, int y)
-        {
+        void union(int x, int y){
             int fa_x = find(x);
             int fa_y = find(y);
-            if (fa_x != fa_y)
+            if (fa_x != fa_y){
                 father.put(fa_x, fa_y);
-        }
-    }
-    
-    List<List<Integer> > print(HashSet<Integer> hashSet, UnionFind uf, int n) {
-        List<List<Integer> > ans = new ArrayList<List<Integer> >();
-        HashMap<Integer, List<Integer> > hashMap = new HashMap<Integer, List<Integer> >();
-        for (int i : hashSet) {
-            int fa = uf.find(i);
-            if (!hashMap.containsKey(fa)) {
-                hashMap.put(fa, new ArrayList<Integer>());
-            }
-            List<Integer> now = hashMap.get(fa);
-            now.add(i);
-            hashMap.put(fa, now);
-        }
-        for (List<Integer> now : hashMap.values()) {
-            Collections.sort(now);
-            ans.add(now);
-        }
-        return ans;
-    }
-
-public
-    List<List<Integer> > connectedSet(ArrayList<UndirectedGraphNode> nodes)
-    {
-        // Write your code here
-
-        HashSet<Integer> hashSet = new HashSet<Integer>();
-        for (UndirectedGraphNode now : nodes) {
-            hashSet.add(now.label);
-            for (UndirectedGraphNode neighbour : now.neighbors) {
-                hashSet.add(neighbour.label);
             }
         }
-        UnionFind uf = new UnionFind(hashSet);
-
-        for (UndirectedGraphNode now : nodes) {
-
-            for (UndirectedGraphNode neighbour : now.neighbors) {
-                int fnow = uf.find(now.label);
-                int fneighbour = uf.find(neighbour.label);
-                if (fnow != fneighbour) {
-                    uf.union(now.label, neighbour.label);
-                }
-            }
-        }
-
-        return print(hashSet, uf, nodes.size());
     }
 }
 
@@ -102,42 +80,32 @@ public
 public class Solution {
     public List<List<Integer>> connectedSet(ArrayList<UndirectedGraphNode> nodes) {
         // Write your code here
-        
-        int m = nodes.size();
-        Map<UndirectedGraphNode, Boolean> visited = new HashMap<>();
-        
-       for (UndirectedGraphNode node : nodes){
-            visited.put(node, false);
-       }
-        
-        List<List<Integer>> result = new ArrayList<>();
-        
-        for (UndirectedGraphNode node : nodes){
-            if (visited.get(node) == false){
-                bfs(node, visited, result);
+        HashSet<UndirectedGraphNode> set = new HashSet<UndirectedGraphNode>();
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        for(UndirectedGraphNode node : nodes){
+            if(!set.contains(node)){
+                bfs(node, set, result);
             }
         }
-        
         return result;
     }
-    public void bfs(UndirectedGraphNode node, Map<UndirectedGraphNode, Boolean> visited, List<List<Integer>> result){
-        List<Integer>row = new ArrayList<>();
-        Queue<UndirectedGraphNode> queue = new LinkedList<>();
-        visited.put(node, true);
+    private void bfs(UndirectedGraphNode node, HashSet<UndirectedGraphNode> set, List<List<Integer>> result){
+        List<Integer> connected = new ArrayList<Integer>();
+        Queue<UndirectedGraphNode> queue = new LinkedList<UndirectedGraphNode>();
         queue.offer(node);
-        while (!queue.isEmpty()){
-            UndirectedGraphNode u = queue.poll();
-            row.add(u.label);    
-            for (UndirectedGraphNode v : u.neighbors){
-                if (visited.get(v) == false){
-                    visited.put(v, true);
-                    queue.offer(v);
+        set.add(node);
+        while(!queue.isEmpty()){
+            UndirectedGraphNode n = queue.poll();
+            connected.add(n.label);
+            for(UndirectedGraphNode neighbor : n.neighbors){
+                if(!set.contains(neighbor)){
+                    set.add(neighbor);
+                    queue.offer(neighbor);
                 }
             }
         }
-        Collections.sort(row);
-        result.add(row);
-        
+        Collections.sort(connected);
+        result.add(connected);
     }
 }
 

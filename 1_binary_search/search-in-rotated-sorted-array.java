@@ -9,17 +9,17 @@ public class Solution {
             int mid = start + (end - start) / 2;
             if (A[mid] == target) {
                 return mid;
-            } else if (A[mid] > A[start]) { //说明start到mid之间有序, 关键点是确定target在不在已知有序的地方
-                if (A[start] <= target && target <= A[mid]) {
-                    end = mid;
-                } else {
-                    start = mid;
-                }
-            } else { //说明mid 到 end之间有序
+            } else if (A[mid] < A[end]) { //说明mid到end之间有序, 关键点是确定target在不在已知有序的地方
                 if (A[mid] <= target && target <= A[end]) {
                     start = mid;
                 } else {
                     end = mid;
+                }
+            } else { //说明start 到 mid之间有序
+                if (A[start] <= target && target <= A[mid]) {
+                    end = mid;
+                } else {
+                    start = mid;
                 }
             }
         }

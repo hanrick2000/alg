@@ -15,7 +15,7 @@ public class Solution {
         ListNode premNode = head;
         ListNode mNode = head.next;
         ListNode nNode = mNode;
-        ListNode postnNode = nNode.next;
+        ListNode postnNode = nNode.next; //不断移动nNode和postnNode
         for (int i = m; i < n; i++) { //对比reverse-linked-list-i, postnNode相当于head, nNode相当于preNode
             if (postnNode == null) {
                 return null;

@@ -24,6 +24,7 @@ public class Solution {
     private ArrayList<UndirectedGraphNode> getNodes(UndirectedGraphNode node) {
         Queue<UndirectedGraphNode> queue = new LinkedList<UndirectedGraphNode>();
         HashSet<UndirectedGraphNode> set = new HashSet<>();
+        queue.offer(node);
         set.add(node);
         while (!queue.isEmpty()) {
             UndirectedGraphNode head = queue.poll();

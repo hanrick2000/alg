@@ -32,6 +32,7 @@ public class Solution {
     }
 }
 
+/*
 start end mid count
 1     456 228 <7
 1     228 114 >=7
@@ -45,6 +46,7 @@ start end mid count
 start = 114
 end = 115
 最后要测试114和115那个满足条件
+*/
 
 /*
 Given n pieces of wood with length L[i] (integer array). 

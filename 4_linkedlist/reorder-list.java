@@ -1,21 +1,5 @@
-/**
- * Definition for ListNode.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int val) {
- *         this.val = val;
- *         this.next = null;
- *     }
- * }
- */ 
 public class Solution {
-    /**
-     * @param head: The head of linked list.
-     * @return: void
-     */
     public void reorderList(ListNode head) {  
-        // write your code here
         if(head == null){
             return;
         }
@@ -67,9 +51,11 @@ public class Solution {
     }
 }
 
+/*
 Given a singly linked list L: L0 → L1 → … → Ln-1 → Ln
 reorder it to: L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …
 Example
 Given 1->2->3->4->null, reorder it to 1->4->2->3->null.
 Challenge 
 Can you do this in-place without altering the nodes' values?
+*/

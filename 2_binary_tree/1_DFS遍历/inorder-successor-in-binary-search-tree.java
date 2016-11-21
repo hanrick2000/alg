@@ -1,9 +1,9 @@
 public class Solution {
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         TreeNode successor = null;
-        while (root != null && root != p) { //要先找到这个p, 用root表示, 如果root右儿子不存在时, 那么此时root的fathter就是其successor, 如果右儿子存在那么还要在右儿子中找到最左下的儿子
+        while (root != null && root != p) { //要先找到这个p, 找到后用root表示p, 如果root右儿子不存在时, 那么此时root的fathter就是其successor, 如果右儿子存在那么还要在右儿子中找到最左下的儿子
             if (root.val > p.val) { //root大于target
-                successor = root; //向左子树走时记录下此时的前继
+                successor = root; //向左子树走时, root就是他的前继
                 root = root.left;
             } else {
                 root = root.right; //root小于target
@@ -23,6 +23,7 @@ public class Solution {
     }
 }
 
+/*
 p=2 get null
    2
   /
@@ -63,3 +64,4 @@ return node 3.
 
 Challenge 
 O(h), where h is the height of the BST.
+*/

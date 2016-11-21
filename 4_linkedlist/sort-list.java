@@ -46,7 +46,7 @@ public class Solution {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode mid = findMedian(head); // 找到中点
+        ListNode mid = findMid(head); // 找到中点
         ListNode leftDummy = new ListNode(0); //做个parition
         ListNode leftTail = leftDummy;
         ListNode rightDummy = new ListNode(0);
@@ -73,7 +73,7 @@ public class Solution {
         ListNode right = sortList(rightDummy.next); //把大于mid的排序
         return concat(left, middleDummy.next, right); //合并
     }
-    private ListNode findMedian(ListNode head) {
+    private ListNode findMid(ListNode head) {
         ListNode slow = head;
         ListNode fast = head.next;
         while (fast != null && fast.next != null) {

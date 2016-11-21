@@ -1,6 +1,5 @@
 public class Solution {
     public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) {
-        // write your code here
         ArrayList<DirectedGraphNode> result = new ArrayList<DirectedGraphNode>();
         HashMap<DirectedGraphNode, Integer> map = new HashMap();
         for (DirectedGraphNode node : graph) {
@@ -33,6 +32,7 @@ public class Solution {
     }
 }
 
+/*
 Given an directed graph, a topological order of the graph nodes is defined as follow:
 1 For each directed edge A -> B in graph, A must before B in the order list.
 2 The first node in the order can be any node in the graph with no nodes direct to it.
@@ -54,19 +54,18 @@ Can you do it in both BFS and DFS?
 Tags 
 LintCode Copyright, Geeks for Geeks, Depth First Search, Breadth First Search
 
-/*
- * Definition for Directed graph.
- * class DirectedGraphNode {
- *     int label;
- *     ArrayList<DirectedGraphNode> neighbors;
- *     DirectedGraphNode(int x) { 
- *         label = x; 
- *         neighbors = new ArrayList<DirectedGraphNode>(); 
- *     }
- * };
- */
+class DirectedGraphNode {
+    int label;
+    ArrayList<DirectedGraphNode> neighbors;
+    DirectedGraphNode(int x) { 
+        label = x; 
+        neighbors = new ArrayList<DirectedGraphNode>(); 
+    }
+};
+
 
 1) 计算所有点的入度，用HashMap保存。
 2) 将入度为0的点加入queue中和result中，将queue中节点出队，将出队节点所有neighbor的入度减少1。
 3) 重复2直到所有点都被加入result中。
 需要注意的是，如果有对HashMap做删除操作，不能再用原来的迭代器继续迭代，需要从头用新的迭代器进行迭代。
+*/

@@ -41,6 +41,7 @@ public class Solution {
         return dummyNew.next;
     }
 }
+
 /*
 No HashMap version
 第一遍扫的时候巧妙运用next指针，开始数组是1->2->3->4 。 

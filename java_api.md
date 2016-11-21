@@ -170,3 +170,7 @@ Character.isLetter(c)
 Character.isDigit(c);
 Character.isLowerCase(c) 
 Character.isUpperCase(c) 
+
+String:
+toCharArray()
+

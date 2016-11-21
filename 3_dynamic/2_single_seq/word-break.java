@@ -10,8 +10,8 @@ public class Solution {
             maxLength = Math.max(maxLength, word.length());
         }
         for(int i = 1; i <= s.length(); i++){
-            for(int j = 0; j <= i && j <= maxLength; j++){
-                if(f[i - j] == true && dict.contains(s.substring(i - j, i))){
+            for(int lastWordLength = 0; lastWordLength <= i && lastWordLength <= maxLength; lastWordLength++){
+                if(f[i - lastWordLength] == true && dict.contains(s.substring(i - lastWordLength, i))){
                     f[i] = true;
                     break;
                 }

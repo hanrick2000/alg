@@ -3,7 +3,6 @@ public class Solution {
         if (height == null || height.length == 0) {
             return 0;
         }
-        
         Stack<Integer> stack = new Stack<Integer>();
         int max = 0;
         for (int i = 0; i <= height.length; i++) {
@@ -15,11 +14,11 @@ public class Solution {
             }
             stack.push(i);
         }
-        
         return max;
     }
 }
 
+/*
 Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
 
 histogram
@@ -37,3 +36,4 @@ return 10.
 
 Tags 
 Array Stack
+*/

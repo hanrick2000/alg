@@ -1,22 +1,22 @@
 OK===E  二分位置======================== www.lintcode.com/problem/classical-binary-search ======================================= Binary Search  
-OK   E  二分位置                         www.lintcode.com/problem/first-position-of-target  
-OK   E  二分位置                         www.lintcode.com/problem/search-insert-position   
-OK   E  二分位置                         www.lintcode.com/problem/last-position-of-target  
-OK   M  二分位置                         www.lintcode.com/problem/search-in-a-big-sorted-array  
-OK   E  二分位置                         www.lintcode.com/problem/search-a-2d-matrix  
+OK   E  二分位置                         www.lintcode.com/problem/first-position-of-target 最后是先检查nums[start] 
+OK   E  二分位置                         www.lintcode.com/problem/search-insert-position  最后有三个位置^start^end^ 
+OK   E  二分位置                         www.lintcode.com/problem/last-position-of-target  注意最后是先检查nums[end]是否等于target
+OK   M  二分位置                         www.lintcode.com/problem/search-in-a-big-sorted-array 先找一个上界 
+OK   E  二分位置                         www.lintcode.com/problem/search-a-2d-matrix 一个二维数组中是否存在某个数, 转化成1维做 
 OK   M  二分位置                         www.lintcode.com/problem/search-a-2d-matrix-ii  
-OK   M  二分位置                         www.lintcode.com/problem/find-minimum-in-rotated-sorted-array  
+OK   M  二分位置                         www.lintcode.com/problem/find-minimum-in-rotated-sorted-array 最小值一定在无序的一边, 最后从剩下的两个值里挑最小的 
 OK   M  二分位置                         www.lintcode.com/problem/find-minimum-in-rotated-sorted-array-ii  
 OK   M  二分位置                         www.lintcode.com/problem/search-in-rotated-sorted-array  
-OK   M  二分位置                         www.lintcode.com/problem/search-in-rotated-sorted-array-ii TODO: 都用end作为标签  
-OK   M  二分位置                         www.lintcode.com/problem/search-for-a-range  
+OK   M  二分位置                         www.lintcode.com/problem/search-in-rotated-sorted-array-ii
+OK   M  二分位置                         www.lintcode.com/problem/search-for-a-range 寻找target的开始和结束位置
 OK   E  二分位置                         www.lintcode.com/problem/total-occurrence-of-target 寻找大于target的最小值所在的位置, 注意判断返回的是数组两边的位置  
 OK   E  二分位置                         www.lintcode.com/problem/closest-number-in-sorted-array 找到大于target的最小元素  
 OK * M  二分位置  两个指针               www.lintcode.com/problem/k-closest-numbers-in-sorted-array 先找到大于target的最小元素, 然后找这个元素周围最近的k个  
-OK   M  二分答案                         www.lintcode.com/problem/first-bad-version  
+OK   M  二分答案                         www.lintcode.com/problem/first-bad-version 最后返回两个先看start 
 OK   E  二分答案                         www.lintcode.com/problem/sqrtx  
-OK   M  二分答案                         www.lintcode.com/problem/wood-cut 先确定一个木头长度的上界, 根据是否满足最少获得的木头个数, 然后二分的方法缩小  
-OK   M  保留有解的一半                   www.lintcode.com/problem/find-peak-element  
+OK   M  二分答案                         www.lintcode.com/problem/wood-cut 先确定一个木头长度的上界, 根据是否满足最少获得的木头个数, 然后二分的方法缩小, 最后先检查end是否满足
+OK   M  保留有解的一半                   www.lintcode.com/problem/find-peak-element mid如果比左边相邻的小则mid左边有peak, mid如果比右边相邻的小则mid右边有peak 
 O    M                                   www.lintcode.com/problem/maximum-number-in-mountain-sequence
 O    M                                   www.lintcode.com/problem/divide-two-integers
 OK===E  DFS遍历 递归+非递归============= www.lintcode.com/problem/binary-tree-preorder-traversal 需栈,根先入栈,然后while循环栈顶出栈加入结果,按照先右后左的顺序放入栈====Binary Tree & Divide Conquer  
@@ -36,8 +36,8 @@ OK   M  DFS遍历 利用pre找到分割in的位置  www.lintcode.com/problem/con
 OK   M  DFS遍历                          www.lintcode.com/problem/construct-binary-tree-from-inorder-and-postorder-traversal  
 OK   E  DivideConquer                    www.lintcode.com/problem/maximum-depth-of-binary-tree 递归;   
 OK * E  DivideConquer                    www.lintcode.com/problem/minimum-depth-of-binary-tree 一定要达到leaf: root空;1个儿子空;2个儿子为空;2个儿子不为空  
-OK   E  DivideConquer                    www.lintcode.com/problem/balanced-binary-tree 递归定义: 返回当前root的高度, -1是不平衡  
-OK   M  DivideConquer  挺难              www.lintcode.com/problem/lowest-common-ancestor 递归定义: 返回以当前root为根, 两个node的祖先, 根据左右子树拆解, 结束条件是遇到一个节点就放会  
+OK   E  DivideConquer                    www.lintcode.com/problem/balanced-binary-tree 递归定义: 返回当前root的高度, -1是不平衡 
+OK   M  DivideConquer                    www.lintcode.com/problem/lowest-common-ancestor 递归定义: 返回以当前root为根, 两个node的祖先, 根据左右子树拆解, 结束条件是遇到一个节点就返回; 思考三种情况
 OK   E  先得到Path,然后沿着Path找        www.lintcode.com/problem/lowest-common-ancestor-ii  
 OK   M  DivideConquer                    www.lintcode.com/problem/binary-tree-maximum-path-sum-ii 从根出发的最大路径, 不一定到叶子  
 OK * M  DivideConquer maxPath一定包含值  www.lintcode.com/problem/binary-tree-maximum-path-sum 递归定义:返回root的Result(singlePath, maxPath), maxPath是树内anytoany, singlePath是从根开始  
@@ -113,7 +113,7 @@ OK   E  前向型指针 快慢类                www.lintcode.com/problem/remove
 OK * M  三种方法都要掌握                 www.lintcode.com/problem/merge-k-sorted-lists Diveide&Conquer; 两两合并; PriorityQueue(min-heap)  
 OK   M  HashMap; No extra space          www.lintcode.com/problem/copy-list-with-random-pointer 先copyNext -> 再copyRandom -> 最后Split  
 OK   E  删除中间的一个节点               www.lintcode.com/problem/delete-node-in-the-middle-of-singly-linked-list  
-OK   M  先得到长度, 然后先递归得到左子树 www.lintcode.com/problem/convert-sorted-list-to-balanced-bst 然后再构造跟, 移动current, 递归构造右子树, 组合左右子树, 最后返回根  
+OK * M  先得到长度, 然后先递归得到左子树 www.lintcode.com/problem/convert-sorted-list-to-balanced-bst 然后再构造根, 移动current, 递归构造右子树, 组合左右子树, 最后返回根  
 OK   M  helper(root)返回当前BST树的      www.lintcode.com/problem/convert-binary-search-tree-to-doubly-linked-list 最小值的node和最大值的node, 递归的得到左右子树的result, 利用它门构造当前根的result  
 OK   H  每次reverseK, 每次先看是否够长   www.lintcode.com/problem/reverse-nodes-in-k-group 确定n1, prev, cur的位置, 然后进行k-1次的翻转操作, 最后做首尾的调整, 画图很重要  
 O    E                                   www.lintcode.com/problem/swap-nodes-in-pairs  
@@ -160,30 +160,37 @@ O    H                                   www.lintcode.com/problem/lfu-cache
 O    H                                   www.lintcode.com/problem/max-tree  
 O    M                                   www.lintcode.com/problem/implement-three-stacks-by-single-array
 OK===M BackTracking ==================== www.lintcode.com/problem/subsets =========================================== Graph & Search & BackTracking 
-OK   M BackTracking                      www.lintcode.com/problem/subsets-ii  
+OK   M BackTracking                      www.lintcode.com/problem/subsets-ii 注意拆解递归时是helper(nums, path, i + 1, results) 而不是 pos + 1 
 OK   M BackTracking                      www.lintcode.com/problem/permutations  
-OK   M BackTracking                      www.lintcode.com/problem/permutations-ii  
-O    M BackTracking                      www.lintcode.com/problem/palindrome-partitioning  
+OK   M BackTracking                      www.lintcode.com/problem/permutations-ii 递归拆解是从0到nums.length-1
+OK   M BackTracking                      www.lintcode.com/problem/palindrome-partitioning 是dfs, subset类型的
 OK   H BackTracking                      www.lintcode.com/problem/word-ladder-ii  
 OK   H BackTracking                      www.lintcode.com/problem/word-break-ii 跟permutation很像, 利用word-break来避免搜索不肯能的
 O    M BackTracking                      www.lintcode.com/problem/k-sum-ii  
 OK   M BackTracking                      langford-pairing
-O    M BackTracking                      www.lintcode.com/problem/combination-sum  
+OK   M BackTracking                      www.lintcode.com/problem/combination-sum 跟subsets很像, 不要忘记排序, 不要忘记增加path到结果集时clone path
+OK   M BackTracking                      www.lintcode.com/problem/combination-sum-ii 跟combination-sum 只有一个区别:递归拆解时i+1
 OK   M BackTracking                      www.lintcode.com/problem/letter-combinations-of-a-phone-number StringBuilder.append() StrinbBuilder.deleteCharAt()
 OK   M BFS 图                            www.leetcode.com/problems/evaluate-division
 OK   M DFS                               battleships-in-a-board
-O    M                                   www.lintcode.com/problem/clone-graph  
+OK   M                                   www.lintcode.com/problem/clone-graph  
 OK   M                                   www.lintcode.com/problem/word-ladder  
-OK   M                                   www.lintcode.com/problem/six-degrees   
-O    M                                   www.lintcode.com/problem/topological-sorting  
-O    M                                   www.lintcode.com/problem/n-queens  
-O    M                                   www.lintcode.com/problem/n-queens-ii  
+OK   M                                   www.lintcode.com/problem/six-degrees bfs遍历, 用hashmap记录从s到遍历到的点的距离 
+OK   M                                   www.lintcode.com/problem/topological-sorting 先求出所有点的入度, 把入度是0的加入queue和结果集, 然后bfs遍历queue, 随着遍历减少遍历到的点的入度
+OK   M                                   www.lintcode.com/problem/n-queens 用了StringBuilder, 要调用toString()才能变成str 
+OK   M                                   www.lintcode.com/problem/n-queens-ii  
 O    M                                   www.lintcode.com/problem/string-permutation-ii  
+
+
+
+
+
+
 OK===E  UF  ============================ www.lintcode.com/problem/number-of-islands ===================================== UnionFind/Trie/SweepLine/Heap/HashHeep/Deque  
 O    H  UF                               www.lintcode.com/problem/number-of-islands-ii  
 OK   M  UF                               www.lintcode.com/problem/graph-valid-tree  
 O    M  UF                               www.lintcode.com/problem/find-the-weak-connected-component-in-the-directed-graph  
-O    M  UF                               www.lintcode.com/problem/find-the-connected-component-in-the-undirected-graph  
+O    M  UF                               www.lintcode.com/problem/find-the-connected-component-in-the-undirected-graph 还可以有BFS做法, 用hashset记录访问过的节点, 然后用bfs遍历每一个node
 O    M  UF                               www.lintcode.com/problem/surrounded-regions  
 O    M  SweepLine                        www.lintcode.com/problem/number-of-airplanes-in-the-sky  
 O    M  Trie                             www.lintcode.com/problem/add-and-search-word  

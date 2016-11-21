@@ -12,7 +12,7 @@ public class Solution {
                 //map中存的是与i点距离是d的点的个数
             }
             for(int val : map.values()) {
-                res += val * (val - 1);
+                res += val * (val - 1); //组合问题, 从val个点中找出2个点来, 第一个点有val种挑法, 第二个点有val-1种挑法
             }            
             map.clear();
         }

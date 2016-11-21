@@ -1,14 +1,14 @@
 public class Solution {
-    public int sixDegrees(List<UndirectedGraphNode> graph,
+    public int sixDegrees(List<UndirectedGraphNode> graph, //这个graph竟然没有用
                           UndirectedGraphNode s,
                           UndirectedGraphNode t) {
         if (s == t){
             return 0;
         }
-        Map<UndirectedGraphNode, Integer> visited = new HashMap<UndirectedGraphNode, Integer>();
+        Map<UndirectedGraphNode, Integer> visited = new HashMap<UndirectedGraphNode, Integer>(); //表示从s点出发, 走到key表示的点, 需要value步
         Queue<UndirectedGraphNode> queue = new LinkedList<UndirectedGraphNode>();
         queue.offer(s);
-        visited.put(s, 0);
+        visited.put(s, 0); 
         while (!queue.isEmpty()) {
             UndirectedGraphNode node = queue.poll();
             int step = visited.get(node);

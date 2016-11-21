@@ -17,14 +17,13 @@ class Solution {
         helper(results, list, visited, nums);    
         return results;
     }
-    public void helper(ArrayList<List<Integer>> results, 
-                   ArrayList<Integer> list, int[] visited, int[] nums) {
+    public void helper(ArrayList<List<Integer>> results, ArrayList<Integer> list, int[] visited, int[] nums) {
         if(list.size() == nums.length) {
             results.add(new ArrayList<Integer>(list));
             return;
         }
         for(int i = 0; i < nums.length; i++) {
-            if (visited[i] == 1 || ( i != 0 && nums[i] == nums[i - 1] && visited[i-1] == 0)){
+            if (visited[i] == 1 || ( i != 0 && nums[i] == nums[i - 1] && visited[i - 1] == 0)){ //若该元素未被加入list, 同时前面相等值的元素也未被加入list, 则该元素不能被先加入, 否则会出现重复情况
                 continue;
             }
             /*

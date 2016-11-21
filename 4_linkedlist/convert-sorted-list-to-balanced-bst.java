@@ -28,6 +28,7 @@ public class Solution {
     }
 }
 
+/*
 Given a singly linked list where elements are sorted in ascending order, 
 convert it to a height balanced BST.
 
@@ -55,6 +56,8 @@ Example
    1     5
     \   / 
      2 4   
+*/
+
 /*
  * Definition for ListNode.
  * public class ListNode {
@@ -77,6 +80,7 @@ Example
  * }
  */ 
 
+/*
 public class Solution {
     private ListNode current;
     public TreeNode sortedListToBST(ListNode head) {
@@ -108,3 +112,4 @@ public class Solution {
         return length;
     }
 }
+*/

@@ -8,7 +8,7 @@ public class Solution {
         int len2 = board[0].length;
         int ans = 0;
         for (int i = 0; i < len1; i++){
-            for(int j=0 ; j < len2; j++){
+            for(int j = 0 ; j < len2; j++){
                 if(board[i][j] == 'X' && (i == 0 || board[i - 1][j] == '.') && (j == 0 || board[i][j - 1] == '.')){
                     ans ++;
                 }
@@ -51,6 +51,7 @@ public class Solution {
     }
 }
 
+/*
 给定一个由'X'和'.'构成的二维字符数组，统计其中“战舰”的数目。“战舰”指的是横向或者是纵向的连续的1-n个"X"。
 给定的输入保证不同的“战舰”不相邻，不存在非法输入。
 样例输入：
@@ -87,3 +88,4 @@ Follow-up 挑战
 面试官角度分析 
 本题属于中等偏下难度，主要考察面试者搜索的思想。
 如果能够利用DFS解决本题就可以达到hire的程度，如果能够利用本题输入数据的特殊之处给出O(1)的空间复杂度的解法，可以达到strong hire 。
+*/

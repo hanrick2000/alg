@@ -1,16 +1,16 @@
 public class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode node1, TreeNode node2) {
-        if (root == null || root == node1 || root == node2) { 
+        if (root == null || root == node1 || root == node2) { //情况1
             return root;
         }
         // Divide, 
         TreeNode left = lowestCommonAncestor(root.left, node1, node2);
         TreeNode right = lowestCommonAncestor(root.right, node1, node2);
         // Conquer
-        if (left != null && right != null) { 
+        if (left != null && right != null) { //情况2
             return root;
         } 
-        if (left != null && right == null) {
+        if (left != null && right == null) { //情况3
             return left;
         }else if (right != null && left == null) {
             return right;
@@ -23,6 +23,7 @@ public class Solution {
 
 
 
+/*
   4
  / \
 3   7
@@ -78,7 +79,6 @@ LCA(6, 7) = 7 情况3
 情况1: 首先看看3和5，这两个节点分居根节点4的两侧，如果可以从子节点往父节点递推，那么他们将在根节点4处第一次重合；
 情况2: 再来看看5和6，这两个都在根节点4的右侧，沿着父节点往上递推，他们将在节点7处第一次重合；
 情况3: 最后来看看6和7，此时由于7是6的父节点，故7即为所求。
-*/
 
 
 Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
@@ -94,4 +94,4 @@ For the following binary tree:
 LCA(3, 5) = 4
 LCA(5, 6) = 7
 LCA(6, 7) = 7
-
+*/

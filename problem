@@ -17,7 +17,7 @@ OK   M  二分答案                         www.lintcode.com/problem/first-bad-
 OK   E  二分答案                         www.lintcode.com/problem/sqrtx  
 OK   M  二分答案                         www.lintcode.com/problem/wood-cut 先确定一个木头长度的上界, 根据是否满足最少获得的木头个数, 然后二分的方法缩小, 最后先检查end是否满足
 OK   M  保留有解的一半                   www.lintcode.com/problem/find-peak-element mid如果比左边相邻的小则mid左边有peak, mid如果比右边相邻的小则mid右边有peak 
-O    M                                   www.lintcode.com/problem/maximum-number-in-mountain-sequence
+O    M                                   www.lintcode.com/problem/maximum-number-in-mountain-sequence contest
 O    M                                   www.lintcode.com/problem/divide-two-integers
 OK===E  DFS遍历 递归+非递归============= www.lintcode.com/problem/binary-tree-preorder-traversal 需栈,根先入栈,然后while循环栈顶出栈加入结果,按照先右后左的顺序放入栈====Binary Tree & Divide Conquer  
 OK   M  DFS遍历 递归+非递归              www.lintcode.com/problem/binary-tree-inorder-traversal 需要栈, 最外while循环, 内层先while循环左子树遍历入栈, 栈若空返回结果, 否则栈顶出栈加入结果, 检查右子树  
@@ -165,7 +165,7 @@ OK   M BackTracking                      www.lintcode.com/problem/permutations
 OK   M BackTracking                      www.lintcode.com/problem/permutations-ii 递归拆解是从0到nums.length-1
 OK   M BackTracking                      www.lintcode.com/problem/palindrome-partitioning 是dfs, subset类型的
 OK   H BackTracking                      www.lintcode.com/problem/word-ladder-ii  
-OK   H BackTracking                      www.lintcode.com/problem/word-break-ii 跟permutation很像, 利用word-break来避免搜索不肯能的
+OK   H BackTracking                      www.lintcode.com/problem/word-break-ii contest 跟permutation很像, 利用word-break来避免搜索不肯能的
 O    M BackTracking                      www.lintcode.com/problem/k-sum-ii  
 OK   M BackTracking                      langford-pairing
 OK   M BackTracking                      www.lintcode.com/problem/combination-sum 跟subsets很像, 不要忘记排序, 不要忘记增加path到结果集时clone path
@@ -197,7 +197,7 @@ O    M  Trie                             www.lintcode.com/problem/add-and-search
 O    M                                   www.lintcode.com/problem/word-search  
 O    H  Trie                             www.lintcode.com/problem/word-search-ii  
 O    M  SegmentTree                      www.lintcode.com/problem/segment-tree-query-ii  
-O    H                                   www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays  
+O    H                                   www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays contest 
 O    H  SegmentTree                      www.lintcode.com/problem/count-of-smaller-number-before-itself  
 O    H  SegmentTree                      www.lintcode.com/problem/interval-sum-ii  
 O    H                                   www.lintcode.com/problem/trapping-rain-water-ii   
@@ -305,7 +305,6 @@ O    E                                   www.leetcode.com/problems/valid-word-ab
      M                                   www.leetcode.com/problems/flatten-nested-list-iterator/
 O    M                                   www.leetcode.com/problems/flip-game-ii/
      M                                   www.leetcode.com/problems/fraction-to-recurring-decimal/
-     M                                   www.leetcode.com/problems/game-of-life/
      M                                   www.leetcode.com/problems/generalized-abbreviation/
 O    M                                   www.leetcode.com/problems/generate-parentheses/
      M                                   www.leetcode.com/problems/guess-number-higher-or-lower-ii/
@@ -372,3 +371,10 @@ O    H                                   www.leetcode.com/problems/shortest-pali
      H                                   www.leetcode.com/problems/the-skyline-problem/
 O    H                                   www.leetcode.com/problems/word-search-ii/
      H                                   www.leetcode.com/problems/word-squares/
+
+     M 拓扑排序                          www.leetcode.com/problems/course-schedule/ google
+     M                                   www.leetcode.com/problems/game-of-life/ google
+
+                                         www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array contest
+                                         www.lintcode.com/problem/sqrtx-ii contest
+                                         www.lintcode.com/problem/longest-repeating-subsequence contest

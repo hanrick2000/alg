@@ -1,0 +1,87 @@
+Q: A[m,n], A[0,0] -> A[m-1, n-1],  RIGHT, DOWN
+MAX-PRODUCT
+
+
+F[m][n] : 从[0][0]走到[m][n]的 max-product
+
+
+F1[m][n]
+F2[m][n]
+
+
+Extra space:
+Consider overflow
+Started from any cell in first row, ended at any cell in last row 
+LEFT, RIGHT, DOWN, once
+
+
+F[i][j] = f[i-1][j], f[i][j-1], f[i][j+1]
+
+
+F[n][m]
+
+
+
+-1 3 7 9
+2 6 -2 1
+5 -3 8 7
+2 4 9 -2
+
+
+
+
+A[0,2].max=63
+A[0,2].min=-21
+
+
+A[0,3].max=63*9
+A[0,3].min=-21
+
+
+
+
+******************************************
+Zerg.
+
+
+Worker.
+
+
+1 W -> 2W : M
+ith-Building: Ti
+A worker at beginning, given building list T[1,.., n].
+
+
+
+
+===============
+
+问了我个图的问题。给我了一组输入
+"a<b", "b<c", "c<a", 问是否是合法输入。我分析后是转化成图做，看有向图是否有环。
+
+
+
+
+
+
+////
+Implement Conways Game of Life.
+For a 2D m by n rectangular grid, each cell can be on or off. 
+Each cell updates based on its eight neighbours. 
+If 2 neighbours are on, the state remains the same. 
+If 3 neighbours are on, the state becomes on. 
+Otherwise the state becomes off. 
+All cells should behave as if updated simultaneously. //
+The grid should be toroidally mapped, such that looking off the right edge sees the left edge, vice versa, and top to bottom.
+是leetcode里那道game of life
+
+
+
+//////
+Given a word, find the minimum number of steps required to convert word to a word with SS pattern. (each operation is counted as 1 step.)
+e.g : cdcc -> cdcd  或者 ccc ->cc
+
+You have the following 3 operations permitted on a word:
+a) Insert a character
+b) Delete a character
+c) Replace a character

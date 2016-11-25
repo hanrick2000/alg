@@ -8,15 +8,16 @@ public class Solution {
         }
         int n = matrix.length; 
         int m = matrix[0].length; 
+
         int x = n - 1; 
         int y = 0; //从左下角开始, 是因为可以根据大于或者小于target做划分, 左上角就不行, 比如小于target, 不知道是往下走还是往右走
         int count = 0;
         while (x >= 0 && y < m) {
             if (matrix[x][y] < target) {
-                //如果A[x][y]小于target,则A[x][y]应该向右侧移动, 因为每一行都是有序的
+                //如果A[x][y]小于target,则A[x][y]应该向右侧移动, 因为每一行都是升序的
                 y++;
             } else if (matrix[x][y] > target) {
-                //如果A[x][y]大于target,则A[x][y]应该向上移动, 因为每一列也是有序的
+                //如果A[x][y]大于target,则A[x][y]应该向上移动, 因为每一列也是降序的
                 x--;
             } else if (matrix[x][y] == target) {
                 //如果相等了,则本行和本列都不会有相同的了

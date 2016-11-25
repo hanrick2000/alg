@@ -1,10 +1,10 @@
 public class Solution {
     public int houseRobber2(int[] nums) {
-        if (nums.length == 0){
-            return 0;
-        } else if (nums.length == 1){
-            return nums[0];
-        }
+       if (nums.length == 0){
+           return 0;
+       } else if (nums.length == 1){
+           return nums[0];
+       }
        return Math.max(robber1(nums, 0, nums.length - 2), robber1(nums, 1, nums.length - 1));
     }
     //my version

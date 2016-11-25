@@ -8,6 +8,7 @@ public class Solution {
         }
         int row = matrix.length;
         int column = matrix[0].length;
+
         int start = 0;
         int end = row * column - 1; //变成一维的
         while (start + 1 < end) {

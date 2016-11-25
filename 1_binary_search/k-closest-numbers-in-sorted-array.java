@@ -22,7 +22,7 @@ public class Solution {
                 if (target - A[start] <= A[end] - target) { //如果A[start]更接近target, 则取A[start], 并将start左移
                     result[i] = A[start];
                     start--;
-                } else { // target -A[start] > A[end] - target, 表示A[end]更接近target, 则收录A[end], end右移
+                } else { // target - A[start] > A[end] - target, 表示A[end]更接近target, 则收录A[end], end右移
                     result[i] = A[end];
                     end++;
                 }

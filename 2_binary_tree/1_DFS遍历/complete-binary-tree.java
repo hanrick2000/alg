@@ -1,3 +1,47 @@
+//方法一, BFS
+/*
+The approach is to do a level order traversal starting from root. 
+In the traversal, once a node is found which is NOT a Full Node, 
+all the following nodes must be leaf nodes. 
+Use the BFS by queue, when first find a node which doesn't have left or right child, 
+if find next node has any child, this tree is definitely not a complete binary tree
+*/
+public class Solution {
+    /**
+     * @param root, the root of binary tree.
+     * @return true if it is a complete binary tree, or false.
+     */
+    public boolean isComplete(TreeNode root) {
+        if(root == null){
+            return true;
+        }
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        int flag = 0;
+        while(!q.isEmpty()){
+            TreeNode tmp = q.poll();
+            if(tmp.left != null){
+                if(flag == 1){
+                    return false;
+                }
+                q.offer(tmp.left);
+            } else {
+                flag = 1;
+            }
+            if(tmp.right != null){
+                if(flag == 1){
+                    return false;
+                }
+                q.offer(tmp.right);
+            } else {
+                flag = 1;
+            }
+        }
+        return true;
+    }
+}
+
+//方法二, DFS
 public class Solution {
     public boolean isComplete(TreeNode root) {
         ResultType result = helper(root);
@@ -39,6 +83,7 @@ public class Solution {
         }
     }
 }
+
 
 
 Check a binary tree is completed or not. 

@@ -1,12 +1,15 @@
 class BSTIterator {
     private Stack<TreeNode> stack = new Stack<>();
     private TreeNode curt;
+
     public BSTIterator(TreeNode root) {
         curt = root;
     }
+
     public boolean hasNext() {
         return (curt != null || !stack.isEmpty());
     }
+
     public TreeNode next() {
         while (curt != null) {
             stack.push(curt);

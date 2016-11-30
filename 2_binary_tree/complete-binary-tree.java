@@ -1,16 +1,10 @@
 //方法一, BFS
 /*
-The approach is to do a level order traversal starting from root. 
-In the traversal, once a node is found which is NOT a Full Node, 
-all the following nodes must be leaf nodes. 
-Use the BFS by queue, when first find a node which doesn't have left or right child, 
-if find next node has any child, this tree is definitely not a complete binary tree
+做层序遍历
+如果一个节点不是full的, 那么剩下的节点必须都是leaf了
+做BFS, 如果有一个节点左右儿子不全, 那么剩下的节点如果还有儿子, 那么这棵树就不是complete的
 */
 public class Solution {
-    /**
-     * @param root, the root of binary tree.
-     * @return true if it is a complete binary tree, or false.
-     */
     public boolean isComplete(TreeNode root) {
         if(root == null){
             return true;

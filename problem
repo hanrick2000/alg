@@ -31,7 +31,7 @@ OK   E  DFS遍历 路径和是target的所有路径 www.lintcode.com/problem/bin
 OK   E  DFS遍历 两棵树                   www.lintcode.com/problem/tweaked-identical-binary-tree 三个递归退出条件, 两种递归拆解情况  
 OK   E  DFS遍历 两棵树                   www.lintcode.com/problem/identical-binary-tree 三个递归退出条件, 1个递归拆解情况  
 OK   E  DFS遍历 一棵树                   www.lintcode.com/problem/symmetric-binary-tree 先拆左右树, 三个递归退出条件, 1个递归拆解情况  
-OK * E  递归 和 非递归                   www.lintcode.com/problem/complete-binary-tree 
+OK * M  递归 和 非递归                   www.lintcode.com/problem/complete-binary-tree hulu
 OK   M  DFS遍历                          www.lintcode.com/problem/construct-binary-tree-from-preorder-and-inorder-traversal hulu 
 OK   M  DFS遍历                          www.lintcode.com/problem/construct-binary-tree-from-inorder-and-postorder-traversal hulu 
 OK   E  DivideConquer                    www.lintcode.com/problem/maximum-depth-of-binary-tree 递归;   

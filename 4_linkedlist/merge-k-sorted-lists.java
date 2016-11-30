@@ -1,3 +1,44 @@
+// Merge lists two by two
+public class Solution {
+    public ListNode mergeKLists(List<ListNode> lists) {  
+        if(lists == null || lists.size() == 0){
+            return null;
+        }
+        while(lists.size() > 1){
+            List<ListNode> tmpLists = new ArrayList<ListNode>();
+            for(int i = 0; i < lists.size() - 1; i += 2){
+                ListNode list = merge(lists.get(i), lists.get(i + 1));
+                tmpLists.add(list);
+            }
+            if(lists.size() % 2 == 1){
+                tmpLists.add(lists.get(lists.size() - 1));
+            }
+            lists = tmpLists;
+        }
+        return lists.get(0);
+    }
+    public ListNode merge(ListNode l1, ListNode l2){
+        ListNode dummy = new ListNode(0);
+        ListNode tail = dummy;
+        while(l1 != null && l2 != null){
+            if(l1.val < l2.val){
+                tail.next = l1;
+                l1 = l1.next;
+            }else{
+                tail.next = l2;
+                l2 = l2.next;
+            }
+            tail = tail.next;
+        }
+        if(l1 == null){
+            tail.next = l2;
+        }else{
+            tail.next = l1;
+        }
+        return dummy.next;
+    }
+}
+
 // Divide Conquer 
 public class Solution {
     public ListNode mergeKLists(List<ListNode> lists) {
@@ -39,47 +80,6 @@ public class Solution {
     }
 }
 
-// Merge lists two by two
-public class Solution {
-    public ListNode mergeKLists(List<ListNode> lists) {  
-        // write your code here
-        if(lists == null || lists.size() == 0){
-            return null;
-        }
-        while(lists.size() > 1){
-            List<ListNode> tmpLists = new ArrayList<ListNode>();
-            for(int i = 0; i < lists.size() - 1; i += 2){
-                ListNode list = merge(lists.get(i), lists.get(i + 1));
-                tmpLists.add(list);
-            }
-            if(lists.size() % 2 == 1){
-                tmpLists.add(lists.get(lists.size() - 1));
-            }
-            lists = tmpLists;
-        }
-        return lists.get(0);
-    }
-    public ListNode merge(ListNode l1, ListNode l2){
-        ListNode dummy = new ListNode(0);
-        ListNode tail = dummy;
-        while(l1 != null && l2 != null){
-            if(l1.val < l2.val){
-                tail.next = l1;
-                l1 = l1.next;
-            }else{
-                tail.next = l2;
-                l2 = l2.next;
-            }
-            tail = tail.next;
-        }
-        if(l1 == null){
-            tail.next = l2;
-        }else{
-            tail.next = l1;
-        }
-        return dummy.next;
-    }
-}
 
 
 // Priority Queue (Heap) 

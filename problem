@@ -31,9 +31,9 @@ OK   E  DFS遍历 路径和是target的所有路径 www.lintcode.com/problem/bin
 OK   E  DFS遍历 两棵树                   www.lintcode.com/problem/tweaked-identical-binary-tree 三个递归退出条件, 两种递归拆解情况  
 OK   E  DFS遍历 两棵树                   www.lintcode.com/problem/identical-binary-tree 三个递归退出条件, 1个递归拆解情况  
 OK   E  DFS遍历 一棵树                   www.lintcode.com/problem/symmetric-binary-tree 先拆左右树, 三个递归退出条件, 1个递归拆解情况  
-OK * E  DFS遍历 一棵树 概念题            www.lintcode.com/problem/complete-binary-tree 定义helper返回Result(深度,Complete,Full); 得到左右子树, 左子树必须是C, 深度相同时, 左F右C, 深度左高右低, 左C右F  
-OK   M  DFS遍历 利用pre找到分割in的位置  www.lintcode.com/problem/construct-binary-tree-from-preorder-and-inorder-traversal 递归定义: 返回从start到end的树的根节点, 找到切分的位置, 拆解递归  
-OK   M  DFS遍历                          www.lintcode.com/problem/construct-binary-tree-from-inorder-and-postorder-traversal  
+OK * E  递归 和 非递归                   www.lintcode.com/problem/complete-binary-tree 
+OK   M  DFS遍历                          www.lintcode.com/problem/construct-binary-tree-from-preorder-and-inorder-traversal hulu 
+OK   M  DFS遍历                          www.lintcode.com/problem/construct-binary-tree-from-inorder-and-postorder-traversal hulu 
 OK   E  DivideConquer                    www.lintcode.com/problem/maximum-depth-of-binary-tree 递归;   
 OK * E  DivideConquer                    www.lintcode.com/problem/minimum-depth-of-binary-tree 一定要达到leaf: root空;1个儿子空;2个儿子为空;2个儿子不为空  
 OK   E  DivideConquer                    www.lintcode.com/problem/balanced-binary-tree 递归定义: 返回当前root的高度, -1是不平衡 
@@ -110,7 +110,7 @@ OK   M  reverse,merge,middle             www.lintcode.com/problem/reorder-list f
 OK   M  前向型指针 快慢类                www.lintcode.com/problem/linked-list-cycle  
 OK   H  前向型指针 快慢类                www.lintcode.com/problem/linked-list-cycle-ii slow fast先移动相遇后再移动head和slow, while(head != slow.next) 最后返回head就是环出现的地方  
 OK   E  前向型指针 快慢类                www.lintcode.com/problem/remove-nth-node-from-end-of-list dummy, preDelete  
-OK * M  三种方法都要掌握                 www.lintcode.com/problem/merge-k-sorted-lists Diveide&Conquer; 两两合并; PriorityQueue(min-heap)  
+OK * M                                   www.lintcode.com/problem/merge-k-sorted-lists hulu
 OK   M  HashMap; No extra space          www.lintcode.com/problem/copy-list-with-random-pointer 先copyNext -> 再copyRandom -> 最后Split  
 OK   E  删除中间的一个节点               www.lintcode.com/problem/delete-node-in-the-middle-of-singly-linked-list  
 OK * M  先得到长度, 然后先递归得到左子树 www.lintcode.com/problem/convert-sorted-list-to-balanced-bst 然后再构造根, 移动current, 递归构造右子树, 组合左右子树, 最后返回根  
@@ -131,9 +131,9 @@ O    E                                   www.lintcode.com/problem/subarray-sum
 O    M                                   www.lintcode.com/problem/two-sum-closest  
 O    M                                   www.lintcode.com/problem/subarray-sum-closest  
 O    E                                   www.lintcode.com/problem/minimum-subarray  
-O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii  
-O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
-O    M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock  
+OK   M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii hulu 
+OK   M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
+OK   M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock hulu
 O    M                                   www.lintcode.com/problem/maximum-subarray-difference  
 O    M                                   www.lintcode.com/problem/maximum-subarray-ii  
 O    H                                   www.lintcode.com/problem/maximum-subarray-iii  
@@ -144,7 +144,7 @@ O    M                                   www.lintcode.com/problem/rehashing
 OK   M                                   www.lintcode.com/problem/implement-queue-by-two-stacks  
 O    M                                   www.lintcode.com/problem/min-stack  
 O    M                                   www.lintcode.com/problem/ugly-number-ii  
-OK   H                                   www.lintcode.com/problem/lru-cache  
+OK   H                                   www.lintcode.com/problem/lru-cache hulu 
 O    H                                   www.lintcode.com/problem/largest-rectangle-in-histogram  
 O    E                                   www.lintcode.com/problem/implement-stack  
 O    E                                   www.lintcode.com/problem/implement-stack-by-two-queues  
@@ -371,10 +371,18 @@ O    H                                   www.leetcode.com/problems/shortest-pali
      H                                   www.leetcode.com/problems/the-skyline-problem/
 O    H                                   www.leetcode.com/problems/word-search-ii/
      H                                   www.leetcode.com/problems/word-squares/
-
      M 拓扑排序                          www.leetcode.com/problems/course-schedule/ google
      M                                   www.leetcode.com/problems/game-of-life/ google
+OK   M 一遍for循环是最好解,回溯是暴力    www.leetcode.com/problems/permutation-sequence/ google
 
                                          www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array contest
                                          www.lintcode.com/problem/sqrtx-ii contest
                                          www.lintcode.com/problem/longest-repeating-subsequence contest
+                                         
+OK   M                                   www.leetcode.com/problems/simplify-path/ hulu microsoft facebook stack string
+O    M                                   company-structure hulu
+OK   M                                   ads-fatigue hulu
+OK   M                                   delete_number hulu
+OK   M                                   www.leetcode.com/problems/populating-next-right-pointers-in-each-node hulu microsoft
+OK   H                                   www.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii hulu facebook microsoft
+O    M                                   snake-ladder-problem-2 graph-bfs

@@ -7,21 +7,17 @@ public class Solution {
         public Node(int key, int value) {
             this.key = key;
             this.value = value;
-            this.prev = null;
-            this.next = null;
         }
     }
     private int capacity;
     private HashMap<Integer, Node> map = new HashMap<Integer, Node>(); //map
     private Node head = new Node(-1, -1); //dummy, 其next指向lru
     private Node tail = new Node(-1, -1); //dummy, 其prev指向最近使用的node的
-    
     public Solution(int capacity) {
         this.capacity = capacity;
         tail.prev = head;
         head.next = tail;
     }
-
     public void set(int key, int value) {
         if(get(key) != -1) { //值存在时直接更新
             map.get(key).value = value;
@@ -36,8 +32,7 @@ public class Solution {
         map.put(key, insert);
         move_to_tail(insert);
     }
-
-    public int get(int key) {
+    public int get(int key) { //只要get了就会移动到tail
         if(!map.containsKey(key)) {
             return -1;
         }
@@ -49,7 +44,6 @@ public class Solution {
         move_to_tail(current);
         return map.get(key).value;
     }
-
     private void move_to_tail(Node current) {
         current.prev = tail.prev;
         tail.prev = current;
@@ -58,6 +52,7 @@ public class Solution {
     }
 }
 
+/*
 Design and implement a data structure for Least Recently Used (LRU) cache. 
 It should support the following operations: get and set.
 
@@ -76,3 +71,4 @@ get():如果key不存在, 则返回-1;
 set():如果key存在, 则将修改过value的该key对应node移到链表尾部;
       如果key不存在, 分两种情况:1)若chache已经达到其capacity, 则删去链表第一个node（least recently used item）,再加入该key的node;
                                 2)若chache还没达到其capacity, 则在链表尾部加入该key的node.
+*/

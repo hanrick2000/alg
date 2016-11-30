@@ -1,0 +1,12 @@
+system design need more experience and practice
+
+网页爬虫
+如何设计一个网页爬虫，以一个URL为起点，把页面里的链接全找出来继续爬。
+最后要返回所有的URL。我很快写了个小程序。
+然后他问如果有很多台机器，如何充分利用，并且达到尽可能高的CPU占用率？
+我说设一个中心服务器，负责任务的派发和统计。
+其余的作为worker，只负责拿到一个url，发请求和解析HTML。
+服务器之间的通讯用RPC完成。
+
+tiny url
+

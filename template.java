@@ -26,7 +26,7 @@ class UnionFind {
     }
 }
 
-// BFS
+// 图的BFS
 // 有一个node
 Queue<UndirectedGraphNode> queue = new LinkedList<UndirectedGraphNode>();
 HashSet<UndirectedGraphNode> set = new HashSet<>();
@@ -40,6 +40,41 @@ while (!queue.isEmpty()) {
             set.add(neighbor);
             queue.offer(neighbor);
         }
+    }
+}
+
+//图的topology sorting
+public class Solution {
+    public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) {
+        ArrayList<DirectedGraphNode> result = new ArrayList<DirectedGraphNode>();
+        HashMap<DirectedGraphNode, Integer> map = new HashMap();
+        for (DirectedGraphNode node : graph) {
+            for (DirectedGraphNode neighbor : node.neighbors) {
+                if (map.containsKey(neighbor)) {
+                    map.put(neighbor, map.get(neighbor) + 1);
+                } else {
+                    map.put(neighbor, 1); 
+                }
+            }
+        }
+        Queue<DirectedGraphNode> q = new LinkedList<DirectedGraphNode>();
+        for (DirectedGraphNode node : graph) {
+            if (!map.containsKey(node)) {
+                q.offer(node);
+                result.add(node);
+            }
+        }
+        while (!q.isEmpty()) {
+            DirectedGraphNode node = q.poll();
+            for (DirectedGraphNode n : node.neighbors) {
+                map.put(n, map.get(n) - 1);
+                if (map.get(n) == 0) {
+                    result.add(n);
+                    q.offer(n);
+                }
+            }
+        }
+        return result;
     }
 }
 
@@ -123,6 +158,7 @@ public List<Integer> preorderTraversal(TreeNode root) {
     }
     return result;
 }
+
 // In Order
 public ArrayList<Integer> inorderTraversal(TreeNode root) {
     ArrayList<Integer> result = new ArrayList<Integer>();
@@ -143,6 +179,7 @@ public ArrayList<Integer> inorderTraversal(TreeNode root) {
         root = root.right;        //考虑右子树
     }
 }
+
 // Post Order
 public ArrayList<Integer> postorderTraversal(TreeNode root) {
     ArrayList<Integer> result = new ArrayList<Integer>();
@@ -168,7 +205,7 @@ public ArrayList<Integer> postorderTraversal(TreeNode root) {
     return result;
 }
 
-// BFS Binary Tree
+// 树的BFS
 Queue<TreeNode> queue = new LinkedList<TreeNode>();
 queue.offer(root); //先入队root
 while (!queue.isEmpty()) {
@@ -210,6 +247,7 @@ public ListNode partition(ListNode head, int x) {
     left.next = rightDummy.next;
     return leftDummy.next;
 }
+
 // Merge list
 private ListNode mergeTwoLists(ListNode list1, ListNode list2) {
     ListNode dummy = new ListNode(0);
@@ -254,10 +292,6 @@ public ListNode reverse(ListNode head){
     }
     return newHead;
 }
-
-
-
-
 
 // Merge k sorted lists: Priority Queue (Heap) 
 public class Solution {

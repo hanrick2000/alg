@@ -10,3 +10,8 @@ system design need more experience and practice
 
 tiny url
 
+电梯问题
+然后他说有种简单的设计只有一个电梯
+变种变成了多个电梯要相互compete接request。就是当分配电梯接request的时候要考虑到怎么样最快，并不一定是选择离request楼层最新的那个电梯。
+我也是一头雾水，说感觉request class应该是singleton desgin pattern， 竟然神奇的蒙对了。然后就从头开始设计各个class，要写code。
+

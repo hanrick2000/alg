@@ -1,0 +1,15 @@
+cassandra与hbase的利弊分析？适用场景？社区环境？
+
+这个是在网上看到的，觉得非常好再次转发
+
+两个都用过，学过，虽然是NoSQL，但是它们从本质上完全不同（想了解各种不同的NoSQL，推荐看老Martin的NoSQL Distilled这本书）。这里只点出最重要的不同：数据的集中和分散HBase基于Big Table，和Hadoop MapReduce完美integrate，数据组织以支持scan为最优先（rowkey 按大小排序分region，所以相近的rowkey必然在相同的region server上），甚至每一个get操作的内部实现都是scan。所以你的应用场景需要大量scan操作 或者需要经常配合MapReduce，而random access数据为辅助手段，那么HBase是你的绝佳选择。Cassandra基于我司的Dynamo，强调自由配置CAP中的C（consistance）和A（availability），强调读写的分散（由于数据都用Distibute Key散列到了不同host，所以相近的Distibute key很大几率散列到不同的host上，这里取决于你的hash算法，这里只说大多数情况）。这种storage model（consistent hash）决定了Cassandra的scan效率比HBase低，但是可以支持更高的并发写与读，并且高并发写和读可以在不同的配置的情况下在一个表上同时实现（由于读写的replica number是可以基于per request 定义的）如果你需要高并发可调节读写，scan需求少，那么Cassandra则比HBase更合适。其他的不同就是各种feature了，比如cassandra支持用户自定义multi version control，multi version conflict resolve，算是一个亮点，而HBase貌似只支持multi version… cassandra的server是peer to peer的，完全不会有single point failure；而HBase则依赖于Master Server的协调… 等等综上所述，两种NoSQL DB cover了两种完全不同的data access pattern，他们俩 完全 不雷同。至于国内注重HBase？个人猜测嘛，还不是为了跟风hadoop催的… 为人必提大数据，提大数据必提hadoop，hadoop怎么存数据？HFile？那怎么random access? 然后...恩....Canssandra提供了太多可调节的地方了，调不好可以比MySQL还慢…创建于 2016-04-18著作权归作者所有
+
+cassandra+ spark是一个好的组合，cassandra多数据中心可以做到OLTP和数据分析分开。可以一个数据中心处理事务性功能，一个数据中心结合spark做数据分析。
+
+个人感觉Cassandra最近2年发展的速度很快，也很好用。它的很多特性，比如Cross DC Replication, 一致性可配置都能让它适应各种应用情况。而HBase更多的是和Hadoop一起使用，发展成熟，有很多配套的东西，搭起来没Cassandra容易。Cassandra的一个特点是写的速度超快，读的速度要看具体情况，很多时候会比预想的慢，所以，我们用的时候，是把它作为存放debugging log的地方，为用户提供diagnostics服务。Btw, Cassandra的Gossip协议据说如果一个DataCenter有上千台server的时候会有Storm问题，不过我自己没部署过这么多Cassandra Instance, 国内听说360有这么大的Cassandra集群。
+
+cassandra是一个大表数据库，优点就是语句很像关系型数据库。大家都知道nosql数据库为了支持分布式，大都已主键来定位分区，然后查询。hbase相对于cassanra，就是支持全表scan然后过滤，但是cassandra要排序必须是第一主键或者其他主键，索引可以直接用等于号查询，不需要第一主键，但是用大于，排序，索引都不行！！！！现在一个业务是要搜出一个区域的rowkey，这些key是在一段时间范围内的，sql就直接order by updatetime，但是现在updatetime在cassandra要排序必须是主键，可是业务要求更新时间要能更新，而主键不能更新！hbase则可以不把updatetime设置为主键，全表过滤。cassandra，hbase注意！一般都是用rowkey来定位的，复杂查询慎用，也用不了。
+
+cassandra比较合适做在线业务的存储，可用性比较好。
+
+从实现角度上说，cassandra更类似amazon的dynamo，而hbase则是按照google的bigtable来实现。hbase具有强一致性，而cassandra的一致性却是可配置的。就个人感觉，hbase的用户更多些，社区更活跃，发展到现在已经非常成熟和强大。

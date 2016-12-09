@@ -1,11 +1,5 @@
 public class Solution {
-    /**
-     * @param nums: A list of integers
-     * @return: An integer indicate the value of maximum difference between two
-     *          Subarrays
-     */
     public int maxDiffSubArrays(int[] nums) {
-        // write your code here
         int size = nums.length;
         int[] left_max = new int[size];
         int[] left_min = new int[size];
@@ -65,22 +59,15 @@ public class Solution {
     }
 }
 
+/*
 Given an array with integers.
-
 Find two non-overlapping subarrays A and B, which |SUM(A) - SUM(B)| is the largest.
-
 Return the largest difference.
-
- Notice
-
+Notice
 The subarray should contain at least one number
-
-Have you met this question in a real interview? Yes
 Example
 For [1, 2, -3, 1], return 6.
-
 Challenge 
 O(n) time and O(n) space.
-
-Tags 
-Greedy Enumeration LintCode Copyright Array Subarray Forward-Backward Traversal
+Tags: Greedy Enumeration LintCode Copyright Array Subarray Forward-Backward Traversal
+*/

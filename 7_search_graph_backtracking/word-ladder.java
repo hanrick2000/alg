@@ -12,7 +12,8 @@ public class Solution {
         Queue<String> queue = new LinkedList<String>(); //queue则是BFS下一轮要遍历的节点
         queue.offer(start); //把start放入queue中作为开始
         set.add(start); //start放入set说明已经访问过start了
-        int length = 1; //length记录的是经过了多少次变换, 每轮BFS时length会增加, 本题就是看经过几轮BFS可以找到end
+        int length = 1; 
+        //length记录的是经过了多少次变换, 每轮BFS时length会增加, 本题就是看经过几轮BFS可以找到end
         while(!queue.isEmpty()) {
             length++;
             int size = queue.size();
@@ -32,7 +33,8 @@ public class Solution {
         }
         return 0;
     }
-    private ArrayList<String> getNextWords(String word, Set<String> dict) { //返回在dict中与word相邻的单词
+    private ArrayList<String> getNextWords(String word, Set<String> dict) { 
+        //寻找在dict中与word相邻的所有单词
         ArrayList<String> nextWords = new ArrayList<String>();
         for (char c = 'a'; c <= 'z'; c++) {
             for (int i = 0; i < word.length(); i++) {
@@ -88,9 +90,12 @@ LeetCode中为数不多的考图的难题。
 无论是求最短路径长度还是求所有最短路径, 都是用BFS. 在BFS中有三个关键步骤需要实现:
 1. 如何找到与当前节点相邻的所有节点.
 这里可以有两个策略：
-(1) 遍历整个字典, 将其中每个单词与当前单词比较, 判断是否只差一个字符. 复杂度为：n*w, n为字典中的单词数量, w为单词长度.
-(2) 遍历当前单词的每个字符x, 将其改变成a~z中除x外的任意一个, 形成一个新的单词, 在字典中判断是否存在. 复杂度为：26*w，w为单词长度.
-这里可以和面试官讨论两种策略的取舍. 对于通常的英语单词来说, 长度大多小于100, 而字典中的单词数则往往是成千上万, 所以策略2相对较优.
+(1) 遍历整个字典, 将其中每个单词与当前单词比较, 判断是否只差一个字符. 
+    复杂度为：n*w, n为字典中的单词数量, w为单词长度.
+(2) 遍历当前单词的每个字符x, 将其改变成a~z中除x外的任意一个, 形成一个新的单词, 
+    在字典中判断是否存在. 复杂度为：26*w，w为单词长度.
+这里可以和面试官讨论两种策略的取舍. 对于通常的英语单词来说, 长度大多小于100, 
+而字典中的单词数则往往是成千上万, 所以策略2相对较优.
 2. 如何标记一个节点已经被访问过, 以避免重复访问.
 set里面有的就是访问过的
 3. 一旦BFS找到目标单词, 如何backtracking找回路径?

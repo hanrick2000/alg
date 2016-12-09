@@ -1,7 +1,4 @@
 schedule=========================
-1129 14:00-14:45 amazon JP     phone screen
-1129 21:00-22:00 hortonworks   HR Director
-1206 13:00-17:00 hulu          onsite
 
 contact==========================
 microsoft seatle
@@ -22,4 +19,7 @@ old==============================
 1122 10:30-11:30 google 新加坡 phone screen 再安排一次电话面试                                              YES
 1124 14:30-15:30 hulu   北京   phone screen 问了项目30分钟, 判断是否完全二叉树(递归写了代码+非递归说了思路) YES
 1125 14:00-15:00 hortonworks                                                                                YES
-1128 14:00-15:00 google        phone screen                                                                 ???
+1128 14:00-15:00 google        phone screen                                                                 NO 
+1129 14:00-14:45 amazon JP     phone screen                                                                 ???
+1129 21:00-22:00 hortonworks   HR Director                                                                  ???
+1206 13:00-17:00 hulu          onsite                                                                       NO

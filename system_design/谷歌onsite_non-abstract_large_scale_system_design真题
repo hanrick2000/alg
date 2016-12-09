@@ -1,0 +1,58 @@
+新鲜出炉的面试真题！答得很差，发出来求教大神们的解法！
+
+设计一个只读的lookup service. 
+后台的数据是10 billion个key-value pair, 
+服务形式是接受用户输入的key，返回对应的value。
+已知每个key的size是0.1kB，每个value的size是1kB。
+要求系统qps >= 5000，latency < 200ms.
+
+server性能参数需要自己问，我当时只问了这些，可能有需要的但是没有问到的
+commodity server
+8X CPU cores on each server
+32G memory
+6T disk
+
+使用任意数量的server，设计这个service。
+
+Google 有一个基础的数据结构 SSTable(Sorted String Table), 是一个简单的抽象，
+用来高效地存储大量的键-值对数据，同时做了优化来实现顺序读/写操作的高吞吐量。
+SSTable 就是用来支持大量的读操作。这个设计题就是让你设计SSTableService。：）
+
+given 10 billion key-value pair
+=> total key size ~ 10 billion * 0.1kB = 1T
+=> total value size ~ 10 billion * 1kB = 10T
+
+Since it's read only, so SSTable is suitable in this case rather than NoSQL. 
+with 6T disk , a server with two disks will be enough.
+
+For every request, 1 value, which is 1kB needs to be returned.
+According to https://fusiontables.google.com/DataSource?snapid=S523155yioc
+
+L1 cache reference  0.5(ns)  
+Branch mispredict  5  
+L2 cache reference  7  
+Mutex lock/unlock  25  
+Main memory reference  100  
+Compress 1K bytes with Zippy  3,000  
+Send 2K bytes over 1 Gbps network  20,000  
+Read 1 MB sequentially from memory  250,000  
+Round trip within same datacenter  500,000  
+Disk seek  10,000,000 10毫秒 
+Read 1 MB sequentially from disk  20,000,000 20毫秒 
+Send packet CA->Netherlands->CA  150,000,000 150毫秒
+
+total time for reading one value will be 10ms(disk seek) + 1kB/1MB * 30ms(reading 1kB sequentially from disk) = 10ms. 
+
+QPS on 1 server will be 1s/10ms * 2 disk = 200
+required QPS support is 5000. So we need 5000/200 = 25 servers.
+
+And for latency, there are several things need to be considered: finding the key, read the value, return the value.
+
+Using binary search, we need log(n) times to find the key. 
+For each time, the disk latency is 1 seek plus 1 read, reading key is really small, so can be ignored. So total time for find the key is log(10billion) * 10ms = 100ms.
+
+Reading a key will take another disk seek , 10ms.
+1 round trip in the same data center is 0.5ms.
+Assume network bandwidth is 1Gbps, sending 1kB will take very short time, so it's ignored.
+so total latency is 100 + 10 + 0.5 = 110.5ms.
+

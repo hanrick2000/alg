@@ -60,9 +60,7 @@ OK   M  单-序列型                        www.lintcode.com/problem/house-robb
 OK   M  单-序列型  拆环                  www.lintcode.com/problem/house-robber-ii 在一个环状小区内最大的偷盗价值  
 OK   M  单-序列型                        www.lintcode.com/problem/word-break 字符串能否用字典分割
 OK   M  单-序列型                        www.lintcode.com/problem/palindrome-partitioning-ii 得到最少的回文串需要切几刀  
-OK   E  单-序列型  贪心 presum           www.lintcode.com/problem/maximum-subarray 连续数组的最大和  
 OK   M  单-序列型                        www.lintcode.com/problem/decode-ways 解码方案数 chatAt(x)  
-OK   M  单-序列型                        www.lintcode.com/problem/maximum-product-subarray 连续数组的最大积  
 OK   M  双序列型                         www.lintcode.com/problem/edit-distance 最少的编辑次数  
 OK   M  双序列型                         www.lintcode.com/problem/distinct-subsequences 不同的子序列个数  
 OK   M  双序列型                         www.lintcode.com/problem/interleaving-string 字符串A和字符串B能否交替的组成字符串C  
@@ -90,7 +88,6 @@ OK * H  背包                             www.lintcode.com/problem/copy-books-i
 OK   M  经典题                           www.lintcode.com/problem/maximal-square 想要RA优化空间, 随着for循环初始化首行和首列  
 OK   M  区间型                           www.lintcode.com/problem/longest-palindromic-substring  
 O    H                                   www.lintcode.com/problem/post-office-problem  
-O    H                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iv  
 OK   E                                   www.lintcode.com/problem/drop-eggs
 OK   M                                   www.lintcode.com/problem/drop-eggs-ii
 OK   M  数学归纳法                       www.leetcode.com/problems/count-numbers-with-unique-digits
@@ -127,16 +124,24 @@ OK===E  ================================ www.lintcode.com/problem/intersection-o
 OK   E                                   www.lintcode.com/problem/merge-two-sorted-arrays  
 OK   E                                   www.lintcode.com/problem/merge-sorted-array 把B合并进A, 从后向前合并即可 
 OK   H                                   www.lintcode.com/problem/median-of-two-sorted-arrays 转化成找有序数列中的第k个数, log(m+n)的复杂度
-O    E                                   www.lintcode.com/problem/subarray-sum  
-O    M                                   www.lintcode.com/problem/two-sum-closest  
-O    M                                   www.lintcode.com/problem/subarray-sum-closest  
-O    E                                   www.lintcode.com/problem/minimum-subarray  
-OK   M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii hulu 
-OK   M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
 OK   M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock hulu
-O    M                                   www.lintcode.com/problem/maximum-subarray-difference  
-O    M                                   www.lintcode.com/problem/maximum-subarray-ii  
-O    H                                   www.lintcode.com/problem/maximum-subarray-iii  
+OK   M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-ii  
+OK   M                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii hulu DP
+OK   H                                   www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iv  DP
+OK   M                                   www.leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown DP
+OK * M  前向型指针 窗口类                www.lintcode.com/problem/minimum-size-subarray-sum 求最短的连续子数组的和>=target TwoPointer
+OK   E                                   www.lintcode.com/problem/subarray-sum         找个子数组和是0
+OK   H                                   www.lintcode.com/problem/subarray-sum-ii      用prefix sum方法, 找个子数组, 和在一个范围内
+OK   M                                   www.lintcode.com/problem/subarray-sum-closest 找个子数组, 和最接近0
+OK   M                                   www.lintcode.com/problem/submatrix-sum        找个子矩阵, 和是0
+OK   E                                   www.lintcode.com/problem/minimum-subarray
+O    M                                   www.lintcode.com/problem/maximum-subarray-difference
+O    M                                   www.lintcode.com/problem/maximum-subarray-ii
+O    H                                   www.lintcode.com/problem/maximum-subarray-iii
+OK   E  单-序列型  贪心 presum           www.lintcode.com/problem/maximum-subarray 连续数组的最大和 DP
+OK   M  单-序列型                        www.lintcode.com/problem/maximum-product-subarray 连续数组的最大积 DP
+O    M                                   www.lintcode.com/problem/continuous-subarray-sum
+O    M                                   www.lintcode.com/problem/continuous-subarray-sum-ii
 O ===E  ================================ www.lintcode.com/problem/hash-function ========================================= Data Structure  
 O    M                                   www.lintcode.com/problem/top-k-largest-numbers  
 O    M                                   www.lintcode.com/problem/merge-k-sorted-arrays  
@@ -144,27 +149,51 @@ O    M                                   www.lintcode.com/problem/rehashing
 OK   M                                   www.lintcode.com/problem/implement-queue-by-two-stacks  
 O    M                                   www.lintcode.com/problem/min-stack  
 O    M                                   www.lintcode.com/problem/ugly-number-ii  
-OK   H                                   www.lintcode.com/problem/lru-cache hulu 
-O    H                                   www.lintcode.com/problem/largest-rectangle-in-histogram  
-O    E                                   www.lintcode.com/problem/implement-stack  
-O    E                                   www.lintcode.com/problem/implement-stack-by-two-queues  
-O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list-ii  
-O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list  
-O    M                                   www.lintcode.com/problem/top-k-largest-numbers-ii  
-O    M                                   www.lintcode.com/problem/stack-sorting  
-O    M                                   www.lintcode.com/problem/top-k-frequent-words  
-O    M                                   www.lintcode.com/problem/heapify  
-O    M                                   www.lintcode.com/problem/longest-consecutive-sequence  
-O    H                                   www.lintcode.com/problem/animal-shelter  
-O    H                                   www.lintcode.com/problem/lfu-cache  
-O    H                                   www.lintcode.com/problem/max-tree  
+OK   H                                   www.lintcode.com/problem/lru-cache hulu microsoft amazon
+O    H                                   www.lintcode.com/problem/lfu-cache
+O    H                                   www.lintcode.com/problem/largest-rectangle-in-histogram
+O    E                                   www.lintcode.com/problem/implement-stack
+O    E                                   www.lintcode.com/problem/implement-stack-by-two-queues
+O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list-ii
+O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list
+O    M                                   www.lintcode.com/problem/top-k-largest-numbers-ii
+O    M                                   www.lintcode.com/problem/stack-sorting
+O    M                                   www.lintcode.com/problem/top-k-frequent-words
+O    M                                   www.lintcode.com/problem/heapify
+O    M                                   www.lintcode.com/problem/longest-consecutive-sequence
+O    H                                   www.lintcode.com/problem/animal-shelter
+OK   H                                   www.lintcode.com/problem/max-tree 构造最大堆笛卡尔树
+OK   H                                   www.lintcode.com/problem/expression-tree-build
+OK   H                                   www.lintcode.com/problem/expression-evaluation 两个栈的方法比较好; 先构造min tree, 然后后续遍历得到逆波兰表达式, 然后在计算逆波兰表达式
+O    H                                   www.lintcode.com/problem/convert-expression-to-reverse-polish-notation
+O    H                                   www.lintcode.com/problem/convert-expression-to-polish-notation
 O    M                                   www.lintcode.com/problem/implement-three-stacks-by-single-array
+OK   E  UF                               www.lintcode.com/problem/number-of-islands microsoft
+OK   H  UF                               www.lintcode.com/problem/number-of-islands-ii microsoft
+OK   M  UF                               www.lintcode.com/problem/graph-valid-tree
+O    M  UF                               www.lintcode.com/problem/find-the-weak-connected-component-in-the-directed-graph
+O    M  UF                               www.lintcode.com/problem/find-the-connected-component-in-the-undirected-graph 还可以有BFS做法, 用hashset记录访问过的节点, 然后用bfs遍历每一个node
+O    M  UF                               www.lintcode.com/problem/surrounded-regions
+O    M  SweepLine                        www.lintcode.com/problem/number-of-airplanes-in-the-sky
+O    M  Trie                             www.lintcode.com/problem/add-and-search-word
+O    M                                   www.lintcode.com/problem/word-search microsoft
+O    H  Trie                             www.lintcode.com/problem/word-search-ii microsoft
+O    M  SegmentTree                      www.lintcode.com/problem/segment-tree-query-ii
+O    H                                   www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays contest
+O    H  SegmentTree                      www.lintcode.com/problem/count-of-smaller-number-before-itself
+O    H  SegmentTree                      www.lintcode.com/problem/interval-sum-ii
+O    H                                   www.lintcode.com/problem/trapping-rain-water-ii
+O    H                                   www.lintcode.com/problem/sliding-window-median
+O    H                                   www.lintcode.com/problem/data-stream-median
+O    S                                   www.lintcode.com/problem/building-outline
+O    S                                   www.lintcode.com/problem/sliding-window-maximum
+O    H                                   www.lintcode.com/problem/maximal-rectangle
 OK===M BackTracking ==================== www.lintcode.com/problem/subsets =========================================== Graph & Search & BackTracking 
 OK   M BackTracking                      www.lintcode.com/problem/subsets-ii 注意拆解递归时是helper(nums, path, i + 1, results) 而不是 pos + 1 
 OK   M BackTracking                      www.lintcode.com/problem/permutations  
 OK   M BackTracking                      www.lintcode.com/problem/permutations-ii 递归拆解是从0到nums.length-1
 OK   M BackTracking                      www.lintcode.com/problem/palindrome-partitioning 是dfs, subset类型的
-OK   H BackTracking                      www.lintcode.com/problem/word-ladder-ii  
+OK   H BackTracking                      www.lintcode.com/problem/word-ladder-ii amazon linkedin yelp
 OK   H BackTracking                      www.lintcode.com/problem/word-break-ii contest 跟permutation很像, 利用word-break来避免搜索不肯能的
 O    M BackTracking                      www.lintcode.com/problem/k-sum-ii  
 OK   M BackTracking                      langford-pairing
@@ -180,62 +209,41 @@ OK   M                                   www.lintcode.com/problem/topological-so
 OK   M                                   www.lintcode.com/problem/n-queens 用了StringBuilder, 要调用toString()才能变成str 
 OK   M                                   www.lintcode.com/problem/n-queens-ii  
 O    M                                   www.lintcode.com/problem/string-permutation-ii  
-
-
-
-
-
-
-OK===E  UF  ============================ www.lintcode.com/problem/number-of-islands ===================================== UnionFind/Trie/SweepLine/Heap/HashHeep/Deque  
-O    H  UF                               www.lintcode.com/problem/number-of-islands-ii  
-OK   M  UF                               www.lintcode.com/problem/graph-valid-tree  
-O    M  UF                               www.lintcode.com/problem/find-the-weak-connected-component-in-the-directed-graph  
-O    M  UF                               www.lintcode.com/problem/find-the-connected-component-in-the-undirected-graph 还可以有BFS做法, 用hashset记录访问过的节点, 然后用bfs遍历每一个node
-O    M  UF                               www.lintcode.com/problem/surrounded-regions  
-O    M  SweepLine                        www.lintcode.com/problem/number-of-airplanes-in-the-sky  
-O    M  Trie                             www.lintcode.com/problem/add-and-search-word  
-O    M                                   www.lintcode.com/problem/word-search  
-O    H  Trie                             www.lintcode.com/problem/word-search-ii  
-O    M  SegmentTree                      www.lintcode.com/problem/segment-tree-query-ii  
-O    H                                   www.lintcode.com/problem/kth-smallest-sum-in-two-sorted-arrays contest 
-O    H  SegmentTree                      www.lintcode.com/problem/count-of-smaller-number-before-itself  
-O    H  SegmentTree                      www.lintcode.com/problem/interval-sum-ii  
-O    H                                   www.lintcode.com/problem/trapping-rain-water-ii   
-O    H                                   www.lintcode.com/problem/sliding-window-median  
-O    H                                   www.lintcode.com/problem/data-stream-median  
-O    S                                   www.lintcode.com/problem/building-outline  
-O    S                                   www.lintcode.com/problem/sliding-window-maximum  
-O    H                                   www.lintcode.com/problem/maximal-rectangle  
-O    H                                   www.lintcode.com/problem/expression-tree-build  
-O    H                                   www.lintcode.com/problem/convert-expression-to-reverse-polish-notation  
-O    H                                   www.lintcode.com/problem/convert-expression-to-polish-notation  
-O    H                                   www.lintcode.com/problem/expression-evaluation  
-OK===M  对撞型指针 2-sum类 ============= www.lintcode.com/problem/container-with-most-water ==================================== Two Pointers  
-OK   M  对撞型指针 2-sum类               www.lintcode.com/problem/trapping-rain-water  
-OK   M  对撞型指针 2-sum类               www.lintcode.com/problem/two-sum  
+OK   M                                   www.leetcode.com/problems/android-unlock-patterns
+OK===M 对撞型指针 2-sum类 =============  www.lintcode.com/problem/container-with-most-water ==================================== Two Pointers  
+OK   M 对撞型指针 2-sum类                www.lintcode.com/problem/trapping-rain-water  
+OK   M 对撞型指针 2-sum类                www.lintcode.com/problem/two-sum  
 OK   M                                   www.lintcode.com/problem/two-sum-ii  
-OK   M  对撞型指针 2-sum类               www.lintcode.com/problem/3sum-closest 固定一个数, 然后左右缩减范围  
-OK   M  对撞型指针 2-sum类               www.lintcode.com/problem/3sum 也是固定一个数, 但注意当遇到相同值时, bypass它  
-OK   M  对撞型指针 2-sum类               www.lintcode.com/problem/4sum  
-OK   H  对撞型指针 2-sum类               www.lintcode.com/problem/triangle-count  
-OK   M  对撞型指针 partition类           www.lintcode.com/problem/nuts-bolts-problem   
-OK * M  对撞型指针 partition类           www.lintcode.com/problem/kth-largest-element  
-OK   E  对撞型指针 partition类           www.lintcode.com/problem/valid-palindrome front>=end; Character.isDigit(), Character.isLetter()  
-OK   E  对撞型指针 partition类           www.lintcode.com/problem/partition-array-by-odd-and-even 一遍直接翻转  
-OK   M  对撞型指针 partition类           www.lintcode.com/problem/sort-letters-by-case 一遍直接翻转, Character.isUpperCase(), Character.isLowerCase()  
-OK * M  对撞型指针 partition类           www.lintcode.com/problem/partition-array 一遍直接翻转 感觉所有此类题跟另外一种partition都可以用一种partition的模板搞定  
-OK   M  对撞型指针 partition类           www.lintcode.com/problem/sort-colors 画图 Left Cur Right  
-OK   M  对撞型指针 partition类           www.lintcode.com/problem/interleaving-positive-and-negative-numbers  
-OK * M  前向型指针 窗口类                www.lintcode.com/problem/minimum-size-subarray-sum 求最短的连续子数组的和>=s  
-OK   M  前向型指针 窗口类                www.lintcode.com/problem/minimum-window-substring 求在Source中最短的包含了Target所有字符的子串  
-OK * M  前向型指针 窗口类                www.lintcode.com/problem/longest-substring-without-repeating-characters  
-OK * M  前向型指针 窗口类                www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters  
-OK   M  两个数组两个指针                 www.lintcode.com/problem/the-smallest-difference 求两个数组A和B中任意两个元素的最小差值  
-OK   H  ????                             www.lintcode.com/problem/sliding-window-matrix-maximum 先求出sum[i][j]表示[i][j]位置的矩形和, 再利用sum数组遍历求k矩形最大值  
-O ===H================================== www.lintcode.com/problem/subarray-sum-ii ========================================== Follow Up  
-O    M                                   www.lintcode.com/problem/submatrix-sum  
-O    M                                   www.lintcode.com/problem/continuous-subarray-sum  
-O    M                                   www.lintcode.com/problem/continuous-subarray-sum-ii  
+O    M                                   www.lintcode.com/problem/two-sum-closest  
+OK   M 对撞型指针 2-sum类                www.lintcode.com/problem/3sum-closest 固定一个数, 然后左右缩减范围  
+OK   M 对撞型指针 2-sum类                www.lintcode.com/problem/3sum 也是固定一个数, 但注意当遇到相同值时, bypass它  
+OK   M                                   www.leetcode.com/problems/3sum-smaller
+OK   M 对撞型指针 2-sum类                www.lintcode.com/problem/4sum  
+OK   H 对撞型指针 2-sum类                www.lintcode.com/problem/triangle-count  
+OK   M 对撞型指针 partition类            www.lintcode.com/problem/nuts-bolts-problem   
+OK * M 对撞型指针 partition类            www.lintcode.com/problem/kth-largest-element  
+OK   E 对撞型指针 partition类            www.lintcode.com/problem/valid-palindrome front>=end; Character.isDigit(), Character.isLetter()  
+OK   E 对撞型指针 partition类            www.lintcode.com/problem/partition-array-by-odd-and-even 一遍直接翻转  
+OK   M 对撞型指针 partition类            www.lintcode.com/problem/sort-letters-by-case 一遍直接翻转, Character.isUpperCase(), Character.isLowerCase()  
+OK * M 对撞型指针 partition类            www.lintcode.com/problem/partition-array 一遍直接翻转 感觉所有此类题跟另外一种partition都可以用一种partition的模板搞定  
+OK   M 对撞型指针 partition类            www.lintcode.com/problem/sort-colors 画图 Left Cur Right  
+OK   M 对撞型指针 partition类            www.lintcode.com/problem/interleaving-positive-and-negative-numbers  
+OK   M 前向型指针 窗口类                 www.lintcode.com/problem/minimum-window-substring 求在Source中最短的包含了Target所有字符的子串  
+OK * M 前向型指针 窗口类                 www.lintcode.com/problem/longest-substring-without-repeating-characters  
+OK * M 前向型指针 窗口类                 www.lintcode.com/problem/longest-substring-with-at-most-k-distinct-characters  
+OK   M 两个数组两个指针                  www.lintcode.com/problem/the-smallest-difference 求两个数组A和B中任意两个元素的最小差值  
+OK   H                                   www.lintcode.com/problem/sliding-window-matrix-maximum 先求出sum[i][j]表示[i][j]位置的矩形和, 再利用sum数组遍历求k矩形最大值  
+OK   E 两层for搞定,注意for的范围         www.lintcode.com/problem/strstr ======================================================= Mics
+O    E                                   www.lintcode.com/problem/climbing-stairs-ii 
+O    E                                   www.lintcode.com/problem/kth-largest-in-n-arrays  
+O    M                                   www.lintcode.com/problem/segment-tree-build  
+O    M                                   www.lintcode.com/problem/segment-tree-build-ii  
+O    M                                   www.lintcode.com/problem/segment-tree-modify  
+O    M                                   www.lintcode.com/problem/segment-tree-query  
+O    M                                   www.lintcode.com/problem/interval-minimum-number  
+O    M                                   www.lintcode.com/problem/lowest-common-ancestor-iii  
+O    M                                   www.lintcode.com/problem/find-the-missing-number-ii  
+O    M                                   www.lintcode.com/problem/number-of-ways-to-represent-n-cents  
 O    M                                   www.lintcode.com/problem/kth-smallest-number-in-sorted-matrix  
 O    H                                   www.lintcode.com/problem/find-peak-element-ii  
 O    H                                   www.lintcode.com/problem/maximum-gap  
@@ -245,17 +253,6 @@ O    E                                   www.lintcode.com/problem/nested-list-we
 O    M                                   www.lintcode.com/problem/bomb-enemy  
 O    M                                   www.lintcode.com/problem/zigzag-iterator  
 O    M                                   www.lintcode.com/problem/zigzag-iterator-ii  
-O ===E================================== www.lintcode.com/problem/climbing-stairs-ii ==================================== Selected Problems in Past Exam  
-O    M                                   www.lintcode.com/problem/lowest-common-ancestor-iii  
-O    M                                   www.lintcode.com/problem/find-the-missing-number-ii  
-O    M                                   www.lintcode.com/problem/number-of-ways-to-represent-n-cents  
-O ===E================================== www.lintcode.com/problem/kth-largest-in-n-arrays =============================== Follow Up  
-O    M                                   www.lintcode.com/problem/segment-tree-build  
-O    M                                   www.lintcode.com/problem/segment-tree-build-ii  
-O    M                                   www.lintcode.com/problem/segment-tree-modify  
-O    M                                   www.lintcode.com/problem/segment-tree-query  
-O    M                                   www.lintcode.com/problem/interval-minimum-number  
-OK   E 两层for搞定,注意for的范围         www.lintcode.com/problem/strstr ======================================================= Mics
 OK   M 字符串操作                        www.lintcode.com/problem/roman-to-integer 
 OK   M Greedy                            www.lintcode.com/problem/gas-station
 OK   M                                   www.leetcode.com/problems/product-of-array-except-self
@@ -264,125 +261,120 @@ OK   M 使用stack记录当前层的最大路径长   www.leetcode.com/problems/
 OK   M                                   www.leetcode.com/problems/sentence-screen-fitting 把sentence重复拼接
 OK   M                                   www.leetcode.com/problems/binary-tree-longest-consecutive-sequence 求tree上的最长连续序列(3-4-5这样的才叫consecutive, 而且本体要求是升序的)
 OK   M                                   www.leetcode.com/problems/missing-ranges
-OK   E                                   www.leetcode.com/problems/add-strings/ 利用carry记录进位, 从num1和num2的最低位开始相加, 逐个append到StringBuilder中
-OK   E                                   www.leetcode.com/problems/binary-tree-paths/
-OK   E                                   www.leetcode.com/problems/binary-watch/ 使用Integer.bitCount(i)来看i对应的二进制有多少个1, 然后用String.format("%d:%02d", i, j)来打印
-OK   E                                   www.leetcode.com/problems/closest-binary-search-tree-value/
-
-     E                                   www.leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
-     E                                   www.leetcode.com/problems/find-the-difference/
-     E                                   www.leetcode.com/problems/flip-game/
-     E                                   www.leetcode.com/problems/group-shifted-strings/
-     E                                   www.leetcode.com/problems/guess-number-higher-or-lower/
-     E                                   www.leetcode.com/problems/logger-rate-limiter/
-O    E                                   www.leetcode.com/problems/longest-palindrome/
-     E                                   www.leetcode.com/problems/nth-digit/
-     E                                   www.leetcode.com/problems/number-of-boomerangs/
-     E                                   www.leetcode.com/problems/paint-fence/
-     E                                   www.leetcode.com/problems/palindrome-permutation/
-O    E                                   www.leetcode.com/problems/plus-one/
-     E                                   www.leetcode.com/problems/power-of-three/
-     E                                   www.leetcode.com/problems/power-of-two/
-     E                                   www.leetcode.com/problems/repeated-substring-pattern/
-O    E                                   www.leetcode.com/problems/reverse-vowels-of-a-string/
-     E                                   www.leetcode.com/problems/strobogrammatic-number/
-     E                                   www.leetcode.com/problems/unique-word-abbreviation/
-O    E                                   www.leetcode.com/problems/valid-parentheses/
-O    E                                   www.leetcode.com/problems/valid-word-abbreviation/
-     E                                   www.leetcode.com/problems/valid-word-square/
-     M                                   www.leetcode.com/problems/3sum-smaller/
-     M                                   www.leetcode.com/problems/android-unlock-patterns/
-     M                                   www.leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
-     M                                   www.leetcode.com/problems/binary-tree-vertical-order-traversal/
-     M                                   www.leetcode.com/problems/combination-sum-iv/
-     M                                   www.leetcode.com/problems/decode-string/
-     M                                   www.leetcode.com/problems/design-hit-counter/
-     M                                   www.leetcode.com/problems/design-phone-directory/
-     M                                   www.leetcode.com/problems/design-tic-tac-toe/
-     M                                   www.leetcode.com/problems/encode-and-decode-strings/
-     M                                   www.leetcode.com/problems/find-k-pairs-with-smallest-sums/
-     M                                   www.leetcode.com/problems/flatten-2d-vector/
-     M                                   www.leetcode.com/problems/flatten-nested-list-iterator/
-O    M                                   www.leetcode.com/problems/flip-game-ii/
-     M                                   www.leetcode.com/problems/fraction-to-recurring-decimal/
-     M                                   www.leetcode.com/problems/generalized-abbreviation/
-O    M                                   www.leetcode.com/problems/generate-parentheses/
-     M                                   www.leetcode.com/problems/guess-number-higher-or-lower-ii/
-     M                                   www.leetcode.com/problems/h-index/
-     M                                   www.leetcode.com/problems/implement-trie-prefix-tree/
-     M                                   www.leetcode.com/problems/integer-replacement/
-     M                                   www.leetcode.com/problems/kth-smallest-element-in-a-bst/
-O    M                                   www.leetcode.com/problems/largest-divisible-subset/
-O    M                                   www.leetcode.com/problems/line-reflection/
-     M                                   www.leetcode.com/problems/linked-list-random-node/
-     M                                   www.leetcode.com/problems/maximum-product-of-word-lengths/
-     M                                   www.leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/
-O    M                                   www.leetcode.com/problems/meeting-rooms-ii/
-     M                                   www.leetcode.com/problems/minimum-height-trees/
-O    M                                   www.leetcode.com/problems/next-permutation/
-     M                                   www.leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
-     M                                   www.leetcode.com/problems/pacific-atlantic-water-flow/
-     M                                   www.leetcode.com/problems/peeking-iterator/
-O    M                                   www.leetcode.com/problems/perfect-squares/
-     M                                   www.leetcode.com/problems/plus-one-linked-list/
-O    M                                   www.leetcode.com/problems/powx-n/
-     M                                   www.leetcode.com/problems/queue-reconstruction-by-height/
-     M                                   www.leetcode.com/problems/range-addition/
-O    M                                   www.leetcode.com/problems/reconstruct-itinerary/
-     M                                   www.leetcode.com/problems/remove-k-digits/
-     M                                   www.leetcode.com/problems/sequence-reconstruction/
-     M                                   www.leetcode.com/problems/sort-characters-by-frequency/
-     M                                   www.leetcode.com/problems/sort-transformed-array/
-O    M                                   www.leetcode.com/problems/spiral-matrix/
-     M                                   www.leetcode.com/problems/strobogrammatic-number-ii/
-     M                                   www.leetcode.com/problems/summary-ranges/
-O    M                                   www.leetcode.com/problems/super-ugly-number/
-     M                                   www.leetcode.com/problems/utf-8-validation/
-O    M                                   www.leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/
-     M                                   www.leetcode.com/problems/walls-and-gates/
-O    M                                   www.leetcode.com/problems/wiggle-sort-ii/
-O    M                                   www.leetcode.com/problems/wiggle-sort/
-O    H                                   www.leetcode.com/problems/alien-dictionary/
-     H                                   www.leetcode.com/problems/basic-calculator/
-     H                                   www.leetcode.com/problems/closest-binary-search-tree-value-ii/
-     H                                   www.leetcode.com/problems/count-of-range-sum/
-     H                                   www.leetcode.com/problems/count-of-smaller-numbers-after-self/
-O    H                                   www.leetcode.com/problems/create-maximum-number/
-     H                                   www.leetcode.com/problems/expression-add-operators/
-     H                                   www.leetcode.com/problems/find-median-from-data-stream/
-     H                                   www.leetcode.com/problems/insert-delete-getrandom-o1/
-O    H                                   www.leetcode.com/problems/insert-interval/
-     H                                   www.leetcode.com/problems/longest-increasing-path-in-a-matrix/
-     H                                   www.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
-     H                                   www.leetcode.com/problems/max-sum-of-sub-matrix-no-larger-than-k/
-O    H                                   www.leetcode.com/problems/merge-intervals/
-     H                                   www.leetcode.com/problems/minimum-unique-word-abbreviation/
-     H                                   www.leetcode.com/problems/palindrome-pairs/
-     H                                   www.leetcode.com/problems/patching-array/
-     H                                   www.leetcode.com/problems/perfect-rectangle/
-     H                                   www.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
-     H                                   www.leetcode.com/problems/rearrange-string-k-distance-apart/
-O    H                                   www.leetcode.com/problems/regular-expression-matching/
-     H                                   www.leetcode.com/problems/remove-duplicate-letters/
-     H                                   www.leetcode.com/problems/russian-doll-envelopes/
-     H                                   www.leetcode.com/problems/shortest-distance-from-all-buildings/
-O    H                                   www.leetcode.com/problems/shortest-palindrome/
-     H                                   www.leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/
-     H                                   www.leetcode.com/problems/the-skyline-problem/
-O    H                                   www.leetcode.com/problems/word-search-ii/
-     H                                   www.leetcode.com/problems/word-squares/
-     M 拓扑排序                          www.leetcode.com/problems/course-schedule/ google
-     M                                   www.leetcode.com/problems/game-of-life/ google
-OK   M 一遍for循环是最好解,回溯是暴力    www.leetcode.com/problems/permutation-sequence/ google
-
-                                         www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array contest
-                                         www.lintcode.com/problem/sqrtx-ii contest
-                                         www.lintcode.com/problem/longest-repeating-subsequence contest
-                                         
-OK   M                                   www.leetcode.com/problems/simplify-path/ hulu microsoft facebook stack string
+OK   E                                   www.leetcode.com/problems/add-strings 利用carry记录进位, 从num1和num2的最低位开始相加, 逐个append到StringBuilder中
+OK   E                                   www.leetcode.com/problems/binary-tree-paths
+OK   E                                   www.leetcode.com/problems/binary-watch 使用Integer.bitCount(i)来看i对应的二进制有多少个1, 然后用String.format("%d:%02d", i, j)来打印
+OK   E                                   www.leetcode.com/problems/closest-binary-search-tree-value
+     E                                   www.leetcode.com/problems/find-all-numbers-disappeared-in-an-array
+     E                                   www.leetcode.com/problems/find-the-difference
+     E                                   www.leetcode.com/problems/flip-game
+     E                                   www.leetcode.com/problems/group-shifted-strings
+     E                                   www.leetcode.com/problems/guess-number-higher-or-lower
+     E                                   www.leetcode.com/problems/logger-rate-limiter
+O    E                                   www.leetcode.com/problems/longest-palindrome
+     E                                   www.leetcode.com/problems/nth-digit
+     E                                   www.leetcode.com/problems/number-of-boomerangs
+     E                                   www.leetcode.com/problems/paint-fence
+     E                                   www.leetcode.com/problems/palindrome-permutation
+O    E                                   www.leetcode.com/problems/plus-one
+     E                                   www.leetcode.com/problems/power-of-three
+     E                                   www.leetcode.com/problems/power-of-two
+     E                                   www.leetcode.com/problems/repeated-substring-pattern
+O    E                                   www.leetcode.com/problems/reverse-vowels-of-a-string
+     E                                   www.leetcode.com/problems/strobogrammatic-number
+     E                                   www.leetcode.com/problems/unique-word-abbreviation
+O    E                                   www.leetcode.com/problems/valid-parentheses
+O    E                                   www.leetcode.com/problems/valid-word-abbreviation
+     E                                   www.leetcode.com/problems/valid-word-square
+O    M                                   www.leetcode.com/problems/binary-tree-vertical-order-traversal google microsoft
+     M                                   www.leetcode.com/problems/combination-sum-iv
+     M                                   www.leetcode.com/problems/decode-string
+     M                                   www.leetcode.com/problems/design-hit-counter
+     M                                   www.leetcode.com/problems/design-phone-directory
+     M                                   www.leetcode.com/problems/design-tic-tac-toe
+     M                                   www.leetcode.com/problems/encode-and-decode-strings
+     M                                   www.leetcode.com/problems/find-k-pairs-with-smallest-sums
+     M                                   www.leetcode.com/problems/flatten-2d-vector
+     M                                   www.leetcode.com/problems/flatten-nested-list-iterator
+O    M                                   www.leetcode.com/problems/flip-game-ii
+     M                                   www.leetcode.com/problems/fraction-to-recurring-decimal
+     M                                   www.leetcode.com/problems/generalized-abbreviation
+O    M                                   www.leetcode.com/problems/generate-parentheses
+     M                                   www.leetcode.com/problems/guess-number-higher-or-lower-ii
+     M                                   www.leetcode.com/problems/h-index
+     M                                   www.leetcode.com/problems/implement-trie-prefix-tree
+     M                                   www.leetcode.com/problems/integer-replacement
+     M                                   www.leetcode.com/problems/kth-smallest-element-in-a-bst
+O    M                                   www.leetcode.com/problems/largest-divisible-subset
+O    M                                   www.leetcode.com/problems/line-reflection
+     M                                   www.leetcode.com/problems/linked-list-random-node
+     M                                   www.leetcode.com/problems/maximum-product-of-word-lengths
+     M                                   www.leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array
+O    M                                   www.leetcode.com/problems/meeting-rooms-ii
+     M                                   www.leetcode.com/problems/minimum-height-trees
+O    M                                   www.leetcode.com/problems/next-permutation
+     M                                   www.leetcode.com/problems/number-of-connected-components-in-an-undirected-graph
+     M                                   www.leetcode.com/problems/pacific-atlantic-water-flow
+     M                                   www.leetcode.com/problems/peeking-iterator
+O    M                                   www.leetcode.com/problems/perfect-squares
+     M                                   www.leetcode.com/problems/plus-one-linked-list
+O    M                                   www.leetcode.com/problems/powx-n
+     M                                   www.leetcode.com/problems/queue-reconstruction-by-height
+     M                                   www.leetcode.com/problems/range-addition
+O    M                                   www.leetcode.com/problems/reconstruct-itinerary
+     M                                   www.leetcode.com/problems/remove-k-digits
+     M                                   www.leetcode.com/problems/sequence-reconstruction
+     M                                   www.leetcode.com/problems/sort-characters-by-frequency
+     M                                   www.leetcode.com/problems/sort-transformed-array
+O    M                                   www.leetcode.com/problems/spiral-matrix
+     M                                   www.leetcode.com/problems/strobogrammatic-number-ii
+     M                                   www.leetcode.com/problems/summary-ranges
+O    M                                   www.leetcode.com/problems/super-ugly-number
+     M                                   www.leetcode.com/problems/utf-8-validation
+O    M                                   www.leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree
+     M                                   www.leetcode.com/problems/walls-and-gates
+O    M                                   www.leetcode.com/problems/wiggle-sort-ii
+O    M                                   www.leetcode.com/problems/wiggle-sort
+O    H                                   www.leetcode.com/problems/alien-dictionary
+     H                                   www.leetcode.com/problems/basic-calculator
+     H                                   www.leetcode.com/problems/closest-binary-search-tree-value-ii
+     H                                   www.leetcode.com/problems/count-of-range-sum
+     H                                   www.leetcode.com/problems/count-of-smaller-numbers-after-self
+O    H                                   www.leetcode.com/problems/create-maximum-number
+     H                                   www.leetcode.com/problems/expression-add-operators
+     H                                   www.leetcode.com/problems/find-median-from-data-stream
+     H                                   www.leetcode.com/problems/insert-delete-getrandom-o1
+O    H                                   www.leetcode.com/problems/insert-interval
+     H                                   www.leetcode.com/problems/longest-increasing-path-in-a-matrix
+     H                                   www.leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters
+     H                                   www.leetcode.com/problems/max-sum-of-sub-matrix-no-larger-than-k
+O    H                                   www.leetcode.com/problems/merge-intervals
+     H                                   www.leetcode.com/problems/minimum-unique-word-abbreviation
+     H                                   www.leetcode.com/problems/palindrome-pairs
+     H                                   www.leetcode.com/problems/patching-array
+     H                                   www.leetcode.com/problems/perfect-rectangle
+     H                                   www.leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times
+     H                                   www.leetcode.com/problems/rearrange-string-k-distance-apart
+O    H                                   www.leetcode.com/problems/regular-expression-matching/ google microsoft
+     H                                   www.leetcode.com/problems/remove-duplicate-letters
+     H                                   www.leetcode.com/problems/russian-doll-envelopes
+     H                                   www.leetcode.com/problems/shortest-distance-from-all-buildings
+O    H                                   www.leetcode.com/problems/shortest-palindrome
+     H                                   www.leetcode.com/problems/smallest-rectangle-enclosing-black-pixels
+     H                                   www.leetcode.com/problems/the-skyline-problem
+O    H                                   www.leetcode.com/problems/word-search-ii
+     H                                   www.leetcode.com/problems/word-squares
+     M 拓扑排序                          www.leetcode.com/problems/course-schedule google
+     M                                   www.leetcode.com/problems/game-of-life google
+OK   M 一遍for循环是最好解,回溯是暴力    www.leetcode.com/problems/permutation-sequence google
+     M                                   www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array contest
+     M                                   www.lintcode.com/problem/sqrtx-ii contest
+     M                                   www.lintcode.com/problem/longest-repeating-subsequence contest
+OK   M                                   www.leetcode.com/problems/simplify-path hulu microsoft facebook stack string
 O    M                                   company-structure hulu
 OK   M                                   ads-fatigue hulu
 OK   M                                   delete_number hulu
 OK   M                                   www.leetcode.com/problems/populating-next-right-pointers-in-each-node hulu microsoft
 OK   H                                   www.leetcode.com/problems/populating-next-right-pointers-in-each-node-ii hulu facebook microsoft
 O    M                                   snake-ladder-problem-2 graph-bfs
+OK   E                                   greatest-common-divisor microsoft

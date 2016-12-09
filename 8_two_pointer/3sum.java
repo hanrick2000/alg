@@ -5,7 +5,8 @@ public class Solution {
             return rst;
         }
         Arrays.sort(num);
-        for (int i = 0; i < num.length - 2; i++) { //因为left=i+1, 所以i的上界是num.length-2
+        for (int i = 0; i < num.length - 2; i++) { 
+            //因为left=i+1, 所以i的上界是num.length-2
             if (i != 0 && num[i] == num[i - 1]) {
                 continue; // to skip duplicate numbers; e.g [0,0,0,0]
             }
@@ -37,6 +38,8 @@ public class Solution {
         return rst;
     }
 }
+
+/*
 Given an array S of n integers, 
 are there elements a, b, c in S such that a + b + c = 0? 
 Find all unique triplets in the array which gives the sum of zero.
@@ -46,3 +49,4 @@ Example
 For example, given array S = {-1 0 1 2 -1 -4}, A solution set is:
 (-1, 0, 1)
 (-1, -1, 2)
+*/

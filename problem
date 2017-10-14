@@ -135,20 +135,23 @@ OK   H                                   www.lintcode.com/problem/subarray-sum-i
 OK   M                                   www.lintcode.com/problem/subarray-sum-closest 找个子数组, 和最接近0
 OK   M                                   www.lintcode.com/problem/submatrix-sum        找个子矩阵, 和是0
 OK   E                                   www.lintcode.com/problem/minimum-subarray
-O    M                                   www.lintcode.com/problem/maximum-subarray-difference
-O    M                                   www.lintcode.com/problem/maximum-subarray-ii
-O    H                                   www.lintcode.com/problem/maximum-subarray-iii
-OK   E  单-序列型  贪心 presum           www.lintcode.com/problem/maximum-subarray 连续数组的最大和 DP
+OK   E  单-序列型/greedy/PrefixSum       www.lintcode.com/problem/maximum-subarray 连续数组的最大和 DP
+OK   M  PrefixSum                        www.lintcode.com/problem/maximum-subarray-difference
+OK   M                                   www.lintcode.com/problem/maximum-subarray-ii
+OK   H                                   www.lintcode.com/problem/maximum-subarray-iii
 OK   M  单-序列型                        www.lintcode.com/problem/maximum-product-subarray 连续数组的最大积 DP
-O    M                                   www.lintcode.com/problem/continuous-subarray-sum
-O    M                                   www.lintcode.com/problem/continuous-subarray-sum-ii
-O ===E  ================================ www.lintcode.com/problem/hash-function ========================================= Data Structure  
-O    M                                   www.lintcode.com/problem/top-k-largest-numbers  
-O    M                                   www.lintcode.com/problem/merge-k-sorted-arrays  
-O    M                                   www.lintcode.com/problem/rehashing  
-OK   M                                   www.lintcode.com/problem/implement-queue-by-two-stacks  
-O    M                                   www.lintcode.com/problem/min-stack  
-O    M                                   www.lintcode.com/problem/ugly-number-ii  
+OK   M                                   www.lintcode.com/problem/continuous-subarray-sum
+OK   M                                   www.lintcode.com/problem/continuous-subarray-sum-ii
+OK===E  ================================ www.lintcode.com/problem/hash-function ========================================= Data Structure  
+OK   M                                   www.lintcode.com/problem/top-k-largest-numbers
+OK   M                                   www.lintcode.com/problem/top-k-largest-numbers-ii
+OK   M                                   www.lintcode.com/problem/top-k-frequent-words
+OK   M                                   www.lintcode.com/problem/merge-k-sorted-arrays
+OK   M                                   www.lintcode.com/problem/rehashing
+OK   M                                   www.lintcode.com/problem/implement-queue-by-two-stacks
+OK   M                                   www.lintcode.com/problem/min-stack
+O    M                                   www.lintcode.com/problem/ugly-number-ii
+O    M                                   www.leetcode.com/problems/super-ugly-number
 OK   H                                   www.lintcode.com/problem/lru-cache hulu microsoft amazon
 O    H                                   www.lintcode.com/problem/lfu-cache
 O    H                                   www.lintcode.com/problem/largest-rectangle-in-histogram
@@ -156,17 +159,15 @@ O    E                                   www.lintcode.com/problem/implement-stac
 O    E                                   www.lintcode.com/problem/implement-stack-by-two-queues
 O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list-ii
 O    E                                   www.lintcode.com/problem/implement-queue-by-linked-list
-O    M                                   www.lintcode.com/problem/top-k-largest-numbers-ii
 O    M                                   www.lintcode.com/problem/stack-sorting
-O    M                                   www.lintcode.com/problem/top-k-frequent-words
 O    M                                   www.lintcode.com/problem/heapify
 O    M                                   www.lintcode.com/problem/longest-consecutive-sequence
 O    H                                   www.lintcode.com/problem/animal-shelter
 OK   H                                   www.lintcode.com/problem/max-tree 构造最大堆笛卡尔树
 OK   H                                   www.lintcode.com/problem/expression-tree-build
 OK   H                                   www.lintcode.com/problem/expression-evaluation 两个栈的方法比较好; 先构造min tree, 然后后续遍历得到逆波兰表达式, 然后在计算逆波兰表达式
-O    H                                   www.lintcode.com/problem/convert-expression-to-reverse-polish-notation
-O    H                                   www.lintcode.com/problem/convert-expression-to-polish-notation
+OK   H                                   www.lintcode.com/problem/convert-expression-to-reverse-polish-notation
+OK   H                                   www.lintcode.com/problem/convert-expression-to-polish-notation
 O    M                                   www.lintcode.com/problem/implement-three-stacks-by-single-array
 OK   E  UF                               www.lintcode.com/problem/number-of-islands microsoft
 OK   H  UF                               www.lintcode.com/problem/number-of-islands-ii microsoft
@@ -329,7 +330,6 @@ O    M                                   www.leetcode.com/problems/reconstruct-i
 O    M                                   www.leetcode.com/problems/spiral-matrix
      M                                   www.leetcode.com/problems/strobogrammatic-number-ii
      M                                   www.leetcode.com/problems/summary-ranges
-O    M                                   www.leetcode.com/problems/super-ugly-number
      M                                   www.leetcode.com/problems/utf-8-validation
 O    M                                   www.leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree
      M                                   www.leetcode.com/problems/walls-and-gates

@@ -1,74 +1,58 @@
-import java.util.Random;
+//维护一个k大小的最小堆, 遍历数组, 只有比堆顶元素大的才更新堆, 这样省空间和时间
+class Solution{
+    public int[] topk(int[] nums, int k){
+        Queue<Integer> minHeap = new PriorityQueue<>();
+        for(int i : nums){
+            if(minHeap.size() < k){
+                minHeap.offer(i);
+            }else if(i > minHeap.peek()){
+                minHeap.poll();
+                minHeap.offer(i);
+            }
+        }
+        int[] result = new int[k];
+        int i = k - 1;
+        while(i >= 0){
+            result[i] = minHeap.poll();
+            i--;
+        }
+        return result;
+    }
+}
 
+//这里是先把所有元素放入max heap, 然后取k个元素
 class Solution {
-    /*
-     * @param nums an integer array
-     * @param k an integer
-     * @return the top k largest numbers in array
-     */
-    public int[] topk(int[] nums, int k) {
-        // Write your code here
-        quickSort(nums, 0, nums.length - 1, k);
-
-        List<Integer> result = new ArrayList<Integer>();
-        for (int i = 0; i < k && i < nums.length; ++i)
-            result.add(nums[i]);
-
-        Collections.sort(result, Collections.reverseOrder());
-        int[] topk = new int[k];
-        for (int i = 0; i < k; ++i)
-            topk[i] = result.get(i);
-
-        return topk;
+     public int[] topk(int[] nums, int k) {
+         //我们需要max heap, PriorityQueue默认是min heap
+         Comparator<Integer> comparator = new Comparator<Integer>() {
+             public int compare(Integer o1, Integer o2) {
+                 if(o1 < o2) {
+                     return 1;
+                 } else if(o1 > o2) {
+                     return -1;
+                 } else {
+                     return 0;
+                 }
+             }
+         };
+         PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(k, comparator);
+         //PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, Collections.reverseOrder());
+         for (int i : nums) {
+             maxHeap.add(i);
+         }
+         int[] result = new int[k];
+         for (int i = 0; i < result.length; i++) {
+             result[i] = maxHeap.poll();
+         }
+         return result;
     }
-    
-    private void quickSort(int[] A, int start, int end, int k) {
-        if (start >= k || end < k)
-            return;
+}
 
-        if (start >= end) {
-            return;
-        }
-        
-        int left = start, right = end;
-        // key point 1: pivot is the value, not the index
-        Random rand =new Random(end - start + 1);
-        int index = rand.nextInt(end - start + 1) + start;
-        int pivot = A[index];
 
-        // key point 2: every time you compare left & right, it should be 
-        // left <= right not left < right
-        while (left <= right) {
-            // key point 3: A[left] < pivot not A[left] <= pivot
-            while (left <= right && A[left] > pivot) {
-                left++;
-            }
-            // key point 3: A[right] > pivot not A[right] >= pivot
-            while (left <= right && A[right] < pivot) {
-                right--;
-            }
-
-            if (left <= right) {
-                int temp = A[left];
-                A[left] = A[right];
-                A[right] = temp;
-                
-                left++;
-                right--;
-            }
-        }
-        
-        quickSort(A, start, right, k);
-        quickSort(A, left, end, k);
-    }
-};
-
+/*
 Given an integer array, find the top k largest numbers in it.
-
-Have you met this question in a real interview? Yes
 Example
 Given [3,10,1000,-99,4,100] and k = 3.
 Return [1000, 100, 10].
-
-Tags 
-Heap Priority Queue
+Tags: Heap, Priority Queue
+*/

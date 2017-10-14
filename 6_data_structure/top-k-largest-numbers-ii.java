@@ -1,3 +1,4 @@
+//注意这里是通过一个最小堆来维护最大的k个元素, 堆顶是最小元素, 要更新也是先更新最小元素
 public class Solution {
     private int maxSize;
     private Queue<Integer> minheap;
@@ -5,35 +6,34 @@ public class Solution {
         minheap = new PriorityQueue<>();
         maxSize = k;
     }
-
     public void add(int num) {
         if (minheap.size() < maxSize) {
             minheap.offer(num);
             return;
         }
-        
         if (num > minheap.peek()) {
             minheap.poll();
             minheap.offer(num);
         }
     }
-
     public List<Integer> topk() {
-        Iterator it = minheap.iterator();
+        Iterator<Integer> it = minheap.iterator();
         List<Integer> result = new ArrayList<Integer>();
         while (it.hasNext()) {
-            result.add((Integer) it.next());
+            result.add(it.next());
         }
         Collections.sort(result, Collections.reverseOrder());
         return result;
     }
-};
+}
 
-mplement a data structure, provide two interfaces:
+/*
+Implement a data structure, provide two interfaces:
 
-add(number). Add a new number in the data structure.
-topk(). Return the top k largest numbers in this data structure. k is given when we create the data structure.
-Have you met this question in a real interview? Yes
+1 add(number). Add a new number in the data structure.
+2 topk(). Return the top k largest numbers in this data structure. 
+  k is given when we create the data structure.
+
 Example
 s = new Solution(3);
 >> create a new data structure.
@@ -53,3 +53,4 @@ s.topk()
 >> return [1000, 100, 10]
 Tags 
 Heap Priority Queue
+*/

@@ -4,36 +4,26 @@ public class Solution {
             return null;
         }
         Stack<TreeNode> stack = new Stack<TreeNode>();
-        for(int i = 0; i <= A.length; i++){
-            TreeNode right = null;
-            if(i == A.length){
-              right = new TreeNode(Integer.MAX_VALUE);
-            }else{
-              right = new TreeNode(A[i]);
+        for(int i = 0; i < A.length; i++){
+            TreeNode node = new TreeNode(A[i]);
+            while(!stack.isEmpty() && node.val >= stack.peek().val){
+                node.left = stack.pop();
             }
-            while (!stack.isEmpty()){
-                if(stack.peek().val <= right.val){ 
-                    TreeNode nodeNow = stack.pop();
-                    if(stack.isEmpty()){
-                        right.left = nodeNow;
-                    }else{
-                        TreeNode left = stack.peek();
-                        if(left.val > right.val){
-                            right.left = nodeNow;
-                        }else{
-                            left.right = nodeNow;
-                        }
-                    }
-                }else{
-                    break;
-                }
+            if(!stack.isEmpty()){
+                stack.peek().right = node;
             }
-            stack.push(right);
+            stack.push(node);
         }
-        return stack.peek().left;
+        if(stack.isEmpty()){
+            return null;
+        }
+        TreeNode root = stack.pop();
+        while(!stack.isEmpty()){
+            root = stack.pop();
+        }
+        return root;
     }
 }
-
 
 
 public class Solution {
@@ -148,5 +138,141 @@ public class TreeNode {
         this.left = this.right = null;
     }
 }
+
+== 2
+stack 2
+== 5
+   5
+  /
+ 2
+stack 5
+== 6
+    6
+   /
+  5
+ /
+2
+stack 6
+== 0
+    6
+   / \
+  5   0
+ /
+2
+stack 6 0
+== 3
+   3
+  /
+ 0
+stack 6
+    6
+   / \
+  5   3
+ /   /
+2   0
+stack 6 3
+== 1
+    6
+   / \
+  5   3
+ /   / \
+2   0   1
+stack 6 3 1
+
+[3,2,1,6,5,4,9,8,7]
+== 3
+stack 3
+== 2
+3
+ \
+  2
+stack 3 2
+== 1
+3
+ \
+  2
+   \
+    1
+stack 3 2 1
+== 6
+  6
+ /
+1
+  6
+ /
+2
+ \
+  1
+  6
+ /
+3
+ \
+  2
+   \
+    1
+== 5
+stack 6
+  6
+ / \
+3   5
+ \
+  2
+   \
+    1
+stack 6 5
+== 4
+  6
+ / \
+3   5
+ \   \
+  2   4
+   \
+    1
+stack 6 5 4
+== 9
+  9
+ /
+4
+  9
+ /
+5
+ \
+  4
+    9
+   /
+  6
+ / \
+3   5
+ \   \
+  2   4
+   \
+    1
+stack 9
+== 8
+    9
+   / \
+  6   8
+ / \
+3   5
+ \   \
+  2   4
+   \
+    1
+stack 9 8
+== 7
+    9
+   / \
+  6   8
+ / \   \
+3   5   7
+ \   \
+  2   4
+   \
+    1
+
+
+
+
+
 
 */
